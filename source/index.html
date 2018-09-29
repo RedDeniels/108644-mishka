@@ -87,7 +87,7 @@
         </ul>
         <button class="comments__prev" type="button">Предыдущий комментарий</button>
         <button class="comments__next" type="button">Следующий комментарий</button>
-        <a class="button comments__write" href="#">Написать</a>
+        <a class="button button--comments" href="#">Написать</a>
       </section>
 
       <section class="contacts">
@@ -109,7 +109,7 @@
         <div class="contacts__map">
           <img src="http://placehold.it/322x457" width="322" height="457" alt="г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101">
         </div>
-        <a class="button contacts__button" href="#">Напишите нам</a>
+        <a class="button button--contacts" href="#">Напишите нам</a>
       </section>
     </main>
     <footer class="page-footer">
@@ -122,9 +122,33 @@
         </ul>
       </div>
       <div class="page-footer__copyright">
-        <b class="page-footer__developed">Разработано</b> <!-- скорее всего, присваивать класс этому тегу - перебор -->
+        <b class="page-footer__developed">Разработано</b>  <!-- скорее всего, присваивать класс этому тегу - перебор -->
         <a class="page-footer__academy" href="#">HTML Academy</a>
       </div>
     </footer>
+    <section class="modal modal-order">
+      <h2 class="modal-order__title">Добавить в корзину</h2>
+      <form class="form modal-form__list" action="https://echo.htmlacademy.ru" method="post">
+        <fieldset class="modal-form__item modal-form__item--size">
+          <legend class="modal-form__phrase">Выберите размер:</legend>  <!-- Этому тоже наверно лишнее -->
+          <ul class="modal-form__list-size">  <!-- Не вижу однозначного решения проблемы громоздких имен классов в этой форме -->
+            <li class="modal-form__item-size">
+              <input class="modal-form__radio" id="size-S" type="radio" name="size">
+              <label class="modal-form__radio-button">S</label>
+            </li>
+            <li class="modal-form__item-size">
+              <input class="modal-form__radio" id="size-M" type="radio" name="size">
+              <label class="modal-form__radio-button">M</label>
+            </li>
+            <li class="modal-form__item-size">
+              <input class="modal-form__radio" id="size-L" type="radio" name="size">
+              <label class="modal-form__radio-button">L</label>
+            </li>
+          </ul>
+        </fieldset>
+        <button class="button button--submit" type="submit">Добавить</button>
+      </form>
+
+    </section>
   </body>
 </html>
