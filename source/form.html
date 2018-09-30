@@ -31,7 +31,91 @@
     </header>
 
     <main class="page-main">
-
+      <h1 class="title page-main__title">Вязание на заказ</h1>
+      <section class="order-main">
+        <h2 class="visual-hidden">Форма заказа</h2>
+        <p class="order-main__info">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+        <form class="form form--order" action="https://echo.htmlacademy.ru" method="post">
+          <fieldset class="form--order__item">
+          <legend class="form--order__caption">Тип</legend>
+          <ul class="form--order__list--type">  <!-- Не вижу однозначного решения проблемы громоздких имен классов в этой форме -->
+            <li class="form--order__item--type">
+              <input class="form--order__radio" id="type--accessory" type="radio" name="type" checked>
+              <label class="form--order__radio-sign">Аксессуар для интерьера</label>
+            </li>
+            <li class="form--order__item--type">
+              <input class="form--order__radio" id="type--accessory" type="radio" name="type">
+              <label class="form--order__radio-sign">Детская игрушка</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="form--order__item">
+          <legend class="form--order__caption">Цвет</legend>
+          <ul class="form--order__list--color">
+            <li class="form--order__item--color">
+              <input class="form--order__checkbox" id="color--white" type="checkbox" name="color" checked>
+              <label class="form--order__checkbox-sign">Белый</label>
+            </li>
+            <li class="form--order__item--color">
+              <input class="form--order__checkbox" id="color--grey" type="checkbox" name="color" checked>
+              <label class="form--order__checkbox-sign">Серый</label>
+            </li>
+            <li class="form--order__item--color">
+              <input class="form--order__checkbox" id="color--tiffany" type="checkbox" name="color">
+              <label class="form--order__checkbox-sign">«Тиффани»</label>
+            </li>
+            <li class="form--order__item--color">
+              <input class="form--order__checkbox" id="color--black" type="checkbox" name="color">
+              <label class="form--order__checkbox-sign">Черный</label>
+            </li>
+            <li class="form--order__item--color">
+              <input class="form--order__checkbox" id="color--pink" type="checkbox" name="color">
+              <label class="form--order__checkbox-sign">Розовый</label>
+            </li>
+            <li class="form--order__item--color">
+              <input class="form--order__checkbox" id="color--orange" type="checkbox" name="color">
+              <label class="form--order__checkbox-sign">Оранжевый</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="form--order__item">
+          <legend class="form--order__caption">ФИО</legend>
+          <ul class="form--order__list--name">
+            <li class="form--order__item--name">
+              <b class="form--order__desc">Имя:</b>
+              <input class="form--order__text" id="name--first" type="text" name="name" placeholder="Введите ваше имя*">
+              <label class="visual-hidden">Введите имя</label>
+            </li>
+            <li class="form--order__item--name">
+              <b class="form--order__desc">Фамилия:</b>
+              <input class="form--order__text" id="name--last" type="text" name="name" placeholder="Укажите фамилию*">
+              <label class="visual-hidden">Введите фамилию</label>
+            </li>
+            <li class="form--order__item--name">
+              <b class="form--order__desc">Отчество:</b>
+              <input class="form--order__text" id="name--patronymic" type="text" name="name" placeholder="Отчество, если желаете">
+              <label class="visual-hidden">Введите отчество</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="form--order__item">
+          <legend class="form--order__caption">Тел</legend>
+          <input class="form--order__text" id="phone" type="text" name="phone" placeholder="+7 XXX XXX XX XX*">
+          <label class="visual-hidden">Введите номер телефона</label>
+        </fieldset>
+        <fieldset class="form--order__item">
+          <legend class="form--order__caption">E-mail</legend>
+          <input class="form--order__text" id="e-mail" type="text" name="e-mail" placeholder="Ваш Email*">
+          <label class="visual-hidden">Введите ваш e-mail</label>
+        </fieldset>
+        <fieldset class="form--order__item">
+          <legend class="form--order__caption">Доп</legend>
+          <textarea class="form--order__comment" id="comment" name="comment" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+          <small class="form--order__small-text"><sup>*</sup>Поля обязательны для заполнения</small>
+        </fieldset>
+        <button class="button button--submit button--submit--order" type="submit">Отправить заказ</button>
+        </form>
+      </section>
     </main>
 
     <footer class="page-footer">
