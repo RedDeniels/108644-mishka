@@ -86,5 +86,29 @@
         <a class="page-footer__academy" href="#">HTML Academy</a>
       </div>
     </footer>
+
+    <section class="modal modal-order">
+      <h2 class="title modal-order__title">Добавить в корзину</h2>
+      <form class="form modal-form__list" action="https://echo.htmlacademy.ru" method="post">
+        <fieldset class="modal-form__item modal-form__item--size">
+          <legend class="modal-form__phrase">Выберите размер:</legend>  <!-- Этому тоже наверно лишнее -->
+          <ul class="modal-form__list-size">  <!-- Не вижу однозначного решения проблемы громоздких имен классов в этой форме -->
+            <li class="modal-form__item-size">
+              <input class="modal-form__radio" id="size-S" type="radio" name="size">
+              <label class="modal-form__radio-button">S</label>
+            </li>
+            <li class="modal-form__item-size">
+              <input class="modal-form__radio" id="size-M" type="radio" name="size">
+              <label class="modal-form__radio-button">M</label>
+            </li>
+            <li class="modal-form__item-size">
+              <input class="modal-form__radio" id="size-L" type="radio" name="size">
+              <label class="modal-form__radio-button">L</label>
+            </li>
+          </ul>
+        </fieldset>
+        <button class="button button--submit" type="submit">Добавить</button>
+      </form>
+    </section>
   </body>
 </html>
