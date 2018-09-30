@@ -6,7 +6,7 @@
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo" href="#">
+      <a class="page-header__logo" href="index.html">
         <img class="page-header__logo-image" src="http://placehold.it/86x35" width="86" height="35" alt="Магазин товаров ручной работы «Mishka»">
       </a>
       <nav class="main-nav">
@@ -34,7 +34,7 @@
       <h1 class="title page-main__title">Каталог товаров</h1>
 
       <section class="catalog">
-        <h2 class="title catalog__title">Каталог товаров</h2>
+        <h2 class="title catalog__title">Каталог товаров</h2> <!-- Ничего лучше не придумал -->
         <ul class="catalog__list">
           <li class="product">
             <h3 class="title product__title">Зайчик-попрыгайчик</h3>
@@ -57,6 +57,19 @@
         </ul>
       </section>
 
+      <section class="special">
+        <h2 class="visual-hidden">Информация о производстве</h2>
+        <div class="special-card">
+          <b class="title special-card__title">Процесс производства</b>
+          <video class="special-card__video">
+            <source src="video/duel.ogv" type="video/ogg">
+            <source src="video/duel.mp4" type="video/mp4">
+            <source src="video/duel.webm" type="video/webm">
+          </video>
+          <p class="special-card__info">По просьбам наших любимых фоловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+          <a class="button special-card__button" href="form.html">Сделать заказ</a>
+        </div>
+      </section>
     </main>
 
     <footer class="page-footer">
