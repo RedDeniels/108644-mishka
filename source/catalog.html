@@ -37,22 +37,25 @@
         <h2 class="title catalog__title">Каталог товаров</h2> <!-- Ничего лучше не придумал -->
         <ul class="catalog__list">
           <li class="product">
-            <h3 class="title product__title">Зайчик-попрыгайчик</h3>
+            <a class="product__link" href="#"><h3 class="title product__title">Зайчик-попрыгайчик</h3></a>
             <p class="product__info">Рост 30 см, вес 200 г</p>
-            <img class="product__image" src="http://placehold.it/260x195" width="260" height="195" alt="Зайчик-попрыгайчик">
+            <a class="product__link-image"><img class="product__image" src="http://placehold.it/260x195" width="260" height="195" alt="Зайчик-попрыгайчик"></a>
             <span class="product__price">1 200 руб.</span>
+            <a class="button button--product" href="#"></a>
           </li>
           <li class="product">
             <h3 class="title product__title">Корзинка для белья</h3>
             <p class="product__info">Диаметр 15 см, высота 10 см</p>
             <img class="product__image" src="http://placehold.it/260x195" width="260" height="195" alt="Корзинка для белья">
             <span class="product__price">690 руб.</span>
+            <a class="button button--product" href="#"></a>
           </li>
           <li class="product">
             <h3 class="title product__title">Большая корзинка для игрушек</h3>
             <p class="product__info">Диаметр 30 см, высота 30 см</p>
             <img class="product__image" src="http://placehold.it/260x195" width="260" height="195" alt="Большая корзинка для игрушек">
             <span class="product__price">1 500 руб.</span>
+            <a class="button button--product" href="#"></a>
           </li>
         </ul>
       </section>
@@ -81,13 +84,13 @@
           <li class="page-footer__item"><a class="page-footer__link" href="#">Twitter</a></li>
         </ul>
       </div>
-      <div class="page-footer__copyright">
-        <b class="page-footer__developed">Разработано</b>  <!-- скорее всего, присваивать класс этому тегу - перебор -->
-        <a class="page-footer__academy" href="#">HTML Academy</a>
+      <div class="copyright page-footer__copyright">
+        <b class="copyright__developed">Разработано</b>  <!-- скорее всего, присваивать класс этому тегу - перебор -->
+        <a class="copyright__academy" href="#">HTML Academy</a>
       </div>
     </footer>
 
-    <section class="modal modal-options">
+    <section class="modal modal--options">
       <h2 class="title modal-options__title">Добавить в корзину</h2>
       <form class="form form--modal" action="https://echo.htmlacademy.ru" method="post">
         <fieldset class="form--modal__item form--modal__item--size">
