@@ -7,9 +7,9 @@
 
 }
 .group-product__item{
-  background-color: #63d1bb;
+  background-color: $mint;
   &:nth-child(2n){
-    background-color: #56c3b2;
+    background-color: $mint--dark;
   }
 }
 .group-product__link{

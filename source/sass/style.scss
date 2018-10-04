@@ -1,45 +1,7 @@
-@font-face {
-  font-family: "OpenSans";
-  src: url("../fonts/opensans.woff2")
-         format("woff2"),
-       url("../fonts/opensans.woff")
-         format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: "OpenSans";
-  src: url("../fonts/opensansbold.woff2")
-         format("woff2"),
-       url("../fonts/opensansbold.woff")
-         format("woff");
-  font-weight: 700;
-  font-style: normal;
-}
-body{
-  font-family: "OpenSans", Arial, sans-serif;
-  font-size: 15px;
-  line-height: 24px;
-  font-weight: normal;
-
-  color: #444444;
-  background: #ffffff;
-}
-a{
-  text-decoration: none;
-}
-.visual-hidden{
-    clip: rect(0 0 0 0);
-
-    position: absolute;
-
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-}
-
 @import "variables.scss";
 
+@import "global.scss";
+@import "blocks/visual-hidden.scss";
 @import "blocks/title.scss";
 @import "blocks/page-header.scss";
 @import "blocks/main-nav.scss";
@@ -47,4 +9,7 @@ a{
 @import "blocks/group-product.scss";
 @import "blocks/product-week.scss";
 @import "blocks/button.scss";
-@import "blocks/features.scss"
+@import "blocks/features.scss";
+@import "blocks/comments.scss";
+@import "blocks/contacts.scss";
+
