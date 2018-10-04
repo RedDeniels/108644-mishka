@@ -17,8 +17,9 @@
   font-style: normal;
 }
 body{
-  font-size: 14px;
   font-family: "OpenSans", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 24px;
   font-weight: normal;
 
   color: #444444;
@@ -44,5 +45,5 @@ a{
 @import "blocks/main-nav.scss";
 @import "blocks/page-main.scss";
 @import "blocks/group-product.scss";
-
+@import "blocks/product-week.scss"
 

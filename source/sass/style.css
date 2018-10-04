@@ -12,17 +12,18 @@
 
 /* line 19, /Users/mac/Documents/GitHub/108644-mishka/source/sass/style.scss */
 body {
-  font-size: 14px;
   font-family: "OpenSans", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 24px;
   font-weight: normal;
   color: #444444;
   background: #ffffff; }
 
-/* line 27, /Users/mac/Documents/GitHub/108644-mishka/source/sass/style.scss */
+/* line 28, /Users/mac/Documents/GitHub/108644-mishka/source/sass/style.scss */
 a {
   text-decoration: none; }
 
-/* line 30, /Users/mac/Documents/GitHub/108644-mishka/source/sass/style.scss */
+/* line 31, /Users/mac/Documents/GitHub/108644-mishka/source/sass/style.scss */
 .visual-hidden {
   clip: rect(0 0 0 0);
   position: absolute;
@@ -109,5 +110,17 @@ a {
   font-size: 19px;
   line-height: 24px;
   font-weight: bold; }
+
+/* line 4, /Users/mac/Documents/GitHub/108644-mishka/source/sass/blocks/product-week.scss */
+.product-week__name {
+  color: #000000;
+  font-size: 25px;
+  line-height: 30px; }
+
+/* line 9, /Users/mac/Documents/GitHub/108644-mishka/source/sass/blocks/product-week.scss */
+.product-week__title {
+  color: #63d1bb;
+  font-size: 17px;
+  line-height: 20px; }
 
 /*# sourceMappingURL=style.css.map */
