@@ -1,0 +1,31 @@
+.main-nav{
+
+}
+.main-nav__toggle{
+  border: none;
+
+  margin: 0;
+}
+.main-nav__list{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.main-nav__item{
+  a{
+    font-size: 17px;
+    line-height: 24px;
+    color: #000000;
+    font-weight: bold;
+  }
+  &::after{
+    content: "";
+    display: block;
+    border-bottom: 1px solid #ececec;
+  }
+  &:first-child::before{
+    content: "";
+    display: block;
+    border-top: 1px solid #ececec;
+  }
+}

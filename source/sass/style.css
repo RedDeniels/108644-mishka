@@ -22,8 +22,22 @@ body {
 a {
   text-decoration: none; }
 
-/* line 1, /Users/mac/Documents/GitHub/108644-mishka/source/sass/blocks/page-header.scss */
-.page-header {
-  color: red; }
+/* line 30, /Users/mac/Documents/GitHub/108644-mishka/source/sass/style.scss */
+.visual-hidden {
+  clip: rect(0 0 0 0);
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px; }
+
+/* line 4, /Users/mac/Documents/GitHub/108644-mishka/source/sass/blocks/page-header.scss */
+.page-header__logo {
+  font-size: 0;
+  display: inline-block; }
+
+/* line 4, /Users/mac/Documents/GitHub/108644-mishka/source/sass/blocks/main-nav.scss */
+.main-nav__toggle {
+  border: none;
+  margin: 0; }
 
 /*# sourceMappingURL=style.css.map */
