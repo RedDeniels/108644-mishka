@@ -1,0 +1,9 @@
+{
+  "version": 3,
+  "file": "page-header.css",
+  "sources": [
+    "page-header.scss"
+  ],
+  "mappings": ";AAGA,AAAA,kBAAkB,CAAA;EAChB,SAAS,EAAE,CAAE;EACb,OAAO,EAAE,YAAa,GACvB",
+  "names": []
+}
