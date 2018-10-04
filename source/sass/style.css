@@ -40,4 +40,29 @@ a {
   border: none;
   margin: 0; }
 
+/* line 9, /Users/mac/Documents/GitHub/108644-mishka/source/sass/blocks/main-nav.scss */
+.main-nav__list {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+/* line 15, /Users/mac/Documents/GitHub/108644-mishka/source/sass/blocks/main-nav.scss */
+.main-nav__item a {
+  font-size: 17px;
+  line-height: 24px;
+  color: #000000;
+  font-weight: bold; }
+
+/* line 21, /Users/mac/Documents/GitHub/108644-mishka/source/sass/blocks/main-nav.scss */
+.main-nav__item::after {
+  content: "";
+  display: block;
+  border-bottom: 1px solid #ececec; }
+
+/* line 26, /Users/mac/Documents/GitHub/108644-mishka/source/sass/blocks/main-nav.scss */
+.main-nav__item:first-child::before {
+  content: "";
+  display: block;
+  border-top: 1px solid #ececec; }
+
 /*# sourceMappingURL=style.css.map */
