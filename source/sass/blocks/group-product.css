@@ -1,0 +1,22 @@
+/* line 4, /Users/mac/Documents/GitHub/108644-mishka/source/sass/blocks/group-product.scss */
+.group-product__list {
+  list-style: none;
+  padding-left: 0; }
+
+/* line 9, /Users/mac/Documents/GitHub/108644-mishka/source/sass/blocks/group-product.scss */
+.group-product__item {
+  background-color: #63d1bb; }
+  /* line 11, /Users/mac/Documents/GitHub/108644-mishka/source/sass/blocks/group-product.scss */
+  .group-product__item:nth-child(2n) {
+    background-color: #56c3b2; }
+
+/* line 15, /Users/mac/Documents/GitHub/108644-mishka/source/sass/blocks/group-product.scss */
+.group-product__link {
+  display: block;
+  padding: 30px;
+  color: #ffffff;
+  font-size: 19px;
+  line-height: 24px;
+  font-weight: bold; }
+
+/*# sourceMappingURL=group-product.css.map */

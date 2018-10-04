@@ -37,6 +37,12 @@ a{
     margin: -1px;
 }
 
+@import "variables.scss";
+
+@import "blocks/title.scss";
 @import "blocks/page-header.scss";
 @import "blocks/main-nav.scss";
 @import "blocks/page-main.scss";
+@import "blocks/group-product.scss";
+
+

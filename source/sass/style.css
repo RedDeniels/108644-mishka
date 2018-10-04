@@ -30,6 +30,12 @@ a {
   height: 1px;
   margin: -1px; }
 
+/* line 1, /Users/mac/Documents/GitHub/108644-mishka/source/sass/blocks/title.scss */
+.title {
+  font-size: 25px;
+  line-height: 30px;
+  color: #000000; }
+
 /* line 4, /Users/mac/Documents/GitHub/108644-mishka/source/sass/blocks/page-header.scss */
 .page-header__logo {
   font-size: 0;
@@ -48,21 +54,60 @@ a {
 
 /* line 15, /Users/mac/Documents/GitHub/108644-mishka/source/sass/blocks/main-nav.scss */
 .main-nav__item a {
+  display: block;
   font-size: 17px;
   line-height: 24px;
   color: #000000;
-  font-weight: bold; }
+  font-weight: bold;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  width: 100%;
+  text-align: center; }
 
-/* line 21, /Users/mac/Documents/GitHub/108644-mishka/source/sass/blocks/main-nav.scss */
+/* line 26, /Users/mac/Documents/GitHub/108644-mishka/source/sass/blocks/main-nav.scss */
 .main-nav__item::after {
   content: "";
   display: block;
   border-bottom: 1px solid #ececec; }
 
-/* line 26, /Users/mac/Documents/GitHub/108644-mishka/source/sass/blocks/main-nav.scss */
+/* line 31, /Users/mac/Documents/GitHub/108644-mishka/source/sass/blocks/main-nav.scss */
 .main-nav__item:first-child::before {
   content: "";
   display: block;
   border-top: 1px solid #ececec; }
+
+/* line 1, /Users/mac/Documents/GitHub/108644-mishka/source/sass/blocks/page-main.scss */
+.page-main {
+  background-image: url("../../img/hero-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center top; }
+
+/* line 6, /Users/mac/Documents/GitHub/108644-mishka/source/sass/blocks/page-main.scss */
+.page-main__title {
+  font-size: 27px;
+  line-height: 30px;
+  text-align: center;
+  margin-bottom: 125px; }
+
+/* line 4, /Users/mac/Documents/GitHub/108644-mishka/source/sass/blocks/group-product.scss */
+.group-product__list {
+  list-style: none;
+  padding-left: 0; }
+
+/* line 9, /Users/mac/Documents/GitHub/108644-mishka/source/sass/blocks/group-product.scss */
+.group-product__item {
+  background-color: #63d1bb; }
+  /* line 11, /Users/mac/Documents/GitHub/108644-mishka/source/sass/blocks/group-product.scss */
+  .group-product__item:nth-child(2n) {
+    background-color: #56c3b2; }
+
+/* line 15, /Users/mac/Documents/GitHub/108644-mishka/source/sass/blocks/group-product.scss */
+.group-product__link {
+  display: block;
+  padding: 30px;
+  color: #ffffff;
+  font-size: 19px;
+  line-height: 24px;
+  font-weight: bold; }
 
 /*# sourceMappingURL=style.css.map */

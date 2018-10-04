@@ -1,0 +1,23 @@
+.group-product{
+
+}
+.group-product__list{
+  list-style: none;
+  padding-left: 0;
+
+}
+.group-product__item{
+  background-color: #63d1bb;
+  &:nth-child(2n){
+    background-color: #56c3b2;
+  }
+}
+.group-product__link{
+  display: block;
+  padding: 30px;
+  color: #ffffff;
+  font-size: 19px;
+  line-height: 24px;
+  font-weight: bold;
+}
+
