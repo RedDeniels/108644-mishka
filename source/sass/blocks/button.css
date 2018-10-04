@@ -1,0 +1,23 @@
+/* line 3, /Users/mac/Documents/GitHub/108644-mishka/source/sass/blocks/button.scss */
+.button {
+  display: inline-block;
+  font-size: 17px;
+  line-height: 20px;
+  color: #444444;
+  text-align: center;
+  padding: 14px;
+  border: 2px solid #444444; }
+  /* line 11, /Users/mac/Documents/GitHub/108644-mishka/source/sass/blocks/button.scss */
+  .button:hover {
+    color: #ffffff;
+    border: none;
+    padding: 16px;
+    background-color: #444444; }
+  /* line 17, /Users/mac/Documents/GitHub/108644-mishka/source/sass/blocks/button.scss */
+  .button:active {
+    color: #7c7c7c;
+    border: none;
+    padding: 16px;
+    background-color: #444444; }
+
+/*# sourceMappingURL=button.css.map */

@@ -123,4 +123,29 @@ a {
   font-size: 17px;
   line-height: 20px; }
 
+/* line 14, /Users/mac/Documents/GitHub/108644-mishka/source/sass/blocks/product-week.scss */
+.product-week__info {
+  line-height: 20px; }
+  /* line 16, /Users/mac/Documents/GitHub/108644-mishka/source/sass/blocks/product-week.scss */
+  .product-week__info td {
+    border-bottom: 1px solid #ececec;
+    min-width: 98px;
+    padding-top: 10px;
+    padding-bottom: 10px; }
+
+/* line 23, /Users/mac/Documents/GitHub/108644-mishka/source/sass/blocks/product-week.scss */
+.product-week__price {
+  text-align: center;
+  font-size: 17px;
+  font-weight: bold; }
+
+/* line 1, /Users/mac/Documents/GitHub/108644-mishka/source/sass/blocks/button.scss */
+.button {
+  display: block;
+  font-size: 17px;
+  line-height: 20px;
+  color: #444444;
+  padding: 14px;
+  border: 2px solid #444444; }
+
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,23 @@
+$grey: #444444;
+
+.button{
+  display: inline-block;
+  font-size: 17px;
+  line-height: 20px;
+  color: $grey;
+  text-align: center;
+  padding: 14px;
+  border: 2px solid $grey;
+  &:hover{
+    color: #ffffff;
+    border: none;
+    padding: 16px;
+    background-color: $grey;
+  }
+  &:active{
+    color: #7c7c7c;
+    border: none;
+    padding: 16px;
+    background-color: $grey;
+  }
+}
