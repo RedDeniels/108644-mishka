@@ -18,5 +18,14 @@
   font-size: 19px;
   line-height: 24px;
   font-weight: bold; }
+  /* line 22, /Users/mac/Documents/GitHub/108644-mishka/source/sass/blocks/group-product.scss */
+  .group-product__link:hover {
+    padding-top: 25px;
+    padding-bottom: 35px; }
+  /* line 26, /Users/mac/Documents/GitHub/108644-mishka/source/sass/blocks/group-product.scss */
+  .group-product__link:active {
+    color: #8be2d0;
+    padding-top: 25px;
+    padding-bottom: 35px; }
 
 /*# sourceMappingURL=group-product.css.map */

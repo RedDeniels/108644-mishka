@@ -19,5 +19,14 @@
   font-size: 19px;
   line-height: 24px;
   font-weight: bold;
+  &:hover{
+    padding-top: 25px;
+    padding-bottom: 35px;
+  }
+  &:active{
+    color: #8be2d0;
+    padding-top: 25px;
+    padding-bottom: 35px;
+  }
 }
 
