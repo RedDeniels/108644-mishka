@@ -1,3 +1,39 @@
+$line: #62d1ba;
+$link--hover: #46c1ae;
+$link--active: #cbede8;
+$line--active: #ecf9f7;
+
 .contacts{
 
+}
+.contacts__title{
+  margin-bottom: 40px;
+}
+.contacts__info{
+  margin-bottom: 45px;
+  & td{
+    line-height: 30px;
+    vertical-align: top;
+  }
+}
+.contacts__field{
+  min-width: 75px;
+  padding-bottom: 45px;
+}
+.contacts__link{
+  text-decoration: underline;
+  text-decoration-color: $line;
+  color: $grey;
+  &:hover{
+    color: $link--hover;
+    text-decoration-color: $link--hover;
+  }
+  &:active{
+    color: $link--active;
+    text-decoration-color: $line--active;
+  }
+}
+.contacts__button{
+  margin-top: 39px;
+  margin-bottom: 39px;
 }
