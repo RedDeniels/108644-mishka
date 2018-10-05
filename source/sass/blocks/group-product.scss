@@ -1,5 +1,8 @@
 .group-product{
-
+  &:hover,
+  &:active{
+    margin-top: -5px;  /*-- Поправить при построении сеток --*/
+  }
 }
 .group-product__list{
   list-style: none;
@@ -20,12 +23,10 @@
   line-height: 24px;
   font-weight: bold;
   &:hover{
-    padding-top: 25px;
     padding-bottom: 35px;
   }
   &:active{
     color: #8be2d0;
-    padding-top: 25px;
     padding-bottom: 35px;
   }
 }

@@ -9,9 +9,7 @@
   margin-bottom: 25px;
 }
 
-.modal__button,
-.modal__button:hover,
-.modal__button:active{
+.modal__button{
   color: #ffffff;
   font-weight: bold;
   border: none;
@@ -20,4 +18,9 @@
   margin-bottom: 45px;
 
   outline: none;
+  &:hover,
+  &:active{
+    background-color: $mint;
+    color: #8be2d0;
+  } /*-- по styleguide нужно смещать надпись на 5 px вверх при :hover ¯\_(ツ)_/¯ Что то тут не так --*/
 }
