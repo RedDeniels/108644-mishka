@@ -1,0 +1,31 @@
+.product{
+  border: 1px solid $grey--border;
+  margin-bottom: 30px; /*не знаю, куда лучше написать этот отступ*/
+}
+.product__link{
+  display: block;
+  margin-bottom: 10px;
+}
+.product__title{
+  font-size: 17px;
+  line-height: 24px;
+}
+.product__link-image{
+  margin-bottom: 30px;
+}
+.product__stats{
+  font-size: 13px;
+  line-height: 30px;
+  margin: 0;
+  margin-bottom: 25px;
+}
+.product__description{
+  padding-left:28px;
+  padding-right: 28px;
+  &:hover{
+    box-shadow: 0 6px 10px rgba(0,0,0,0.1);
+  }
+  &:active{
+    box-shadow: 0 3px 5px rgba(0,0,0,0.1);
+  }
+}
