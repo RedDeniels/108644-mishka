@@ -20,16 +20,16 @@ $line--active: #ecf9f7;
   padding-bottom: 45px;
 }
 .contacts__link{
-  text-decoration: underline;
-  text-decoration-color: $mint--alt;
+  border-bottom: 1px solid $mint--alt;
   color: $grey;
+  padding-bottom: 3px;
   &:hover{
     color: $link--hover;
-    text-decoration-color: $link--hover;
+    border-color: $link--hover;
   }
   &:active{
     color: $link--active;
-    text-decoration-color: $line--active;
+    border-color: $line--active;
   }
 }
 .contacts__button{
