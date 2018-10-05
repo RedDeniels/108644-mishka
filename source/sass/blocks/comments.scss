@@ -1,18 +1,13 @@
 .comments{
-  margin-bottom: 90px;
-}
-.comments__title{
-  margin-bottom: 35px;
+
 }
 .comments__list{
   list-style: none;
   padding: 0;
   margin: 0;
-  margin-bottom: 35px;
 }
 .comments__text{
   line-height: 30px;
-  margin-bottom: 40px;
 }
 .comments__author{
   color: #000000;
@@ -25,7 +20,6 @@
 }
 .comments__control{
   font-size: 0;
-  margin-bottom: 38px;
 }
 .comments__arrow{
   border: 1px solid $grey--light;
@@ -34,4 +28,20 @@
   &:nth-child(n+1){
     border-left: none;
   }
+}
+/*-- Модификаторы main --*/
+.comments--main{
+  margin-bottom: 90px;
+}
+.comments__title--main{
+  margin-bottom: 35px;
+}
+.comments__list--main{
+  margin-bottom: 35px;
+}
+.comments__text--main{
+  margin-bottom: 40px;
+}
+.comments__control--main{
+  margin-bottom: 38px;
 }
