@@ -1,0 +1,12 @@
+.copyright{
+
+}
+.copyright__developed{
+  font-size: 19px;
+  line-height: 18x;
+  color: #000000;
+
+  .copyright__academy:active ~ &{
+    color: #a8a8a8;
+  }
+}
