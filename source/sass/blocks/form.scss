@@ -1,0 +1,36 @@
+.form{
+
+}
+.form__list{
+  list-style: none;
+  padding: 0;
+}
+
+/*-- Модификаторы --*/
+.form__field--modal{
+  border: none;
+}
+.form__caption--modal{
+  text-align: center;
+}
+.form__item--modal{
+  display: inline-block;
+}
+.form__radio-button--modal{
+  display: block;
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: bold;
+  text-align: center;
+  border: 2px solid $grey--light;
+  min-width: 78px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  &:hover{
+    border-color: #c7c7c7;
+  }
+  &:active,
+  .form__radio--modal:checked + &{
+    border-color: $mint;
+  }
+}
