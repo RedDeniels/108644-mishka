@@ -4,9 +4,107 @@
 .form__list{
   list-style: none;
   padding: 0;
+  margin: 0;
+}
+.form__item{
+
+}
+.form__field{
+  border: none;
+  border-top: 1px solid $mint--alt;
+  margin: 0;
+  padding: 0;
+  padding-top: 35px;
 }
 
-/*-- Модификаторы --*/
+.form__caption{
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: bold;
+  color: $mint--alt;
+  padding-right: 25px;
+}
+.form__sign{
+  display: block;
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: bold;
+  color: #000000;
+}
+.form__desc{
+  display: block;
+  color: #000000;
+}
+.form__text{
+  font-size: 17px;
+  line-height: 18px;
+  color: $grey;
+  border: none;
+  border-bottom:2px solid #000000;
+  padding-bottom: 15px;
+  padding-top: 10px;
+  margin-bottom: 23px;
+  width: 100%;
+  outline: none;
+  &::placeholder{
+    color: #c7c7c7;
+  }
+  &:hover{
+    border-color: $mint--alt;
+  }
+  &:active,
+  &:focus{
+    border-color: $mint--alt;
+  }
+}
+.form__comment{
+  font-size: 17px;
+  line-height: 18px;
+  color: #c7c7c7;
+
+  min-width: 256px;
+  min-height: 138px;
+  border: 2px solid #000000;
+  resize: none;
+  outline: none;
+  margin: 0;
+  &:hover{
+    border-color: $mint--alt;
+  }
+  &:active,
+  &:focus{
+    border-color: $mint--alt;
+    color: $grey;
+  }
+}
+.form__postscript{
+  display: block;
+  font-size: 14px;
+  line-height: 16px;
+  padding: 0;
+  margin: 0;
+}
+/*-- Модификаторы страницы form.html --*/
+.form__sign--order{
+  margin-left: 60px;
+  margin-bottom: 23px;
+}
+.form__comment--order{
+  margin-bottom: 17px;
+}
+.form__field--phone{
+  padding-top: 10px;
+}
+.form__field--email{
+  padding-top: 10px;
+}
+.form__field--comment{
+  padding-top: 25px;
+}
+.form__postscript--order{
+  margin-bottom: 30px;
+}
+/*-- Модификаторы modal --*/
 .form__field--modal{
   border: none;
 }

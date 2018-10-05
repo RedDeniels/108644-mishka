@@ -1,4 +1,3 @@
-$line: #62d1ba;
 $link--hover: #46c1ae;
 $link--active: #cbede8;
 $line--active: #ecf9f7;
@@ -22,7 +21,7 @@ $line--active: #ecf9f7;
 }
 .contacts__link{
   text-decoration: underline;
-  text-decoration-color: $line;
+  text-decoration-color: $mint--alt;
   color: $grey;
   &:hover{
     color: $link--hover;

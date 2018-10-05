@@ -11,8 +11,7 @@
   margin: 0;
   padding: 0;
 }
-.main-nav__item{
-  a{
+.main-nav__link{
     display: block;
     font-size: 17px;
     line-height: 24px;
@@ -22,7 +21,18 @@
     padding-bottom: 22px;
     width: 100%;
     text-align: center;
+    &:hover{
+      color: #666666;
+    }
+    &:active,
+    &--current{
+      color: #b2b2b2;
+    }
+    &--current:hover{
+    color: #b2b2b2;
+    }
   }
+.main-nav__item{
   &::after{
     content: "";
     display: block;
