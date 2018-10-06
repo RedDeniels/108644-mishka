@@ -2,20 +2,20 @@
   display: inline-block;
   font-size: 17px;
   line-height: 20px;
-  color: $grey;
+  color: $button--color;
   text-align: center;
   padding: 14px;
-  border: 2px solid $grey;
+  border: 2px solid $button--border;
   &:hover{
-    color: #ffffff;
+    color: $button-hover--color;
     border: none;
     padding: 16px;
-    background-color: $grey;
+    background-color: $button-hover--bg;
   }
   &:active{
-    color: #7c7c7c;
+    color: $button-active--color;
     border: none;
     padding: 16px;
-    background-color: $grey;
+    background-color: $button-active--bg;
   }
 }

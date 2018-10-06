@@ -16,16 +16,16 @@
   padding-bottom: 45px;
 }
 .contacts__link{
-  border-bottom: 1px solid $mint--alt;
-  color: $grey;
+  border-bottom: 1px solid $contacts-link__border;
+  color: $contacts-link__color;
   padding-bottom: 3px;
   &:hover{
-    color: $link--hover;
-    border-color: $link--hover;
+    color: $contacts-link-hover__color;
+    border-color: $contacts-link-hover__border;
   }
   &:active{
-    color: $link--active;
-    border-color: $line--active;
+    color: $contacts-link-active__color;
+    border-color: $contacts-link-active__border;
   }
 }
 .contacts__button{

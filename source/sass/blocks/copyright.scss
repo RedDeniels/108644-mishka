@@ -4,9 +4,9 @@
 .copyright__developed{
   font-size: 19px;
   line-height: 18x;
-  color: #000000;
+  color: $copyright__color;
 
   .copyright__academy:active ~ &{
-    color: #a8a8a8;
+    color: $copyright-active__color;
   }
 }

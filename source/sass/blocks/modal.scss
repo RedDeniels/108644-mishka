@@ -1,7 +1,7 @@
 .modal{
-  border-top: 1px solid #c7c7c7;
-  border-bottom: 1px solid #c7c7c7;
-  background-color: #ffffff;
+  border-top: 1px solid $modal__border;
+  border-bottom: 1px solid $modal__border;
+  background-color: $modal__bg;
 }
 .modal__title{
   text-align: center;
@@ -10,17 +10,17 @@
 }
 
 .modal__button{
-  color: #ffffff;
+  color: $modal-button__color;
   font-weight: bold;
   border: none;
-  background-color: $mint;
+  background-color: $modal-button__bg;
   padding: 16px;
   margin-bottom: 45px;
 
   outline: none;
   &:hover,
   &:active{
-    background-color: $mint;
-    color: #8be2d0;
+    background-color: $modal-button-active__border;
+    color: $modal-button-active__color;
   } /*-- по styleguide нужно смещать надпись на 5 px вверх при :hover ¯\_(ツ)_/¯ Что то тут не так --*/
 }

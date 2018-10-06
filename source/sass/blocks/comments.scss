@@ -1,5 +1,5 @@
 .comments{
-  margin-bottom: 90px;
+
 }
 .comments__title{
   margin-bottom: 35px;
@@ -15,7 +15,7 @@
   margin-bottom: 40px;
 }
 .comments__author{
-  color: #000000;
+  color: $comments-author;
   font-size: 17px;
   line-height: 24px;
 }
@@ -28,7 +28,7 @@
   margin-bottom: 38px;
 }
 .comments__arrow{
-  border: 1px solid $grey--light;
+  border: 1px solid $comments-arrow__border;
   min-width: 129px;
   min-height: 52px;
   &:nth-child(n+1){

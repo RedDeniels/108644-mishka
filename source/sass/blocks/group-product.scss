@@ -10,15 +10,15 @@
 
 }
 .group-product__item{
-  background-color: $mint;
+  background-color: $group-product-item__bg;
   &:nth-child(2n){
-    background-color: $mint--dark;
+    background-color: $group-product-item-2n__bg;
   }
 }
 .group-product__link{
   display: block;
   padding: 30px;
-  color: #ffffff;
+  color: $group-product-link__color;
   font-size: 19px;
   line-height: 24px;
   font-weight: bold;
@@ -26,7 +26,7 @@
     padding-bottom: 35px;
   }
   &:active{
-    color: #8be2d0;
+    color: $group-product-link-active__color;
     padding-bottom: 35px;
   }
 }

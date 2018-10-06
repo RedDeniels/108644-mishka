@@ -16,32 +16,32 @@
     display: block;
     font-size: 17px;
     line-height: 24px;
-    color: #000000;
+    color: $main-nav-link__color;
     font-weight: bold;
     padding-top: 22px;
     padding-bottom: 22px;
     width: 100%;
     text-align: center;
     &:hover{
-      color: #666666;
+      color: $main-nav-link-hover__color;
     }
     &:active,
     &--current{
-      color: #b2b2b2;
+      color: $main-nav-link-active__color;
     }
     &--current:hover{
-    color: #b2b2b2;
+    color: $main-nav-link-current-hover__color;
     }
   }
 .main-nav__item{
   &::after{
     content: "";
     display: block;
-    border-bottom: 1px solid #ececec;
+    border-bottom: 1px solid $main-nav-item-after__border;
   }
   &:first-child::before{
     content: "";
     display: block;
-    border-top: 1px solid #ececec;
+    border-top: 1px solid $main-nav-item-fc-before__border;
   }
 }
