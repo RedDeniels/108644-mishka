@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
@@ -14,24 +15,25 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a href="catalog.html">Каталог товаров</a>
+              <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
             </li>
             <li class="main-nav__item">
-              <a href="form.html">Вязание на заказ</a>
+              <a class="main-nav__link" href="form.html">Вязание на заказ</a>
             </li>
             <li class="main-nav__item">
-              <a href="#">Поиск по сайту</a>
+              <a class="main-nav__link" href="#">Поиск по сайту</a>
             </li>
             <li class="main-nav__item">
-              <a href="#">Корзина: пока пуста</a>
+              <a class="main-nav__link" href="#">Корзина: пока пуста</a>
             </li>
           </ul>
         </div>
       </nav>
     </header>
     <main class="page-main">
-      <h1 class="page-main__phrase">Милые штуки ручной работы для дома</h1>
-
+      <div class="page-main__banner page-main__banner--main">
+        <h1 class="title page-main__title">Милые штуки ручной работы для дома</h1>
+      </div>
       <div class="group-product">
         <h2 class="visual-hidden">Группы товаров</h2>
         <ul class="group-product__list">
@@ -79,7 +81,7 @@
         </ul>
       </section>
 
-      <section class="comments">
+      <section class="comments page-main__comments">
         <h2 class="title comments__title">Отзывы</h2>
         <ul class="comments__list">
           <li class="comments__item">
@@ -90,7 +92,7 @@
         </ul>
         <div class="comments__control">
           <button class="comments__arrow comments__arrow--prev" type="button">Предыдущий комментарий</button>
-        <button class="comments__arrow" type="button">Следующий комментарий</button>
+          <button class="comments__arrow comments__arrow--next" type="button">Следующий комментарий</button>
         </div>
         <a class="button button--comments comments__button" href="comments.html">Написать</a>
       </section>
@@ -99,11 +101,11 @@
         <h2 class="title contacts__title">Контакты</h2>
         <table class="contacts__info">
           <tr>
-            <td class="contacts__filed">e-mail:</td>
-            <td class="contacts__value">info@mimimishkashop.ru</td>
+            <td class="contacts__field">e-mail:</td>
+            <td class="contacts__value"><a class="contacts__link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></td>
           </tr>
           <tr>
-            <td class="contacts__filed">адрес:</td>
+            <td class="contacts__field">адрес:</td>
             <td class="contacts__value">
               г. Санкт-Петербург,<br>
               ул. Большая Конюшенная,<br>
@@ -112,14 +114,14 @@
           </tr>
         </table>
         <div class="contacts__map">
-          <img class="contacts__map-img" src="http://placehold.it/322x457" width="322" height="457" alt="г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101">
+          <img class="contacts__map-img" src="http://placehold.it/322x457" width="320" height="457" alt="г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101">
         </div>
-        <a class="button button--contacts contacts__button" href="feedback.html">Напишите нам</a>
+        <a class="button contacts__button" href="feedback.html">Напишите нам</a>
       </section>
     </main>
 
     <footer class="page-footer">
-      <a class="logo page-footer__logo" href="#"></a>
+      <a class="logo page-footer__logo"></a>
       <div class="page-footer__social">
         <ul class="page-footer__list">
           <li class="page-footer__item"><a class="page-footer__link" href="#">Instagram</a></li>
@@ -128,8 +130,8 @@
         </ul>
       </div>
       <div class="copyright page-footer__copyright">
-        <b class="copyright__developed">Разработано</b>
         <a class="copyright__academy" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <b class="copyright__developed">Разработано</b>
       </div>
     </footer>
 
@@ -140,20 +142,20 @@
           <legend class="form__caption form__caption--modal">Выберите размер:</legend>
           <ul class="form__list form__list--modal">
             <li class="form__item form__item--modal">
-              <input class="form__radio form__radio--modal" id="size-S" type="radio" name="size">
-              <label class="form__radio-button form__radio-button--modal">S</label>
+              <input class="form__radio form__radio--modal visual-hidden" id="size-S" type="radio" name="size" checked>
+              <label class="form__radio-button form__radio-button--modal" for="size-S">S</label>
             </li>
             <li class="form__item form__item--modal">
-              <input class="form__radio form__radio--modal" id="size-M" type="radio" name="size">
-              <label class="form__radio-button form__radio-button--modal">M</label>
+              <input class="form__radio form__radio--modal visual-hidden" id="size-M" type="radio" name="size">
+              <label class="form__radio-button form__radio-button--modal" for="size-M">M</label>
             </li>
             <li class="form__item form__item--modal">
-              <input class="form__radio form__radio--modal" id="size-L" type="radio" name="size">
-              <label class="form__radio-button form__radio-button--modal">L</label>
+              <input class="form__radio form__radio--modal visual-hidden" id="size-L" type="radio" name="size">
+              <label class="form__radio-button form__radio-button--modal" for="size-L">L</label>
             </li>
           </ul>
         </fieldset>
-        <button class="button button--submit modal__button" type="submit">Добавить</button>
+        <button class="button modal__button" type="submit">Добавить</button>
       </form>
     </section>
   </body>

@@ -1,0 +1,17 @@
+.features{
+
+}
+.features__list{
+  list-style: none;
+  padding: 0;
+}
+.features__item{
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: bold;
+  color: $features__color;
+  margin-top: 90px;
+  &:last-child{
+    margin-bottom: 60px;
+  }
+}

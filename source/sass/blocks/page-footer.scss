@@ -1,0 +1,15 @@
+.page-footer{
+  background-color: $page-footer__bg;
+}
+.page-footer__list{
+  list-style: none;
+  padding: 0;
+}
+.page-footer__item{
+  font-size: 0;
+  margin-right: 35px;
+}
+.page-footer__copyright{
+  padding-top: 35px;
+  padding-bottom: 35px;
+}

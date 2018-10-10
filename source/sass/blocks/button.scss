@@ -1,0 +1,21 @@
+.button{
+  display: inline-block;
+  font-size: 17px;
+  line-height: 20px;
+  color: $button--color;
+  text-align: center;
+  padding: 14px;
+  border: 2px solid $button--border;
+  &:hover{
+    color: $button-hover--color;
+    border: none;
+    padding: 16px;
+    background-color: $button-hover--bg;
+  }
+  &:active{
+    color: $button-active--color;
+    border: none;
+    padding: 16px;
+    background-color: $button-active--bg;
+  }
+}

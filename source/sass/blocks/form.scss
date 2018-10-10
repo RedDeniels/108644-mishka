@@ -1,0 +1,128 @@
+.form{
+
+}
+.form__list{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.form__item{
+
+}
+.form__field{
+  border: none;
+  border-top: 1px solid $form-field__border;
+  margin: 0;
+  padding: 0;
+  padding-top: 35px;
+}
+
+.form__caption{
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: bold;
+  color: $form-caption__color;
+  padding-right: 25px;
+}
+.form__sign{
+  display: block;
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: bold;
+  color: $form-sign__color;
+  margin-left: 60px;
+  margin-bottom: 23px;
+}
+.form__desc{
+  display: block;
+  color: $form-desc__color;
+}
+.form__text{
+  font-size: 17px;
+  line-height: 18px;
+  color: $form-text__color;
+  border: none;
+  border-bottom:2px solid $form-text__border;
+  padding-bottom: 15px;
+  padding-top: 10px;
+  margin-bottom: 23px;
+  width: 100%;
+  outline: none;
+  &::placeholder{
+    color: $form-text__placeholder;
+  }
+  &:hover{
+    border-color: $form-text-hover__border;
+  }
+  &:active,
+  &:focus{
+    border-color: $form-text-active__border;
+  }
+}
+.form__comment{
+  font-size: 17px;
+  line-height: 18px;
+  color: $form-comment__color;
+
+  min-width: 256px;
+  min-height: 138px;
+  border: 2px solid $form-comment__border;
+  resize: none;
+  outline: none;
+  margin: 0;
+  margin-bottom: 17px;
+  &:hover{
+    border-color: $form-comment-hover__border;
+  }
+  &:active,
+  &:focus{
+    border-color: $form-comment-active__border;
+    color: $form-comment-active__color;
+  }
+}
+.form__postscript{
+  display: block;
+  font-size: 14px;
+  line-height: 16px;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 30px;
+}
+/*-- Модификаторы страницы form.html --*/
+.form__field--phone{
+  padding-top: 10px;
+}
+.form__field--email{
+  padding-top: 10px;
+}
+.form__field--comment{
+  padding-top: 25px;
+}
+/*-- Модификаторы modal --*/
+.form__field--modal{
+  border: none;
+}
+.form__caption--modal{
+  text-align: center;
+}
+.form__item--modal{
+  display: inline-block;
+}
+.form__radio-button--modal{
+  display: block;
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: bold;
+  text-align: center;
+  border: 2px solid $form-radio-button-modal__border;
+  min-width: 78px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  &:hover{
+    border-color: $form-radio-button-modal-hover__border;
+  }
+  &:active,
+  .form__radio--modal:checked + &{
+    border-color: $form-radio-button-modal-active__border;
+  }
+}

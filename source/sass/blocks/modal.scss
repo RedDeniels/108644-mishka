@@ -1,0 +1,26 @@
+.modal{
+  border-top: 1px solid $modal__border;
+  border-bottom: 1px solid $modal__border;
+  background-color: $modal__bg;
+}
+.modal__title{
+  text-align: center;
+  margin-top: 35px;
+  margin-bottom: 25px;
+}
+
+.modal__button{
+  color: $modal-button__color;
+  font-weight: bold;
+  border: none;
+  background-color: $modal-button__bg;
+  padding: 16px;
+  margin-bottom: 45px;
+
+  outline: none;
+  &:hover,
+  &:active{
+    background-color: $modal-button-active__border;
+    color: $modal-button-active__color;
+  } /*-- по styleguide нужно смещать надпись на 5 px вверх при :hover ¯\_(ツ)_/¯ Что то тут не так --*/
+}

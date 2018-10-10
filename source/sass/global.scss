@@ -1,0 +1,12 @@
+body{
+  font-family: $deafult-font;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: normal;
+
+  color: $body--color;
+  background: $body--bg;
+}
+a{
+  text-decoration: none;
+}

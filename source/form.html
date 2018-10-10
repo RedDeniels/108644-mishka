@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
@@ -14,16 +15,16 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a href="catalog.html">Каталог товаров</a>
+              <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
             </li>
             <li class="main-nav__item">
-              <a>Вязание на заказ</a>
+              <a class="main-nav__link main-nav__link--current">Вязание на заказ</a>
             </li>
             <li class="main-nav__item">
-              <a href="#">Поиск по сайту</a>
+              <a class="main-nav__link" href="#">Поиск по сайту</a>
             </li>
             <li class="main-nav__item">
-              <a href="#">Корзина: пока пуста</a>
+              <a class="main-nav__link" href="#">Корзина: пока пуста</a>
             </li>
           </ul>
         </div>
@@ -31,7 +32,9 @@
     </header>
 
     <main class="page-main">
-      <h1 class="title page-main__title">Вязание на заказ</h1>
+      <div class="page-main__banner">
+        <h1 class="title page-main__title">Вязание на заказ</h1>
+      </div>
       <section class="order-main">
         <h2 class="visual-hidden">Форма заказа</h2>
         <p class="order-main__entry">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
@@ -40,11 +43,11 @@
           <legend class="form__caption">Тип</legend>
           <ul class="form__list">
             <li class="form__item">
-              <input class="form__radio" id="type--accessory" type="radio" name="type" checked>
+              <input class="form__radio visual-hidden" id="type--accessory" type="radio" name="type" checked>
               <label class="form__sign">Аксессуар для интерьера</label>
             </li>
             <li class="form__item">
-              <input class="form__radio" id="type--toy" type="radio" name="type">
+              <input class="form__radio visual-hidden" id="type--toy" type="radio" name="type">
               <label class="form__sign">Детская игрушка</label>
             </li>
           </ul>
@@ -53,27 +56,27 @@
           <legend class="form__caption">Цвет</legend>
           <ul class="form__list">
             <li class="form__item">
-              <input class="form__checkbox" id="color--white" type="checkbox" name="color" checked>
+              <input class="form__checkbox visual-hidden" id="color--white" type="checkbox" name="color" checked>
               <label class="form__sign">Белый</label>
             </li>
             <li class="form__item">
-              <input class="form__checkbox" id="color--grey" type="checkbox" name="color" checked>
+              <input class="form__checkbox visual-hidden" id="color--grey" type="checkbox" name="color" checked>
               <label class="form__sign">Серый</label>
             </li>
             <li class="form__item">
-              <input class="form__checkbox" id="color--tiffany" type="checkbox" name="color">
+              <input class="form__checkbox visual-hidden" id="color--tiffany" type="checkbox" name="color">
               <label class="form__sign">«Тиффани»</label>
             </li>
             <li class="form__item">
-              <input class="form__checkbox" id="color--black" type="checkbox" name="color">
+              <input class="form__checkbox visual-hidden" id="color--black" type="checkbox" name="color">
               <label class="form__sign">Черный</label>
             </li>
             <li class="form__item">
-              <input class="form__checkbox" id="color--pink" type="checkbox" name="color">
+              <input class="form__checkbox visual-hidden" id="color--pink" type="checkbox" name="color">
               <label class="form__sign">Розовый</label>
             </li>
             <li class="form__item">
-              <input class="form__checkbox" id="color--orange" type="checkbox" name="color">
+              <input class="form__checkbox visual-hidden" id="color--orange" type="checkbox" name="color">
               <label class="form__sign">Оранжевый</label>
             </li>
           </ul>
@@ -113,13 +116,13 @@
           <textarea class="form__comment" id="comment" name="comment" placeholder="Опишите все ваши пожелания к заказу"></textarea>
           <small class="form__postscript"><sup>*</sup>Поля обязательны для заполнения</small>
         </fieldset>
-        <button class="button button--submit" type="submit">Отправить заказ</button>
+        <button class="button order-main__button" type="submit">Отправить заказ</button>
         </form>
       </section>
     </main>
 
     <footer class="page-footer">
-      <a class="logo page-footer__logo" href="#"></a>
+      <a class="logo page-footer__logo" href="index.html"></a>
       <div class="page-footer__social">
         <ul class="page-footer__list">
           <li class="page-footer__item"><a class="page-footer__link" href="#">Instagram</a></li>

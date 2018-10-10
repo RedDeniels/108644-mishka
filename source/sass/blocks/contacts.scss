@@ -1,0 +1,34 @@
+.contacts{
+
+}
+.contacts__title{
+  margin-bottom: 40px;
+}
+.contacts__info{
+  margin-bottom: 45px;
+  & td{
+    line-height: 30px;
+    vertical-align: top;
+  }
+}
+.contacts__field{
+  min-width: 75px;
+  padding-bottom: 45px;
+}
+.contacts__link{
+  border-bottom: 1px solid $contacts-link__border;
+  color: $contacts-link__color;
+  padding-bottom: 3px;
+  &:hover{
+    color: $contacts-link-hover__color;
+    border-color: $contacts-link-hover__border;
+  }
+  &:active{
+    color: $contacts-link-active__color;
+    border-color: $contacts-link-active__border;
+  }
+}
+.contacts__button{
+  margin-top: 39px;
+  margin-bottom: 39px;
+}

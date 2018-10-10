@@ -1,0 +1,30 @@
+.product-week{
+
+}
+.product-week__name{
+  color: $product-week-name__color;
+  font-size: 25px;
+  line-height: 30px;
+}
+.product-week__title{
+  color: $product-week-title__color;
+  font-size: 17px;
+  line-height: 20px;
+}
+.product-week__info{
+  line-height: 20px;
+  & td{
+    border-bottom: 1px solid $product-week-info__border;
+    min-width: 98px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+.product-week__price{
+  text-align: center;
+  font-size: 17px;
+  font-weight: bold;
+}
+.product-week__button{
+
+}
