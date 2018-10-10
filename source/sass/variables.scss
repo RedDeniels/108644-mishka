@@ -118,5 +118,9 @@ $product-week-info__border: $grey--light;
 /*-- product color variables --*/
 $product__border: $grey--lumin;
 
+/*-- product shadow variables --*/
+$product-description-hover__shadow: 0 6px 10px rgba(0,0,0,0.1);
+$product-description-active__shadow: 0 3px 5px rgba(0,0,0,0.1);
+
 /*-- special color variables --*/
 $special__border: $grey--lumin;
