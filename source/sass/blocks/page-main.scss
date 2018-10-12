@@ -21,3 +21,11 @@
 .page-main__comments{
   margin-bottom: 90px;
 }
+
+@media (min-width: $tablet-width){
+  .page-main
+  .page-main__banner{
+    min-height: 570px;
+  }
+
+}
