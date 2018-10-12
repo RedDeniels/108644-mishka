@@ -7,29 +7,39 @@
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo" href="#">
-        <img class="page-header__logo-image" src="http://placehold.it/86x35" width="86" height="35" alt="Магазин товаров ручной работы «Mishka»">
-      </a>
       <nav class="main-nav">
+        <a class="main-nav__logo" href="#">
+          <img class="main-nav__logo-image" src="http://placehold.it/86x35" width="86" height="35" alt="Магазин товаров ручной работы «Mishka»">
+        </a>
         <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
+          <ul class="main-nav__list main-nav__list--site">
+            <li class="main-nav__item main-nav__item--site main-nav__item--catalog">
               <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
             </li>
-            <li class="main-nav__item">
+            <li class="main-nav__item main-nav__item--site main-nav__item--form">
               <a class="main-nav__link" href="form.html">Вязание на заказ</a>
             </li>
-            <li class="main-nav__item">
+          </ul>
+          <ul class="main-nav__list main-nav__list--user">
+            <li class="main-nav__item main-nav__item--user main-nav__item--search">
               <a class="main-nav__link" href="#">Поиск по сайту</a>
             </li>
-            <li class="main-nav__item">
+            <li class="main-nav__item main-nav__item--user main-nav__item--cart">
               <a class="main-nav__link" href="#">Корзина: пока пуста</a>
             </li>
           </ul>
-        </div>
+        <ul class="extra-nav">
+          <li class="extra-nav__item">
+            <a class="extra-nav__link" href="#">Новые поступления</a>
+          </li>
+          <li class="extra-nav__item">
+            <a class="extra-nav__link" href="#">Распродажа</a>
+          </li>
+        </ul>
+        <span class="page-header__delivery">Бесплатная доставка по России</span>
       </nav>
     </header>
+
     <main class="page-main">
       <div class="page-main__banner page-main__banner--main">
         <h1 class="title page-main__title">Милые штуки ручной работы для дома</h1>

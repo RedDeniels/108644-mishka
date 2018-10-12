@@ -1,5 +1,8 @@
 $deafult-font: "Open Sans", "Arial", sans-serif;
 
+$tablet-width: 768px;
+$desktop-width: 1250px;
+
 $mint: #63d1bb;
 $mint--alt: #62d1ba;
 $mint--dark: #56c3b2;
@@ -124,3 +127,9 @@ $product-description-active__shadow: 0 3px 5px rgba(0,0,0,0.1);
 
 /*-- special color variables --*/
 $special__border: $grey--lumin;
+
+/*-- extra-nav color variables --*/
+$extra-nav-link__color: $black;
+$extra-nav-link-hover__color: $grey--pre;
+$extra-nav-link-active__color: $grey--soft;
+$extra-nav-link-current-hover__color: $grey--soft;

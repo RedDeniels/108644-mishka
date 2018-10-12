@@ -1,18 +1,20 @@
 .group-product{
-  &:hover,
-  &:active{
-    margin-top: -5px;  /*-- Поправить при построении сеток --*/
-  }
+
 }
 .group-product__list{
   list-style: none;
   padding-left: 0;
+  margin: 0;
 
 }
 .group-product__item{
   background-color: $group-product-item__bg;
   &:nth-child(2n){
     background-color: $group-product-item-2n__bg;
+  }
+  &:hover,
+  &:active{
+    margin-top: -5px;  /*-- Поправить при построении сеток --*/
   }
 }
 .group-product__link{
