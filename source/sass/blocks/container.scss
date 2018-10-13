@@ -1,5 +1,6 @@
 .container{
-  min-width: 260px;
+  box-sizing: border-box;
+  min-width: 320px;
   padding-left: 30px;
   padding-right: 30px;
   margin: auto;
@@ -7,6 +8,7 @@
 
 @media (min-width: $tablet-width){
   .container{
+    padding: 0;
     width: 668px;
   }
 }
@@ -14,5 +16,6 @@
 @media (min-width: $desktop-width){
   .container{
     width: 1050px;
+    padding-left: 175px;
   }
 }

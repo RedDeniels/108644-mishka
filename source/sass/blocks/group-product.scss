@@ -35,11 +35,18 @@
 @media (min-width: $tablet-width){
   .group-product__list{
     display: flex;
-    width: 86.9%;
+    width: 668px;
     margin: 0 auto;
   }
   .group-product__item{
     width: 50%;
   }
-
+}
+@media (min-width: $desktop-width){
+  .group-product__list{
+    width: 1050px;
+  }
+  .group-product__item{
+    width: 50%;
+  }
 }

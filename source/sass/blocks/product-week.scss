@@ -144,6 +144,8 @@
   }
   .product-week__headline{
     position: absolute;
+    left: -180px;
+    top: 60px;
   }
   .product-week__name{
     font-size: 53px;
@@ -155,12 +157,18 @@
     margin-left: 45px;
   }
   .product-week__data{
-    box-sizing: border-box;
-    padding-left: 175px;
+    width: 40%;
     margin-top: 165px;
   }
+  .product-week__image{
+    width: 59.8%;
+  }
   .product-week__order{
-    box-sizing: border-box;
-    padding-left: 175px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .product-week__button{
+    margin: 0;
   }
 }
