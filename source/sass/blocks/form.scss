@@ -6,6 +6,13 @@
   padding: 0;
   margin: 0;
 }
+.form__list--modal{
+  display: flex;
+  justify-content: space-between;
+  width: 260px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
 .form__item{
 
 }
@@ -23,6 +30,11 @@
   font-weight: bold;
   color: $form-caption__color;
   padding-right: 25px;
+}
+.form__caption--modal{
+  color: $form-caption-modal__color;
+  font-weight: normal;
+  padding: 0;
 }
 .form__sign{
   display: block;
