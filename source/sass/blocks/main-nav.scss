@@ -66,8 +66,14 @@
     order: 2;
     margin-left: auto;
   }
+  .main-nav__item--user{
+    margin-left: 30px;
+  }
   .main-nav__list--site{
     order: 3;
+  }
+  .main-nav__item--site{
+    margin-right: 30px;
   }
 }
 

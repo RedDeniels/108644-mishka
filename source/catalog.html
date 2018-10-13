@@ -41,10 +41,10 @@
     </header>
 
     <main class="page-main">
-      <div class="page-main__banner">
-        <h1 class="title page-main__title">Каталог товаров</h1>
+      <div class="page-main__banner page-main__catalog">
+        <h1 class="title page-main__title page-main__title--catalog">Каталог товаров</h1>
       </div>
-      <section class="catalog">
+      <section class="catalog catalog--main container">
         <ul class="catalog__list">
           <li class="product catalog__product">
             <a class="product__link-image" href="rabbit.html"><img class="product__image" src="http://placehold.it/260x195" width="260" height="195" alt="Зайчик-попрыгайчик"></a>
@@ -55,7 +55,7 @@
               <a class="product__cart" href="#"></a>
             </div>
           </li>
-          <li class="product">
+          <li class="product catalog__product">
             <a class="product__link-image" href="basket.html"><img class="product__image" src="http://placehold.it/260x195" width="260" height="195" alt="Корзинка для белья"></a>
             <div class="product__description">
               <a class="product__link" href="basket.html"><h3 class="title product__title">Корзинка для белья</h3></a>
@@ -64,7 +64,7 @@
               <a class="product__cart" href="#"></a>
             </div>
           </li>
-          <li class="product">
+          <li class="product catalog__product">
             <a class="product__link-image" href="bigbasket.html"><img class="product__image" src="http://placehold.it/260x195" width="260" height="195" alt="Большая корзинка для игрушек"></a>
             <div class="product__description">
               <a class="product__link" href="bigbasket.html"><h3 class="title product__title">Большая корзинка для игрушек</h3></a>
@@ -91,42 +91,46 @@
     </main>
 
     <footer class="page-footer">
-      <a class="logo page-footer__logo" href="index.html"></a>
-      <div class="page-footer__social">
-        <ul class="page-footer__list">
-          <li class="page-footer__item"><a class="page-footer__link" href="#">Instagram</a></li>
-          <li class="page-footer__item"><a class="page-footer__link" href="#">Facebook</a></li>
-          <li class="page-footer__item"><a class="page-footer__link" href="#">Twitter</a></li>
-        </ul>
-      </div>
-      <div class="copyright page-footer__copyright">
-        <b class="copyright__developed">Разработано</b>
-        <a class="copyright__academy" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      <div class="container page-footer__container">
+        <a class="logo page-footer__logo"></a>
+        <div class="page-footer__social">
+          <ul class="page-footer__list">
+            <li class="page-footer__item"><a class="page-footer__link" href="#">Instagram</a></li>
+            <li class="page-footer__item"><a class="page-footer__link" href="#">Facebook</a></li>
+            <li class="page-footer__item"><a class="page-footer__link" href="#">Twitter</a></li>
+          </ul>
+        </div>
+        <div class="copyright page-footer__copyright">
+          <b class="copyright__developed">Разработано</b>
+          <a class="copyright__academy" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        </div>
       </div>
     </footer>
 
     <section class="modal modal--options">
-      <h2 class="title modal__title">Добавить в корзину</h2>
-      <form class="form form--modal" action="https://echo.htmlacademy.ru" method="post">
-        <fieldset class="form__field form__field--modal">
-          <legend class="form__caption form__caption--modal">Выберите размер:</legend>
-          <ul class="form__list form__list--modal">
-            <li class="form__item form__item--modal">
-              <input class="form__radio form__radio--modal" id="size-S" type="radio" name="size">
-              <label class="form__radio-button form__radio-button--modal">S</label>
-            </li>
-            <li class="form__item form__item--modal">
-              <input class="form__radio form__radio--modal" id="size-M" type="radio" name="size">
-              <label class="form__radio-button form__radio-button--modal">M</label>
-            </li>
-            <li class="form__item form__item--modal">
-              <input class="form__radio form__radio--modal" id="size-L" type="radio" name="size">
-              <label class="form__radio-button form__radio-button--modal">L</label>
-            </li>
-          </ul>
-        </fieldset>
-        <button class="button button--submit modal__button" type="submit">Добавить</button>
-      </form>
+      <div class="container--modal">
+        <h2 class="title modal__title">Добавить в корзину</h2>
+        <form class="form form--modal" action="https://echo.htmlacademy.ru" method="post">
+          <fieldset class="form__field form__field--modal">
+            <legend class="form__caption form__caption--modal">Выберите размер:</legend>
+            <ul class="form__list form__list--modal">
+              <li class="form__item form__item--modal">
+                <input class="form__radio form__radio--modal visual-hidden" id="size-S" type="radio" name="size" checked>
+                <label class="form__radio-button form__radio-button--modal" for="size-S">S</label>
+              </li>
+              <li class="form__item form__item--modal">
+                <input class="form__radio form__radio--modal visual-hidden" id="size-M" type="radio" name="size">
+                <label class="form__radio-button form__radio-button--modal" for="size-M">M</label>
+              </li>
+              <li class="form__item form__item--modal">
+                <input class="form__radio form__radio--modal visual-hidden" id="size-L" type="radio" name="size">
+                <label class="form__radio-button form__radio-button--modal" for="size-L">L</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button class="button modal__button" type="submit">Добавить</button>
+        </form>
+      </div>
     </section>
   </body>
 </html>
