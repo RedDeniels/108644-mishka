@@ -1,6 +1,9 @@
 .comments{
 
 }
+.comments--main{
+  margin-bottom: 90px;
+}
 .comments__title{
   margin-bottom: 35px;
 }
@@ -12,6 +15,7 @@
 }
 .comments__text{
   line-height: 30px;
+  margin: 0;
   margin-bottom: 40px;
 }
 .comments__author{
@@ -34,4 +38,47 @@
   &:nth-child(n+1){
     border-left: none;
   }
+}
+
+@media (min-width: $tablet-width){
+  .comments{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .comments--main{
+    margin-bottom: 115px;
+  }
+  .comments__title{
+    order: 1;
+    font-size: 43px;
+    line-height: 50px;
+  }
+  .comments__button{
+    order: 2;
+    padding-left: 39px;
+    padding-right: 39px;
+  }
+  .comments__list{
+    order: 3;
+  }
+  .comments__item{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .comments__control{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}
+
+@media (min-width: $tablet-width){
+  .comments--main{
+    margin-bottom: 115px;
+  }
+
 }
