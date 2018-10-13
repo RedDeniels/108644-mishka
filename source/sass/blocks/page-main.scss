@@ -20,7 +20,12 @@
 }
 
 @media (min-width: $tablet-width){
-  .page-main
+  .page-main__title{
+    font-size: 43px;
+    line-height: 50px;
+    width: 520px;
+    margin: 0 auto;
+  }
   .page-main__banner{
     min-height: 570px;
   }
