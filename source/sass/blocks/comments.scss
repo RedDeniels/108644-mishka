@@ -29,6 +29,8 @@
 }
 .comments__control{
   font-size: 0;
+  display: flex;
+  justify-content: center;
   margin-bottom: 38px;
 }
 .comments__arrow{
@@ -38,6 +40,19 @@
   &:nth-child(n+1){
     border-left: none;
   }
+}
+.comments__button{
+  padding-left: 40px;
+  padding-right: 40px;
+  &:hover{
+      padding-left: 41px;
+      padding-right: 41px;
+    }
+    &:active{
+      padding-left: 41px;
+      padding-right: 41px;
+      color: $comments-button-active__color;
+    }
 }
 
 @media (min-width: $tablet-width){

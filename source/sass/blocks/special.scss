@@ -81,44 +81,45 @@
 
 @media (min-width: $desktop-width){
   .special{
+    display: block;
     box-sizing: border-box;
     position: relative;
     width: 1050px;
     margin: 0 auto;
-    align-items: flex-end;
-    padding-left: 760px;
     padding-right: 55px;
+    min-height: 394px;
   }
   .special--main{
     margin-bottom: 58px;
   }
   .special__title{
+    display: inline-block;
     box-sizing: border-box;
-    width: 100%;
+    width: 31%;
     margin-top: 98px;
     padding: 0;
+    padding-left: 80px;
     margin-bottom: 40px;
-    order: 1;
   }
   .special__description{
+    display: inline-block;
     box-sizing: border-box;
-    width: 100%;
-    order: 2;
+    width: 31%;
+    padding-left: 80px;
   }
   .special__info{
     padding: 0;
   }
   .special__button{
+    display: inline-block;
     margin: 0;
     margin-bottom: 47px;
+    width: 78%;
   }
   .special__video{
-    position: absolute;
+    float: left;
     width: 682px;
     height: 453px;
-    left: 0;
-    height: 0;
-    order: 3;
   }
 
 }
