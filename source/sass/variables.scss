@@ -1,5 +1,8 @@
 $deafult-font: "Open Sans", "Arial", sans-serif;
 
+$tablet-width: 768px;
+$desktop-width: 1250px;
+
 $mint: #63d1bb;
 $mint--alt: #62d1ba;
 $mint--dark: #56c3b2;
@@ -17,6 +20,7 @@ $grey--lighter: #a8a8a8;
 $grey--hight: #c7c7c7;
 $grey--pre: #666666;
 $grey--soft: #b2b2b2;
+$grey--pastel: #f9f9f9;
 
 $white: #ffffff;
 $black: #000000;
@@ -39,6 +43,7 @@ $button-active--bg: $grey;
 /*-- comments color variables --*/
 $comments-author: $black;
 $comments-arrow__border: $grey--light;
+$comments-button-active__color: $grey--hight;
 
 /*-- contacts color variables --*/
 $contacts-link__border: $mint--alt;
@@ -50,6 +55,8 @@ $contacts-link-hover__border: $mint--deep;
 $contacts-link-active__color: $mint--lighter;
 $contacts-link-active__border: $mint--white;
 
+$contacts-button-active--color: $grey--hight;
+
 /*-- copyright color variables --*/
 $copyright__color: $black;
 $copyright-active__color: $grey--lighter;
@@ -60,21 +67,29 @@ $features__color: $black;
 /*-- form color variables --*/
 $form-field__border: $mint--alt;
 $form-caption__color: $mint--alt;
+$form-caption-modal__color: $grey;
 $form-sign__color: $black;
 $form-desc__color: $black;
+
 $form-text__color: $grey;
 $form-text__border: $black;
 $form-text__placeholder: $grey--hight;
 $form-text-hover__border: $mint--alt;
 $form-text-active__border: $mint--alt;
+
 $form-comment__color: $grey--hight;
 $form-comment__border: $black;
 $form-comment-hover__border: $mint--alt;
 $form-comment-active__border: $mint--alt;
 $form-comment-active__color: $grey;
+
 $form-radio-button-modal__border: $grey--light;
 $form-radio-button-modal-hover__border: $grey--hight;
 $form-radio-button-modal-active__border: $mint;
+
+$form-field-nth-2n__bg: $grey--clear;
+
+$form-button__bg: $white;
 
 /*-- group-product color variables --*/
 $group-product-item__bg: $mint;
@@ -108,7 +123,7 @@ $page-footer__bg: $grey--clear;
 $page-header__bg: $white;
 
 /*-- page-main color variables --*/
-$page-main__bg: $grey--clear;
+$page-main__bg: $grey--pastel;
 
 /*-- product-week color variables --*/
 $product-week-name__color: $black;
@@ -117,6 +132,7 @@ $product-week-info__border: $grey--light;
 
 /*-- product color variables --*/
 $product__border: $grey--lumin;
+$product-price-before__bg: $grey--lumin;
 
 /*-- product shadow variables --*/
 $product-description-hover__shadow: 0 6px 10px rgba(0,0,0,0.1);
@@ -124,3 +140,10 @@ $product-description-active__shadow: 0 3px 5px rgba(0,0,0,0.1);
 
 /*-- special color variables --*/
 $special__border: $grey--lumin;
+$special-button-active__color: $grey--hight;
+
+/*-- extra-nav color variables --*/
+$extra-nav-link__color: $black;
+$extra-nav-link-hover__color: $grey--pre;
+$extra-nav-link-active__color: $grey--soft;
+$extra-nav-link-current-hover__color: $grey--soft;

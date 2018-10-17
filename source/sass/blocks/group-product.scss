@@ -1,18 +1,19 @@
 .group-product{
-  &:hover,
-  &:active{
-    margin-top: -5px;  /*-- Поправить при построении сеток --*/
-  }
+
 }
 .group-product__list{
   list-style: none;
   padding-left: 0;
-
+  margin: 0;
 }
 .group-product__item{
   background-color: $group-product-item__bg;
   &:nth-child(2n){
     background-color: $group-product-item-2n__bg;
+  }
+  &:hover,
+  &:active{
+    margin-top: -5px;  /*-- Поправить при построении сеток --*/
   }
 }
 .group-product__link{
@@ -28,5 +29,24 @@
   &:active{
     color: $group-product-link-active__color;
     padding-bottom: 35px;
+  }
+}
+
+@media (min-width: $tablet-width){
+  .group-product__list{
+    display: flex;
+    width: 668px;
+    margin: 0 auto;
+  }
+  .group-product__item{
+    width: 50%;
+  }
+}
+@media (min-width: $desktop-width){
+  .group-product__list{
+    width: 1050px;
+  }
+  .group-product__item{
+    width: 50%;
   }
 }

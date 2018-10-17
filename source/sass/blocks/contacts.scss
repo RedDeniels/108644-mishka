@@ -2,10 +2,13 @@
 
 }
 .contacts__title{
+  margin-left: 30px;
   margin-bottom: 40px;
 }
 .contacts__info{
+  margin-left: 30px;
   margin-bottom: 45px;
+  width: 290px;
   & td{
     line-height: 30px;
     vertical-align: top;
@@ -28,7 +31,107 @@
     border-color: $contacts-link-active__border;
   }
 }
+.contacts__map{
+  display: block;
+  width: 100%;
+  height: auto;
+  /*Временно*/
+  max-height: 400px;
+}
 .contacts__button{
-  margin-top: 39px;
-  margin-bottom: 39px;
+  box-sizing: border-box;
+  display: block;
+  padding-left: 39px;
+  padding-right: 39px;
+  margin: 0 auto;
+  max-width: 230px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  &:hover{
+    padding-left: 41px;
+    padding-right: 41px;
+  }
+  &:active{
+    padding-left: 41px;
+    padding-right: 41px;
+    color: $contacts-button-active--color;
+  }
+}
+
+@media (min-width: $tablet-width){
+  .contacts{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .contacts__title{
+    font-size: 43px;
+    line-height: 50px;
+    width: 668px;
+    margin: 0 auto;
+    margin-bottom: 55px;
+  }
+  .contacts__info{
+    width: 668px;
+    margin: 0 auto;
+    margin-bottom: 55px;
+  }
+  .contacts__info tbody{
+    display: flex;
+    justify-content: space-between;
+  }
+  .contacts__map{
+    min-width: 768px;
+    height: 40vw;
+    min-height:457px;
+  }
+  .contacts__button{
+    display: inline-block;
+    align-self: center;
+  }
+}
+
+@media (min-width: $desktop-width){
+  .contacts{
+    width: 875px;
+    margin: 0 auto;
+    padding-left: 175px;
+    display: block;
+  }
+  .contacts--main{
+    margin-bottom: 105px;
+  }
+  .contacts__title{
+    display: inline-block;
+    margin: 0;
+    margin-top: 80px;
+    margin-bottom: 55px;
+  }
+  .contacts__info{
+    display: inline-block;
+    margin: 0;
+    width: 35%;
+
+  }
+  .contacts__value,
+  .contacts__field{
+    padding: 0;
+  }
+  .contacts__field--email{
+    padding-bottom: 20px;
+  }
+  .contacts__info tbody{
+    display: block;
+  }
+  .contacts__map{
+    float: right;
+    min-width: 525px;
+    min-height: 427px;
+    width: 525px;
+    height: 427px;
+
+    /*Временно*/
+    margin-top: -185px;
+  }
 }

@@ -5,6 +5,14 @@
   list-style: none;
   padding: 0;
   margin: 0;
+  padding-left: 30px;
+}
+.form__list--modal{
+  display: flex;
+  justify-content: space-between;
+  width: 260px;
+  margin: 0 auto;
+  margin-bottom: 30px;
 }
 .form__item{
 
@@ -22,7 +30,15 @@
   line-height: 16px;
   font-weight: bold;
   color: $form-caption__color;
-  padding-right: 25px;
+  padding-left: 30px;
+}
+.form__caption--contacts{
+  padding-left: 0;
+}
+.form__caption--modal{
+  color: $form-caption-modal__color;
+  font-weight: normal;
+  padding: 0;
 }
 .form__sign{
   display: block;
@@ -43,6 +59,7 @@
   color: $form-text__color;
   border: none;
   border-bottom:2px solid $form-text__border;
+  background-color: inherit;
   padding-bottom: 15px;
   padding-top: 10px;
   margin-bottom: 23px;
@@ -71,6 +88,7 @@
   outline: none;
   margin: 0;
   margin-bottom: 17px;
+  margin-left: 30px;
   &:hover{
     border-color: $form-comment-hover__border;
   }
@@ -86,13 +104,11 @@
   line-height: 16px;
   padding: 0;
   margin: 0;
+  margin-left: 30px;
   margin-bottom: 30px;
 }
 /*-- Модификаторы страницы form.html --*/
-.form__field--phone{
-  padding-top: 10px;
-}
-.form__field--email{
+.form__field--contacts{
   padding-top: 10px;
 }
 .form__field--comment{
@@ -124,5 +140,137 @@
   &:active,
   .form__radio--modal:checked + &{
     border-color: $form-radio-button-modal-active__border;
+  }
+}
+.form__button{
+  background-color: $form-button__bg;
+  display: block;
+  box-sizing: border-box;
+  margin: 0 auto;
+  max-width: 230px;
+}
+@media (min-width: $tablet-width){
+  .form{
+    position: relative;
+  }
+  .form__field{
+    position: relative;
+    border-top: none;
+  }
+  .form__field:nth-child(2n){
+    background-color: $form-field-nth-2n__bg;
+  }
+  .form__caption{
+    position: absolute;
+    left: calc(50% - 334px);
+
+    @include center--tablet;
+  }
+  .form__caption--contacts{
+    padding-left: 30px;
+  }
+  .form__list{
+    @include center--tablet;
+  }
+  .form__list--color{
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 165px;
+  }
+  .form__item{
+    margin-left: 165px;
+  }
+  .form__item--color{
+    margin-left: 0;
+    width: 50%;
+  }
+  .form__item--name{
+    display: flex;
+  }
+  .form__desc{
+    margin-top: 20px;
+    margin-right: 30px;
+  }
+  .form__comment{
+    box-sizing: border-box;
+    display: block;
+    @include center--tablet;
+    margin-left: 165px;
+    width: 500px;
+  }
+  .form__item--comment{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 230px;
+    @include center--tablet;
+  }
+  .form__postscript{
+    text-align: right;
+    margin-bottom: 0;
+  }
+  .form__button{
+    position: absolute;
+    bottom: -16px;
+    left: calc(50% - 170px);
+  }
+  /* Модификаторы modal */
+  .form__caption--modal{
+    position: static;
+    margin: 0;
+    width: auto;
+  }
+  .form__list--modal{
+    width: 260px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+  .form__item--modal{
+    margin-left: 0;
+  }
+}
+@media (min-width: $desktop-width){
+  .form__caption{
+    left: calc(50% - 460px);
+    @include center--desktop;
+  }
+  .form__list{
+    @include center--desktop;
+  }
+  .form__list--color{
+
+  }
+  .form__item{
+    padding-right: 175px;
+  }
+  .form__item--comment{
+    box-sizing: border-box;
+    @include center--desktop;
+  }
+  .form__item--color{
+    width: 33%;
+    padding-right: 0;
+  }
+  .form__text{
+    display: block;
+  }
+  .form__comment{
+    width: 710px;
+  }
+  .form__button{
+    left: calc(50% - 360px);
+  }
+  /* Модификаторы modal */
+  .form__caption{
+    margin: 0;
+    width: auto;
+  }
+  .form__list--modal{
+    width: 260px;
+  }
+  .form__item--modal{
+    margin-left: 0;
+    padding-right: 0;
   }
 }

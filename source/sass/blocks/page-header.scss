@@ -1,7 +1,28 @@
 .page-header{
   background-color: $page-header__bg;
 }
-.page-header__logo{
-  font-size: 0;
-  display: inline-block;
+.page-header__delivery{
+  display: none;
+}
+
+@media (min-width: $tablet-width){
+
+  .page-header{
+    width: 668px;
+    margin: 0 auto;
+  }
+  .page-header__delivery{
+    display: block;
+    order: 4;
+    margin-left: auto;
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: $desktop-width){
+
+  .page-header{
+    width: 1050px;
+    margin: 0 auto;
+  }
 }
