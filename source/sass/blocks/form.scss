@@ -5,6 +5,7 @@
   list-style: none;
   padding: 0;
   margin: 0;
+  padding-left: 30px;
 }
 .form__list--modal{
   display: flex;
@@ -29,6 +30,10 @@
   line-height: 16px;
   font-weight: bold;
   color: $form-caption__color;
+  padding-left: 30px;
+}
+.form__caption--contacts{
+  padding-left: 0;
 }
 .form__caption--modal{
   color: $form-caption-modal__color;
@@ -83,6 +88,7 @@
   outline: none;
   margin: 0;
   margin-bottom: 17px;
+  margin-left: 30px;
   &:hover{
     border-color: $form-comment-hover__border;
   }
@@ -98,6 +104,7 @@
   line-height: 16px;
   padding: 0;
   margin: 0;
+  margin-left: 30px;
   margin-bottom: 30px;
 }
 /*-- Модификаторы страницы form.html --*/
@@ -137,6 +144,10 @@
 }
 .form__button{
   background-color: $form-button__bg;
+  display: block;
+  box-sizing: border-box;
+  margin: 0 auto;
+  max-width: 230px;
 }
 @media (min-width: $tablet-width){
   .form{
@@ -154,6 +165,9 @@
     left: calc(50% - 334px);
 
     @include center--tablet;
+  }
+  .form__caption--contacts{
+    padding-left: 30px;
   }
   .form__list{
     @include center--tablet;
