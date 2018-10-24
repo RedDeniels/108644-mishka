@@ -33,10 +33,18 @@
 }
 .contacts__map{
   display: block;
+  width: 100%;
+  height: auto;
+  /*Временно*/
+  max-height: 400px;
 }
 .contacts__button{
+  box-sizing: border-box;
+  display: block;
   padding-left: 39px;
   padding-right: 39px;
+  margin: 0 auto;
+  max-width: 230px;
   margin-top: 40px;
   margin-bottom: 40px;
   &:hover{
@@ -74,12 +82,12 @@
     justify-content: space-between;
   }
   .contacts__map{
-    width: 100%;
     min-width: 768px;
     height: 40vw;
     min-height:457px;
   }
   .contacts__button{
+    display: inline-block;
     align-self: center;
   }
 }
@@ -89,14 +97,22 @@
     width: 875px;
     margin: 0 auto;
     padding-left: 175px;
+    display: block;
+  }
+  .contacts--main{
+    margin-bottom: 105px;
   }
   .contacts__title{
+    display: inline-block;
     margin: 0;
     margin-top: 80px;
     margin-bottom: 55px;
   }
   .contacts__info{
+    display: inline-block;
     margin: 0;
+    width: 35%;
+
   }
   .contacts__value,
   .contacts__field{
@@ -109,14 +125,13 @@
     display: block;
   }
   .contacts__map{
-    position: absolute;
+    float: right;
     min-width: 525px;
     min-height: 427px;
     width: 525px;
     height: 427px;
-    right: 0;
-  }
-  .contacts__button{
-    align-self: auto;
+
+    /*Временно*/
+    margin-top: -185px;
   }
 }

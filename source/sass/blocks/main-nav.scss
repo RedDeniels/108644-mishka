@@ -2,8 +2,12 @@
 
 }
 .main-nav__logo{
-  font-size: 0;
-  display: inline-block;
+  display: block;
+  margin: 0 auto;
+}
+.main-nav__logo-image{
+  display: block;
+  margin: 0 auto;
 }
 .main-nav__toggle{
   border: none;

@@ -43,6 +43,7 @@ $button-active--bg: $grey;
 /*-- comments color variables --*/
 $comments-author: $black;
 $comments-arrow__border: $grey--light;
+$comments-button-active__color: $grey--hight;
 
 /*-- contacts color variables --*/
 $contacts-link__border: $mint--alt;
@@ -85,6 +86,10 @@ $form-comment-active__color: $grey;
 $form-radio-button-modal__border: $grey--light;
 $form-radio-button-modal-hover__border: $grey--hight;
 $form-radio-button-modal-active__border: $mint;
+
+$form-field-nth-2n__bg: $grey--clear;
+
+$form-button__bg: $white;
 
 /*-- group-product color variables --*/
 $group-product-item__bg: $mint;

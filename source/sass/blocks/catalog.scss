@@ -19,6 +19,9 @@
 }
 
 @media (min-width: $desktop-width){
+  .catalog{
+    display: flex;
+  }
   .catalog--main{
     margin-top: 125px;
   }

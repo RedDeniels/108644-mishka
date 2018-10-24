@@ -20,6 +20,9 @@
 }
 
 @media (min-width: $tablet-width){
+  .page-main{
+    margin-top: -71px;
+  }
   .page-main__title{
     font-size: 43px;
     line-height: 50px;
@@ -27,15 +30,17 @@
     margin: 0 auto;
   }
   .page-main__title--index{
-
+    padding-top: 100px;
 }
   .page-main__banner--index{
     min-height: 570px;
   }
-  .page-main__catalog{
-    min-height: 150px;
-  }
   .page-main__title--catalog{
-    padding-top: 45px;
+    padding-top: 105px;
+    padding-bottom: 70px;
+  }
+  .page-main__title--form{
+    padding-top: 105px;
+    padding-bottom: 70px;
   }
 }

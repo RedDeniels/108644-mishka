@@ -100,7 +100,7 @@
     width: 290px;
     display: inline-block;
     margin-right: 40px;
-
+    margin-bottom: 23px;
     vertical-align: top;
     text-align: left;
   }
@@ -112,14 +112,13 @@
   }
   .product-week__image{
     display: inline-block;
+    float: right;
     width: 50%;
     height: auto;
     margin-bottom: 0;
   }
   .product-week__order{
-    position: absolute;
-    bottom: 12px;
-    left: 0;
+
     width: 50%;
   }
   .product-week__price{
@@ -160,6 +159,9 @@
     width: 40%;
     margin-top: 165px;
   }
+  .product-week__info{
+    margin-bottom: 88px;
+  }
   .product-week__image{
     width: 59.8%;
   }
@@ -167,6 +169,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    width: 40%;
   }
   .product-week__button{
     margin: 0;
