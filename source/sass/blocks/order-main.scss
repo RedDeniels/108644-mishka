@@ -15,7 +15,9 @@
   .order-main__entry{
     box-sizing: border-box;
     @include center--tablet;
-
+  }
+  .order-main--form{
+    padding-right: 0;
   }
 }
 @media (min-width: $desktop-width){
