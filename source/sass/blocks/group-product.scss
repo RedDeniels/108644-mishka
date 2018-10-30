@@ -1,54 +1,63 @@
-.group-product{
+.group-product {}
 
-}
-.group-product__list{
+.group-product__list {
   list-style: none;
   padding-left: 0;
   margin: 0;
 }
-.group-product__item{
+
+.group-product__item {
   background-color: $group-product-item__bg;
-  &:nth-child(2n){
+
+  &:nth-child(2n) {
     background-color: $group-product-item-2n__bg;
   }
+
   &:hover,
-  &:active{
-    margin-top: -5px;  /*-- Поправить при построении сеток --*/
+  &:active {
+    margin-top: -5px;
+    /*-- Поправить при построении сеток --*/
   }
 }
-.group-product__link{
+
+.group-product__link {
   display: block;
   padding: 30px;
   color: $group-product-link__color;
   font-size: 19px;
   line-height: 24px;
   font-weight: bold;
-  &:hover{
+
+  &:hover {
     padding-bottom: 35px;
   }
-  &:active{
+
+  &:active {
     color: $group-product-link-active__color;
     padding-bottom: 35px;
   }
 }
 
-@media (min-width: $tablet-width){
-  .group-product__list{
+@media (min-width: $tablet-width) {
+  .group-product__list {
     display: flex;
     min-width: 668px;
     max-width: 1050px;
     width: 87%;
     margin: 0 auto;
   }
-  .group-product__item{
+
+  .group-product__item {
     width: 50%;
   }
 }
-@media (min-width: $desktop-width){
-  .group-product__list{
+
+@media (min-width: $desktop-width) {
+  .group-product__list {
     width: 1050px;
   }
-  .group-product__item{
+
+  .group-product__item {
     width: 50%;
   }
 }

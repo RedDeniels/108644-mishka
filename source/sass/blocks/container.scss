@@ -1,17 +1,18 @@
-.container{
+.container {
   box-sizing: border-box;
   min-width: 320px;
   padding-left: 30px;
   padding-right: 30px;
   margin: auto;
 }
-.container--modal{
+
+.container--modal {
   width: 260px;
   margin: 0 auto;
 }
 
-@media (min-width: $tablet-width){
-  .container{
+@media (min-width: $tablet-width) {
+  .container {
     padding: 0;
     width: 87%;
     min-width: 668px;
@@ -19,11 +20,12 @@
   }
 }
 
-@media (min-width: $desktop-width){
-  .container{
+@media (min-width: $desktop-width) {
+  .container {
     width: 1050px;
   }
-  .container--righter{
+
+  .container--righter {
     padding-left: 175px;
   }
 }

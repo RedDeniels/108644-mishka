@@ -1,16 +1,16 @@
-.copyright{
+.copyright {}
 
-}
-.copyright__developed{
+.copyright__developed {
   font-size: 19px;
   line-height: 18x;
   color: $copyright__color;
 
-  .copyright__academy:active ~ &{
+  .copyright__academy:active ~ & {
     color: $copyright-active__color;
   }
 }
-.copyright__academy{
+
+.copyright__academy {
   position: absolute;
   font-size: 0;
   width: 30px;
