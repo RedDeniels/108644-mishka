@@ -13,7 +13,9 @@
 @media (min-width: $tablet-width){
   .container{
     padding: 0;
-    width: 668px;
+    width: 87%;
+    min-width: 668px;
+    max-width: 1050px;
   }
 }
 

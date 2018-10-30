@@ -62,9 +62,15 @@
   .main-nav__toggle{
     display: none;
   }
+  .main-nav__logo{
+    margin-left: 0;
+  }
   .main-nav__list{
     display: flex;
     flex-wrap: wrap;
+
+    box-sizing: border-box;
+    width: 60%;
   }
   .main-nav__list--user{
     order: 2;
@@ -72,6 +78,9 @@
   }
   .main-nav__item--user{
     margin-left: 30px;
+  }
+  .main-nav__item--search{
+    margin-left: auto;
   }
   .main-nav__list--site{
     order: 3;
@@ -87,12 +96,16 @@
   }
   .main-nav__logo{
     order: 2;
+    margin: 0 auto;
+  }
+  .main-nav__list{
+    width: 40%;
   }
   .main-nav__list--site{
     order: 1;
   }
   .main-nav__list--user{
-    flex-direction: row-reverse;
+    flex-direction: row;
   }
   .main-nav__list{
     min-width: 440px;

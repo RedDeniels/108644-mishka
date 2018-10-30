@@ -13,6 +13,7 @@
   width: 260px;
   margin: 0 auto;
   margin-bottom: 30px;
+  padding-left: 0;
 }
 .form__item{
 
@@ -82,6 +83,7 @@
   color: $form-comment__color;
 
   min-width: 256px;
+  width: calc(100% - 38px);
   min-height: 138px;
   border: 2px solid $form-comment__border;
   resize: none;
@@ -147,7 +149,8 @@
   display: block;
   box-sizing: border-box;
   margin: 0 auto;
-  max-width: 230px;
+  width: 260px;
+  transform: translateX(15px);
 }
 @media (min-width: $tablet-width){
   .form{

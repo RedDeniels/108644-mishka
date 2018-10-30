@@ -18,11 +18,16 @@
   line-height: 24px;
 }
 .product__link-image{
+  display: block;
   font-size: 0;
-  margin-bottom: 30px;
+  background-color: $product-link-image__bg;
 }
 .product__image{
   display: block;
+  width: 100%;
+  max-width: 333px;
+  margin: 0 auto;
+  height: auto;
 }
 .product__info{
   display: flex;

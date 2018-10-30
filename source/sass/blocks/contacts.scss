@@ -44,16 +44,10 @@
   padding-left: 39px;
   padding-right: 39px;
   margin: 0 auto;
-  max-width: 230px;
+  width: 260px;
   margin-top: 40px;
   margin-bottom: 40px;
-  &:hover{
-    padding-left: 41px;
-    padding-right: 41px;
-  }
   &:active{
-    padding-left: 41px;
-    padding-right: 41px;
     color: $contacts-button-active--color;
   }
 }
@@ -89,6 +83,7 @@
   .contacts__button{
     display: inline-block;
     align-self: center;
+    width: 230px;
   }
 }
 

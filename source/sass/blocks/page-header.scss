@@ -8,7 +8,9 @@
 @media (min-width: $tablet-width){
 
   .page-header{
-    width: 668px;
+    min-width: 668px;
+    max-width: 1050px;
+    width: 87%;
     margin: 0 auto;
   }
   .page-header__delivery{
