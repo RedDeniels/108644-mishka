@@ -1,10 +1,13 @@
-.page-main {}
+.page-main {
+  min-width: 320px;
+}
 
 .page-main__title {
   font-size: 27px;
   line-height: 30px;
   text-align: center;
-
+  padding-left: 30px;
+  padding-right: 30px;
   /* Временно */
   padding-top: 72px;
 }

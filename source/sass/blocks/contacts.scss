@@ -8,7 +8,7 @@
 .contacts__info {
   margin-left: 30px;
   margin-bottom: 45px;
-  width: 290px;
+  width: 260px;
 
   & td {
     line-height: 30px;
@@ -71,24 +71,32 @@
   .contacts__title {
     font-size: 43px;
     line-height: 50px;
-    width: 668px;
+    min-width: 668px;
+    max-width: 1050px;
+    width: 87%;
     margin: 0 auto;
     margin-bottom: 55px;
   }
 
   .contacts__info {
-    width: 668px;
+    min-width: 668px;
+    max-width: 1050px;
+    width: 87%;
     margin: 0 auto;
     margin-bottom: 55px;
   }
 
   .contacts__info tbody {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
+  }
+
+  .contacts__row{
+    margin-right: 55px;
   }
 
   .contacts__map {
-    min-width: 768px;
+    min-width: 760px;
     height: 40vw;
     min-height: 457px;
   }
