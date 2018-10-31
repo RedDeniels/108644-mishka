@@ -25,7 +25,7 @@
 
 @media (min-width: $tablet-width) {
   .page-main {
-    margin-top: -71px;
+    margin-top: -69px;
   }
 
   .page-main__title {
@@ -37,6 +37,10 @@
 
   .page-main__title--index {
     padding-top: 100px;
+  }
+
+  .page-main__banner{
+    border-top: 1px solid $page-main__border;
   }
 
   .page-main__banner--index {

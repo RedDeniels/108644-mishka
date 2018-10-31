@@ -45,6 +45,8 @@
   .page-footer__container {
     display: flex;
     justify-content: space-between;
+    max-width: 1050px;
+    margin: 0 auto;
   }
 
   .page-footer__logo {

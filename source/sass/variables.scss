@@ -102,8 +102,10 @@ $main-nav-link__color: $black;
 $main-nav-link-hover__color: $grey--pre;
 $main-nav-link-active__color: $grey--soft;
 $main-nav-link-current-hover__color: $grey--soft;
-$main-nav-item-after__border: $grey--light;
-$main-nav-item-fc-before__border: $grey--light;
+$main-nav-item__border: $grey--light;
+$main-nav-item-logo__border: $grey--light;
+$main-nav-item-search__border: $grey--light;
+$main-nav-item-form__border: $grey--light;
 
 /*-- modal color variables --*/
 $modal__border: $grey--hight;
@@ -124,6 +126,7 @@ $page-header__bg: $white;
 
 /*-- page-main color variables --*/
 $page-main__bg: $grey--pastel;
+$page-main__border: $grey--light;
 
 /*-- product-week color variables --*/
 $product-week-name__color: $black;
