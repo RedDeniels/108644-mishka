@@ -57,3 +57,16 @@
     padding-bottom: 70px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .page-main{
+    margin-top: -68px;
+  }
+
+  .page-main__title--form {
+    font-size: 53px;
+    line-height: 57px;
+    padding-top: 95px;
+    padding-bottom: 85px;
+  }
+}

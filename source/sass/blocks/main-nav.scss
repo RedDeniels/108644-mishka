@@ -38,7 +38,8 @@
   padding-top: 27px;
   padding-bottom: 27px;
   padding-left: 76px;
-  width: 100%;
+  width: 260px;
+  margin: 0 auto;
   text-align: left;
 
   &:hover {
@@ -155,6 +156,7 @@
 
   .main-nav__list {
     width: 40%;
+    min-width: 440px;
   }
 
   .main-nav__list--site {
@@ -165,11 +167,25 @@
     flex-direction: row;
   }
 
+  .main-nav__item--site{
+    padding-right: 35px;
+    padding-left: 35px;
+    &:first-child{
+      padding-left: 0;
+    }
+  }
+
   .main-nav__item--form{
     border-left: 1px solid $main-nav-item-form__border;
   }
 
-  .main-nav__list {
-    min-width: 440px;
+  .main-nav__link--site{
+    font-size: 17px;
+    padding-top: 30px;
+    padding-bottom: 34px;
+  }
+
+  .main-nav__link--cart{
+    padding-left: 85px;
   }
 }

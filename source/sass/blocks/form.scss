@@ -413,24 +413,22 @@
 }
 
 @media (min-width: $desktop-width) {
-  .form__caption {
-    left: calc(50% - 460px);
-    @include center--desktop;
+
+  .form__field--contacts{
+    padding-top: 69px;
   }
 
   .form__list {
     @include center--desktop;
   }
 
-  .form__list--color {}
+  .form__list--color {
+    padding-left: 7px;
+    width: 800px;
+  }
 
   .form__item {
     padding-right: 175px;
-  }
-
-  .form__item--comment {
-    box-sizing: border-box;
-    @include center--desktop;
   }
 
   .form__item--color {
@@ -438,23 +436,91 @@
     padding-right: 0;
   }
 
+  .form__item--name{
+    margin-left: 162px;
+    margin-bottom: 6px;
+  }
+
+  .form__item--contacts{
+    margin-bottom: 42px;
+    margin-left: 160px;
+    padding-right: 190px;
+  }
+
+  .form__item--comment {
+    box-sizing: border-box;
+    @include center--desktop;
+  }
+
+  .form__caption {
+    left: calc(50% - 460px);
+    @include center--desktop;
+  }
+
+  .form__caption--color{
+    left: calc(50% - 464px);
+  }
+
+  .form__caption--name{
+    top: 67px;
+    left: calc(50% - 465px);
+  }
+
+  .form__caption--contacts{
+    left: calc(50% - 464px);
+  }
+
+  .form__caption--comment{
+    top: 62px;
+    left: calc(50% - 464px);
+  }
+
+  .form__sign{
+    margin-left: 75px;
+  }
+
+  .form__sign--color{
+    margin-left: 125px;
+  }
+
   .form__text {
     display: block;
   }
 
+  .form__text--name{
+    margin-right: 15px;
+    margin-left: 3px;
+    padding-left: 15px;
+  }
+
   .form__comment {
-    width: 710px;
+    margin-left: 175px;
+    width: 700px;
+    font-size: 19px;
+    line-height: 18px;
   }
 
   .form__button {
     left: calc(50% - 375px);
   }
 
-  /* Модификаторы modal */
   .form__caption {
     margin: 0;
     width: auto;
   }
+
+  .form__postscript{
+    margin-bottom: 6px;
+  }
+
+  .form__button{
+    margin-bottom: 3px;
+    left: calc(50% - 365px);
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+    /* Модификаторы modal */
 
   .form__list--modal {
     width: 260px;
