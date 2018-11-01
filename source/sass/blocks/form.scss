@@ -18,6 +18,13 @@
 
 .form__item {}
 
+.form__item--contacts{
+  margin-bottom: 30px;
+  &:last-child{
+    margin-bottom: 0;
+  }
+}
+
 .form__field {
   border: none;
   border-top: 1px solid $form-field__border;
@@ -32,10 +39,40 @@
   font-weight: bold;
   color: $form-caption__color;
   padding-left: 30px;
+  text-transform: uppercase;
+  padding-right: 28px;
+}
+
+.form__caption--color{
+  padding-right: 15px;
 }
 
 .form__caption--contacts {
   padding-left: 0;
+  position: relative;
+  &::after{
+    content: '';
+    position: absolute;
+    height: 1px;
+    color: red;
+    width: calc(100% - 65px);
+    top: 7px;
+    left: 65px;
+  }
+}
+
+.form__caption--comment{
+  position: relative;
+  margin-bottom: 24px;
+  &::after{
+    content: '';
+    position: absolute;
+    height: 1px;
+    color: red;
+    width: calc(100% - 100px);
+    top: 7px;
+    left: 100px;
+  }
 }
 
 .form__caption--modal {
@@ -50,8 +87,12 @@
   line-height: 18px;
   font-weight: bold;
   color: $form-sign__color;
-  margin-left: 60px;
+  margin-left: 61px;
   margin-bottom: 23px;
+}
+
+.form__sign--color {
+  margin-bottom: 43px;
 }
 
 .form__desc {
@@ -66,9 +107,9 @@
   border: none;
   border-bottom: 2px solid $form-text__border;
   background-color: inherit;
-  padding-bottom: 15px;
+  padding-bottom: 17px;
   padding-top: 10px;
-  margin-bottom: 23px;
+  margin-bottom: 22px;
   width: 100%;
   outline: none;
 
@@ -86,20 +127,26 @@
   }
 }
 
+.form__text--contacts{
+  padding-top: 24px;
+  margin-bottom: 0;
+}
+
 .form__comment {
   font-size: 17px;
   line-height: 18px;
   color: $form-comment__color;
-
-  min-width: 256px;
+  box-sizing: border-box;
+  min-width: 260px;
   width: calc(100% - 38px);
-  min-height: 138px;
+  min-height: 142px;
   border: 2px solid $form-comment__border;
   resize: none;
   outline: none;
   margin: 0;
-  margin-bottom: 17px;
+  margin-bottom: 10px;
   margin-left: 30px;
+  padding: 15px;
 
   &:hover {
     border-color: $form-comment-hover__border;
@@ -123,12 +170,23 @@
 }
 
 /*-- Модификаторы страницы form.html --*/
+.form__field--type{
+  margin-bottom: 20px;
+}
+
+.form__field--name{
+  padding-top: 27px;
+}
+
 .form__field--contacts {
-  padding-top: 10px;
+  padding-top: 8px;
+  border-top: 0;
+  margin-bottom: 7px;
 }
 
 .form__field--comment {
   padding-top: 25px;
+  border-top: 0;
 }
 
 /*-- Модификаторы modal --*/
@@ -173,6 +231,8 @@
   margin: 0 auto;
   width: 260px;
   transform: translateX(15px);
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 @media (min-width: $tablet-width) {
@@ -183,21 +243,50 @@
   .form__field {
     position: relative;
     border-top: none;
+    padding-top: 65px;
+    &:first-child{
+      padding-top: 35px;
+    }
   }
 
   .form__field:nth-child(2n) {
     background-color: $form-field-nth-2n__bg;
   }
 
+  .form__field--type{
+    margin-bottom: 10px;
+  }
+
+  .form__field--color{
+    padding-bottom: 10px;
+  }
+
+  .form__field--name{
+    padding-top: 55px;
+    padding-bottom: 20px;
+  }
+
+  .form__field--contacts{
+    padding-bottom: 10px;
+  }
+
+  .form__field--comment{
+    padding-top: 46px;
+  }
+
   .form__caption {
     position: absolute;
     left: calc(50% - 334px);
-
+    padding-left: 0;
     @include center--tablet;
   }
 
-  .form__caption--contacts {
-    padding-left: 30px;
+  .form__caption--name{
+    margin-top: 12px;
+  }
+
+  .form__caption--comment{
+    margin-top: 18px;
   }
 
   .form__list {
@@ -208,11 +297,12 @@
     box-sizing: border-box;
     display: flex;
     flex-wrap: wrap;
-    padding-left: 165px;
+    padding-left: 148px;
   }
 
   .form__item {
     margin-left: 165px;
+    margin-bottom: 58px;
   }
 
   .form__item--color {
@@ -222,19 +312,18 @@
 
   .form__item--name {
     display: flex;
+    margin-bottom: 7px;
+    margin-left: 155px;
+    padding-right: 15px;
   }
 
-  .form__desc {
-    margin-top: 20px;
-    margin-right: 30px;
-  }
-
-  .form__comment {
-    box-sizing: border-box;
-    display: block;
-    @include center--tablet;
-    margin-left: 165px;
-    width: 500px;
+  .form__item--contacts{
+    margin-left: 153px;
+    padding-right: 15px;
+    margin-bottom: 38px;
+    &:last-child{
+      margin-bottom: 38px;
+    }
   }
 
   .form__item--comment {
@@ -243,17 +332,66 @@
     justify-content: space-between;
     min-height: 230px;
     @include center--tablet;
+    min-height: 235px;
+    margin-bottom: 7px;
+  }
+
+  .form__sign{
+    margin-left: 67px;
+    margin-bottom: 0;
+    font-size: 19px;
+    line-height: 18px;
+  }
+
+  .form__sign--color{
+    margin-left: 100px;
+  }
+
+  .form__desc {
+    margin-top: 10px;
+    margin-right: 22px;
+    font-size: 19px;
+    line-height: 18px;
+  }
+
+  .form__comment {
+    box-sizing: border-box;
+    display: block;
+    @include center--tablet;
+    margin-left: 165px;
+    width: 500px;
+    margin-left: 167px;
+  }
+
+  .form__text--name{
+    padding-left: 20px;
+    padding-bottom: 14px;
+    font-size: 19px;
+    line-height: 18px;
+  }
+  .form__text--contacts{
+    box-sizing: border-box;
+    padding-top: 0;
+    padding-bottom: 14px;
+    padding-left: 17px;
   }
 
   .form__postscript {
     text-align: right;
+    margin-top: 5px;
     margin-bottom: 0;
+    font-size: 17px;
+    line-height: 30px;
   }
 
   .form__button {
     position: absolute;
-    bottom: -16px;
-    left: calc(50% - 320px);
+    left: calc(50% - 350px);
+    bottom: -10px;
+    width: auto;
+    padding-left: 31px;
+    padding-right: 31px;
+    margin-bottom: 5px;
   }
 
   /* Модификаторы modal */

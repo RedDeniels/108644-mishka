@@ -1,7 +1,7 @@
 .order-main {}
 
 .order-main--form {
-  margin-bottom: 70px;
+  margin-bottom: 55px;
   padding-right: 30px;
 }
 
@@ -16,9 +16,14 @@
   .order-main__entry {
     box-sizing: border-box;
     @include center--tablet;
+    font-size: 17px;
+    line-height: 30px;
+    padding-left: 0;
+    margin-bottom: 36px;
   }
 
   .order-main--form {
+    margin-top: 85px;
     padding-right: 0;
   }
 }

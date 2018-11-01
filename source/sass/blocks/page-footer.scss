@@ -42,6 +42,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .page-footer{
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
   .page-footer__container {
     display: flex;
     justify-content: space-between;
