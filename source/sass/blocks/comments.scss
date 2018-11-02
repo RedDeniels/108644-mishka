@@ -1,24 +1,24 @@
 .comments {}
 
 .comments--main {
-  margin-bottom: 90px;
+  margin-bottom: 86px;
 }
 
 .comments__title {
-  margin-bottom: 35px;
+  margin-bottom: 25px;
 }
 
 .comments__list {
   list-style: none;
   padding: 0;
   margin: 0;
-  margin-bottom: 35px;
+  margin-bottom: 30px;
 }
 
 .comments__text {
   line-height: 30px;
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 25px;
 }
 
 .comments__author {
@@ -54,6 +54,8 @@
   box-sizing: border-box;
   margin: 0 auto;
   max-width: 260px;
+  text-transform: uppercase;
+  font-weight: bold;
   padding-left: 40px;
   padding-right: 40px;
 
@@ -79,13 +81,15 @@
   }
 
   .comments--main {
-    margin-bottom: 115px;
+    margin-bottom: 165px;
   }
 
   .comments__title {
+    @include title--fix;
     order: 1;
     font-size: 43px;
     line-height: 50px;
+    margin-bottom: 50px;
   }
 
   .comments__button {
@@ -115,14 +119,33 @@
     align-items: flex-start;
   }
 
+  .comments__text{
+    font-size: 17px;
+    margin-bottom: 57px;
+  }
+
+  .comments__author{
+    font-size: 18px;
+  }
+
   .comments__control {
     position: absolute;
-    bottom: 0;
+    bottom: -8px;
     right: 0;
+  }
+
+  .comments__arrow{
+    min-width: 90px;
+  }
+
+  .comments__button{
+    margin-top: 3px;
+    padding-left: 38px;
+    padding-right: 38px;
   }
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $desktop-width) {
   .comments--main {
     margin-bottom: 115px;
   }

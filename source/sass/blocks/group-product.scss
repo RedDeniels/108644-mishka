@@ -16,13 +16,15 @@
   &:hover,
   &:active {
     margin-top: -5px;
-    /*-- Поправить при построении сеток --*/
   }
 }
 
 .group-product__link {
   display: block;
-  padding: 30px;
+  padding-left: 30px;
+  padding-right: 130px;
+  padding-top: 25px;
+  padding-bottom: 30px;
   color: $group-product-link__color;
   font-size: 19px;
   line-height: 24px;
@@ -49,6 +51,13 @@
 
   .group-product__item {
     width: 50%;
+  }
+
+  .group-product__link{
+    padding-top: 28px;
+    padding-left: 35px;
+    font-size: 20px;
+    line-height: 30px;
   }
 }
 

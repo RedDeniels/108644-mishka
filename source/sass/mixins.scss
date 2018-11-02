@@ -7,3 +7,8 @@
   width: 1050px;
   margin: 0 auto;
 }
+
+@mixin title--fix{
+  position: relative;
+  left: -5px;
+}

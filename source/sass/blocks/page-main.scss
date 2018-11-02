@@ -20,7 +20,8 @@
 .page-main__banner--index {
   background-image: url("../img/hero-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: center top;
+  background-position: center -16px;;
+  min-height: 284px;
 }
 
 @media (min-width: $tablet-width) {
@@ -36,7 +37,7 @@
   }
 
   .page-main__title--index {
-    padding-top: 100px;
+    padding-top: 154px;
   }
 
   .page-main__banner{
@@ -44,7 +45,9 @@
   }
 
   .page-main__banner--index {
-    min-height: 570px;
+    background-size: 1150px auto;
+    background-position: center 0;
+    min-height: 628px;
   }
 
   .page-main__title--catalog {

@@ -10,23 +10,34 @@
   line-height: 20px;
   font-weight: bold;
   color: $features__color;
-  margin-top: 90px;
+  padding-right: 60px;
+  margin-top: 83px;
 
   &:last-child {
-    margin-bottom: 60px;
+    margin-bottom: 58px;
   }
 }
 
 @media (min-width: $tablet-width) {
-  .features {}
+  .features {
+    /**Временно**/
+    margin-top: 118px;
+  }
+
+  .features--main{
+    margin-bottom: 102px;
+  }
 
   .features__title {
+    @include title--fix;
     font-size: 43px;
     line-height: 50px;
   }
 
   .features__list {
+    height: 500px;
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
   }
 
@@ -34,6 +45,12 @@
     box-sizing: border-box;
     width: 50%;
     margin-top: 110px;
+    font-size: 20px;
+    line-height: 22px;
+    &:first-child,
+    &:nth-child(3n+1) {
+      margin-top: 88px;
+    }
   }
 
 }
