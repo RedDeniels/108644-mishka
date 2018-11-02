@@ -150,17 +150,18 @@
   }
 
   .contacts__title {
+    @include title--desktop;
     display: inline-block;
     margin: 0;
     margin-top: 80px;
-    margin-bottom: 55px;
+    margin-bottom: 46px;
   }
 
   .contacts__info {
     display: inline-block;
     margin: 0;
     width: 35%;
-
+    margin-bottom: 70px;
   }
 
   .contacts__value,
@@ -169,7 +170,7 @@
   }
 
   .contacts__field--email {
-    padding-bottom: 20px;
+    padding-bottom: 28px;
   }
 
   .contacts__info tbody {
@@ -179,11 +180,9 @@
   .contacts__map {
     float: right;
     min-width: 525px;
-    min-height: 427px;
+    min-height: 457px;
     width: 525px;
     height: 427px;
-
-    /*Временно*/
-    margin-top: -333px;
+    margin-top: -405px;
   }
 }

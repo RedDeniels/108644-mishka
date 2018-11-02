@@ -30,8 +30,7 @@
 
   .features__title {
     @include title--fix;
-    font-size: 43px;
-    line-height: 50px;
+    @include title--tablet;
   }
 
   .features__list {
@@ -56,13 +55,22 @@
 }
 
 @media (min-width: $desktop-width) {
-  .features__item {
-    width: 245px;
-    margin-right: 100px;
+  .features--main{
+    margin-top: 155px;
+  }
 
-    &:nth-child(2n) {
-      width: 300px;
-    }
+  .features__title{
+    @include title--desktop;
+  }
+
+  .features__list{
+    align-content: flex-start;
+  }
+
+  .features__item {
+    width: 290px;
+    margin-right: 60px;
+    padding-right: 0;
   }
 
 }

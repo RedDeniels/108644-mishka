@@ -401,14 +401,20 @@
     width: auto;
   }
 
+  .form__field--modal{
+    margin-bottom: 0;
+  }
+
   .form__list--modal {
-    width: 260px;
+    width: 350px;
     margin: 0 auto;
-    margin-bottom: 30px;
+    margin-bottom: 28px;
   }
 
   .form__item--modal {
+    min-width: 108px;
     margin-left: 0;
+    margin-bottom: 0;
   }
 }
 
@@ -523,11 +529,12 @@
     /* Модификаторы modal */
 
   .form__list--modal {
-    width: 260px;
+    width: 350px;
   }
 
   .form__item--modal {
     margin-left: 0;
     padding-right: 0;
+    margin-bottom: 28px;
   }
 }

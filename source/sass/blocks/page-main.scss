@@ -66,9 +66,17 @@
     margin-top: -68px;
   }
 
-  .page-main__title--form {
+  .page-main__title{
     font-size: 53px;
     line-height: 57px;
+    width: 650px;
+  }
+
+  .page-main__banner{
+    min-height: 626px;
+  }
+
+  .page-main__title--form {
     padding-top: 95px;
     padding-bottom: 85px;
   }

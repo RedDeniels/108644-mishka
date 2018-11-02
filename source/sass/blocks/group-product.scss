@@ -21,8 +21,9 @@
 
 .group-product__link {
   display: block;
+  width: 150px;
   padding-left: 30px;
-  padding-right: 130px;
+  padding-right: 0;
   padding-top: 25px;
   padding-bottom: 30px;
   color: $group-product-link__color;
@@ -68,5 +69,9 @@
 
   .group-product__item {
     width: 50%;
+  }
+
+  .group-product__link{
+    padding-bottom: 13px;
   }
 }

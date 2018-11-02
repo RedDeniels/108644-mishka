@@ -41,7 +41,19 @@
   .modal {
     width: 566px;
     left: 50%;
+    bottom: -350px;
     margin-left: -283px;
+  }
+
+  .modal__title{
+    width: auto;
+  }
+
+  .modal__button{
+    box-sizing: border-box;
+    max-width: 350px;
+    margin: 0 auto;
+    margin-bottom: 46px;
   }
 
 }

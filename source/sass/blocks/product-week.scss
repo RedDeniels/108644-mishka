@@ -31,8 +31,6 @@
 }
 
 .product-week__description {
-  font-size: 15px;
-  line-height: 24px;
   margin: 0;
   margin-bottom: 17px;
 }
@@ -121,8 +119,7 @@
 
   .product-week__name {
     @include title--fix;
-    font-size: 43px;
-    line-height: 50px;
+    @include title--tablet;
     margin-top: 45px;
     margin-bottom: 50px;
     order: 1;
@@ -139,6 +136,7 @@
   }
 
   .product-week__description {
+    @include text--tablet;
     font-size: 17px;
     line-height: 30px;
     width: 100%;
@@ -182,23 +180,24 @@
   }
 
   .product-week__order {
-    width: 50%;
+    width: 290px;
+    margin: 0 auto;
     margin-top: -125px;
     align-items: center;
+    padding-right: calc(50% + 45px);
   }
 
   .product-week__price {
     display: inline-block;
     font-size: 20px;
     line-height: 24px;
-    margin-right: 48px;
+    margin-right: 0;
     margin-bottom: 35px;
   }
 
   .product-week__button {
-    width: 290px;
+    width: 292px;
     display: inline-block;
-    margin-left: 0px;
   }
 
 }
@@ -207,7 +206,8 @@
   .product-week {}
 
   .product-week--main {
-    padding-top: 70px;
+    margin-top: 36px;
+    padding-top: 45px;
   }
 
   .product-week__headline {
@@ -217,19 +217,24 @@
   }
 
   .product-week__name {
-    font-size: 53px;
-    line-height: 57px;
+    @include title--desktop;
     order: 2;
+
   }
 
   .product-week__title {
-    margin-right: 50px;
-    margin-left: 45px;
+    margin-right: 54px;
+    margin-left: 47px;
+    margin-top: 60px;
   }
 
   .product-week__data {
-    width: 40%;
+    width: 38%;
     margin-top: 165px;
+  }
+
+  .product-week__description{
+    margin-bottom: 50px;
   }
 
   .product-week__info {
@@ -238,6 +243,7 @@
 
   .product-week__image {
     width: 59.8%;
+    margin-left: 19px;
   }
 
   .product-week__order {
@@ -245,6 +251,13 @@
     flex-direction: column;
     align-items: flex-start;
     width: 40%;
+    margin-top: -120px;
+    margin-left: 0;
+    padding-right: 0;
+  }
+
+  .product-week__price{
+    margin-left: 73px;
   }
 
   .product-week__button {
