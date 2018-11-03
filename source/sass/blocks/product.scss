@@ -12,12 +12,11 @@
 
 .product__link {
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   width: 100%;
 }
 
 .product__title {
-  margin-top: 25px;
   font-size: 17px;
   line-height: 24px;
 }
@@ -37,6 +36,7 @@
 }
 
 .product__info {
+  padding-top: 27px;
   display: flex;
   flex-direction: column;
 }
@@ -45,7 +45,7 @@
   font-size: 13px;
   line-height: 30px;
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
   width: 100%;
 }
 
@@ -59,8 +59,15 @@
 }
 
 .product__order {
+  border-top: 1px solid $product-order__border;
+  padding-top: 17px;
   display: flex;
   justify-content: space-between;
+}
+
+.product__price{
+  margin-top: 5px;
+  font-weight: bold;
 }
 
 .product__cart {
@@ -68,6 +75,7 @@
   height: 30px;
   background-color: aqua;
   margin-left: auto;
+  margin-right: -7px;
 }
 
 @media (min-width: $tablet-width) {

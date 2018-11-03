@@ -11,7 +11,7 @@
 .special__title {
   font-size: 17px;
   line-height: 24px;
-  padding: 25px;
+  padding: 24px;
   padding-left: 89px;
 }
 
@@ -25,12 +25,15 @@
   display: block;
 }
 
-.special__description {}
+.special__description {
+  padding-top: 27px;
+}
 
 .special__info {
+  font-size: 13px;
+  line-height: 24px;
   margin: 0;
-  margin-bottom: 30px;
-  margin-top: 30px;
+  margin-bottom: 25px;
   padding-left: 33px;
   padding-right: 33px;
 }
@@ -39,7 +42,10 @@
   display: block;
   font-size: 17px;
   line-height: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
   align-self: center;
+  padding: 16px;
   padding-left: 23px;
   padding-right: 23px;
   margin-bottom: 33px;
