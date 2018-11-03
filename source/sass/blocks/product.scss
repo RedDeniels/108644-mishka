@@ -164,10 +164,12 @@
   .product__description {
     width: 100%;
     margin-bottom: 20px;
+    margin-top: 25px;
+    flex-grow: 2;
   }
 
   .product__stats{
-    margin-bottom: 26px;
+    margin-bottom: 14px;
   }
 
   .product__order{
