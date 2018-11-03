@@ -16,9 +16,17 @@
 }
 
 @media (min-width: $tablet-width) {
+  .catalog--main{
+    padding-top: 90px;
+  }
+
   .catalog__list {
     display: flex;
     flex-wrap: wrap;
+  }
+
+  .catalog__product{
+    margin-bottom: 54px;
   }
 
 }
