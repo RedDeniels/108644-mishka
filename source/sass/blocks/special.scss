@@ -133,7 +133,8 @@
   }
 
   .special--main {
-    margin-bottom: 58px;
+    margin-bottom: 105px;
+    padding-bottom: 12px;
   }
 
   .special__title {
@@ -142,19 +143,22 @@
     width: 31%;
     margin-top: 98px;
     padding: 0;
-    padding-left: 80px;
-    margin-bottom: 40px;
+    padding-left: 77px;
+    margin-bottom: 7px;
   }
 
   .special__description {
     display: inline-block;
     box-sizing: border-box;
     width: 31%;
-    padding-left: 80px;
+    padding-top: 25px;
+    padding-left: 77px;
+    padding-right: 0;
   }
 
   .special__info {
     padding: 0;
+    margin-bottom: 47px;
   }
 
   .special__button {
@@ -162,17 +166,19 @@
     margin: 0;
     margin-bottom: 47px;
     width: 78%;
+    padding-left: 24px;
+    padding-right: 24px;
   }
 
   .special__preview {
     width: 682px;
-    height: 455px;
+    min-height: 456px;
   }
 
   .special__video {
     float: left;
     width: 682px;
-    height: 455px;
+    height: 457px;
     background: none;
   }
 

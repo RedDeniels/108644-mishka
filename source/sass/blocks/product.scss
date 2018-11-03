@@ -142,7 +142,7 @@
   .product {
     width: 30%;
     overflow: hidden;
-    flex-direction: row;
+    flex-direction: column;
     align-items: stretch;
   }
 
@@ -151,15 +151,29 @@
     height: 463px;
   }
 
+  .product__title{
+    margin-top: 0;
+    padding-right: 0;
+  }
+
   .product__image {
     height: 100%;
     width: auto;
-
   }
 
   .product__description {
     width: 100%;
+    margin-bottom: 20px;
+  }
 
+  .product__stats{
+    margin-bottom: 26px;
+  }
+
+  .product__order{
+    padding-top: 22px;
+    margin-left: 0;
+    margin-right: 6px;
   }
 
   .product__cart {
