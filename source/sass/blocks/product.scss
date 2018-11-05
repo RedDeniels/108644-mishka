@@ -102,7 +102,7 @@
   .product__image {
     width: 100%;
     height: auto;
-    min-height: 45.5vh;
+    min-height: 44.3vh;
   }
 
   .product__link-image {
@@ -138,6 +138,7 @@
   .product__cart {
     align-self: flex-end;
     margin: 0;
+    top: -5px;
   }
 }
 
@@ -183,5 +184,6 @@
 
   .product__cart {
     margin-left: auto;
+    background-position: 11px center;
   }
 }
