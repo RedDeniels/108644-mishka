@@ -12,7 +12,7 @@
 
 .page-footer__list {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   list-style: none;
   padding: 0;
   padding-top: 20px;
@@ -23,13 +23,52 @@
 
 .page-footer__item {
   font-size: 0;
-  margin-right: 20px;
+  margin-right: 7px;
   width: 50px;
   height: 50px;
-  background-color: cadetblue;
 
   &:last-child {
     margin-right: 0;
+  }
+}
+
+.page-footer__link{
+  position: relative;
+  &::after{
+    content: '';
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}
+
+.page-footer__link--inst{
+  &::after{
+    left: 6px;
+    top: -7px;
+    width: 30px;
+    height: 30px;
+    background-image: url("../../img/icon-insta.svg");
+  }
+}
+
+.page-footer__link--fb{
+  &::after{
+    left: 8px;
+    top: -8px;
+    width: 30px;
+    height: 30px;
+    background-image: url("../../img/icon-fb.svg");
+  }
+}
+
+.page-footer__link--tw{
+  &::after{
+    left: 10px;
+    top: -9px;
+    width: 30px;
+    height: 30px;
+    background-image: url("../../img/icon-twitter.svg");
   }
 }
 
@@ -55,20 +94,65 @@
 
   .page-footer__logo {
     display: block;
+    position: relative;
     margin-top: 20px;
-    width: 190px;
+    margin-left: 10px;
+    width: 120px;
     height: 50px;
-    background-color: cadetblue;
+    background-image: url('../../img/logo-footer.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
   }
 
-  .page-footer__list {}
+  .page-footer__list {
+    padding-left: 50px;
+    padding-right: 0;
+  }
+
+  .page-footer__link--inst{
+    &::after{
+      left: 17px;
+      top: 2px;
+    }
+  }
+
+  .page-footer__link--fb{
+    &::after{
+      left: 20px;
+      top: 0px;
+    }
+  }
+
+  .page-footer__link--tw{
+    &::after{
+      left: 21px;
+      top: 2px;
+    }
+  }
 
   .page-footer__copyright {
     margin: 0;
+    margin-right: 14px;
   }
 
   .page-footer__social {
     margin: 0;
     padding-top: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer__logo{
+    margin-left: 0;
+    background-position: 1px center;
+  }
+
+  .page-footer__list{
+    padding-left: 40px;
+  }
+
+  .page-footer__copyright{
+    margin-right: 0;
+    width: 184px;
   }
 }

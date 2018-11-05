@@ -40,12 +40,18 @@
 }
 
 .comments__arrow {
+  position: relative;
   border: 1px solid $comments-arrow__border;
   min-width: 129px;
   min-height: 52px;
+  background-image: url("../../img/icon-left-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: 36px 11px;
 
-  &:nth-child(n+1) {
+  &:nth-child(n+2) {
     border-left: none;
+    background-position: 38px 11px;
+    background-image: url("../../img/icon-right-arrow.svg");
   }
 }
 
@@ -110,6 +116,7 @@
 
   .comments__list {
     order: 3;
+    margin-bottom: 26px;
   }
 
   .comments__item {
@@ -131,6 +138,16 @@
 
   .comments__arrow{
     min-width: 90px;
+    background-color: transparent;
+    background-position: 22px 12px;
+
+    &:nth-child(n+2) {
+      background-position: 22px 12px;
+    }
+  }
+
+  .comments__author{
+    margin-bottom: 4px;
   }
 
   .comments__button{

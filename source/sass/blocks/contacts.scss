@@ -83,6 +83,7 @@
 
   .contacts__title {
     @include title--fix;
+    position: relative;
     font-size: 43px;
     line-height: 50px;
     min-width: 668px;
@@ -90,6 +91,16 @@
     width: 87%;
     margin: 0 auto;
     margin-bottom: 45px;
+
+    &::before{
+      content: '';
+      position: absolute;
+      right: -1px;
+      top: -15px;
+      width: 46.6px;
+      height: 81.7px;
+      background-image: url('../../img/icon-flag.svg');
+    }
   }
 
   .contacts__info {
@@ -155,6 +166,11 @@
     margin: 0;
     margin-top: 80px;
     margin-bottom: 46px;
+
+    &::before{
+      left: -107px;
+      top: -10px;
+    }
   }
 
   .contacts__info {
