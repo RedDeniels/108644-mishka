@@ -9,10 +9,21 @@
 }
 
 .special__title {
+  position: relative;
   font-size: 17px;
   line-height: 24px;
   padding: 24px;
   padding-left: 89px;
+
+  &::after{
+    content: '';
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    top: 28px;
+    left: 33px;
+    background-image: url('../../img/icon-video.svg');
+  }
 }
 
 .special__preview {
@@ -21,8 +32,18 @@
   height: auto;
 }
 
+.special__video{
+  position: relative;
+}
+
 .special__play {
   display: block;
+  position: absolute;
+  left: calc(50% - 50px);
+  bottom: calc(50% - 38px);
+  width: 100.7px;
+  height: 76.9px;
+  background-image: url('../../img/icon-play.svg');
 }
 
 .special__description {
