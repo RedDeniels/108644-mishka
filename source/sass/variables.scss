@@ -37,8 +37,9 @@ $button--bg: $grey;
 $button-hover--color: $white;
 $button-hover--bg: $grey;
 
-$button-active--color: $grey;
+$button-active--color: $grey--hight;
 $button-active--bg: $grey;
+$button-active--border: $grey;
 
 /*-- comments color variables --*/
 $comments-author: $black;
@@ -66,13 +67,21 @@ $features__color: $black;
 
 /*-- form color variables --*/
 $form-field__border: $mint--alt;
+
 $form-caption__color: $mint--alt;
 $form-caption-modal__color: $grey;
 $form-caption-contacts-after__bg: $mint--alt;
+$form-caption-comment-after__bg: $mint--alt;
+
+$form-sign-type-icon__default: $grey;
+$form-sign-type-icon__hover: $mint--alt;
+$form-sign-type-icon__active: $grey--hight;
+
 $form-sign__color: $black;
-$form-sign-type-after__bg: $grey;
-$form-sign-color-after__bg: $grey;
-$form-sign-type-after-hover__bg: $mint--alt;
+$form-sign-color-icon__default: $grey;
+$form-sign-color-icon__hover: $mint--alt;
+$form-sign-color-icon__active: $grey--hight;
+
 $form-desc__color: $black;
 
 $form-text__color: $grey;

@@ -22,7 +22,8 @@
     height: 32px;
     top: 28px;
     left: 33px;
-    background-image: url('../../img/icon-video.svg');
+    background-image: url('../img/icon-video.svg');
+    background-repeat: no-repeat;
   }
 }
 
@@ -41,9 +42,10 @@
   position: absolute;
   left: calc(50% - 50px);
   bottom: calc(50% - 38px);
-  width: 100.7px;
-  height: 76.9px;
-  background-image: url('../../img/icon-play.svg');
+  width: 101px;
+  height: 77px;
+  background-image: url('../img/icon-play.svg');
+  background-repeat: no-repeat;
 }
 
 .special__description {
@@ -72,17 +74,6 @@
   margin-bottom: 33px;
   margin-left: 33px;
   margin-right: 33px;
-
-  &:hover {
-    padding-left: 25px;
-    padding-right: 25px;
-  }
-
-  &:active {
-    color: $special-button-active__color;
-    padding-left: 25px;
-    padding-right: 25px;
-  }
 
 }
 

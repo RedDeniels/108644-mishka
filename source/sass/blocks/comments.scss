@@ -44,14 +44,15 @@
   border: 1px solid $comments-arrow__border;
   min-width: 129px;
   min-height: 52px;
-  background-image: url("../../img/icon-left-arrow.svg");
+  background-image: url("../img/icon-left-arrow.svg");
   background-repeat: no-repeat;
   background-position: 36px 11px;
+  background-color: transparent;
 
   &:nth-child(n+2) {
     border-left: none;
     background-position: 38px 11px;
-    background-image: url("../../img/icon-right-arrow.svg");
+    background-image: url("../img/icon-right-arrow.svg");
   }
 }
 
@@ -64,17 +65,6 @@
   font-weight: bold;
   padding-left: 40px;
   padding-right: 40px;
-
-  &:hover {
-    padding-left: 41px;
-    padding-right: 41px;
-  }
-
-  &:active {
-    padding-left: 41px;
-    padding-right: 41px;
-    color: $comments-button-active__color;
-  }
 }
 
 @media (min-width: $tablet-width) {
@@ -102,16 +92,6 @@
     padding-left: 48px;
     padding-right: 48px;
     margin: 0;
-
-    &:hover {
-      padding-left: 50px;
-      padding-right: 50px;
-    }
-
-    &:active {
-      padding-left: 50px;
-      padding-right: 50px;
-    }
   }
 
   .comments__list {
@@ -138,7 +118,6 @@
 
   .comments__arrow{
     min-width: 90px;
-    background-color: transparent;
     background-position: 22px 12px;
 
     &:nth-child(n+2) {

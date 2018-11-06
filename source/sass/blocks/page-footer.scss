@@ -48,7 +48,8 @@
     top: -7px;
     width: 30px;
     height: 30px;
-    background-image: url("../../img/icon-insta.svg");
+    background-image: url("../img/icon-insta.svg");
+    background-repeat: no-repeat;
   }
 }
 
@@ -58,7 +59,8 @@
     top: -8px;
     width: 30px;
     height: 30px;
-    background-image: url("../../img/icon-fb.svg");
+    background-image: url("../img/icon-fb.svg");
+    background-repeat: no-repeat;
   }
 }
 
@@ -68,7 +70,8 @@
     top: -9px;
     width: 30px;
     height: 30px;
-    background-image: url("../../img/icon-twitter.svg");
+    background-image: url("../img/icon-twitter.svg");
+    background-repeat: no-repeat;
   }
 }
 
@@ -99,7 +102,7 @@
     margin-left: 10px;
     width: 120px;
     height: 50px;
-    background-image: url('../../img/logo-footer.svg');
+    background-image: url('../img/logo-footer.svg');
     background-repeat: no-repeat;
     background-position: center center;
   }

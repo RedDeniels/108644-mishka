@@ -63,10 +63,6 @@
   padding-right: 39px;
   margin: 0 auto;
   width: 260px;
-
-  &:active {
-    color: $contacts-button-active--color;
-  }
 }
 
 @media (min-width: $tablet-width) {
@@ -97,9 +93,10 @@
       position: absolute;
       right: -1px;
       top: -15px;
-      width: 46.6px;
-      height: 81.7px;
-      background-image: url('../../img/icon-flag.svg');
+      width: 47px;
+      height: 82px;
+      background-image: url('../img/icon-flag.svg');
+      background-repeat: no-repeat;
     }
   }
 
@@ -139,12 +136,6 @@
     width: auto;
     padding-left: 39px;
     padding-right: 39px;
-    &:hover{
-
-    }
-    &:active{
-      padding-left: 38px;
-    }
   }
 }
 

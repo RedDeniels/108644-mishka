@@ -9,15 +9,13 @@
 
   &:hover {
     color: $button-hover--color;
-    border: none;
-    padding: 16px;
+    border-color: $button-hover--bg;
     background-color: $button-hover--bg;
   }
 
   &:active {
     color: $button-active--color;
-    border: none;
-    padding: 16px;
+    border-color: $button-active--border;
     background-color: $button-active--bg;
   }
 }

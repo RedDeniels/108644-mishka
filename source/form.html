@@ -50,15 +50,15 @@
         <p class="order-main__entry">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
         <form class="form order-main__form" action="https://echo.htmlacademy.ru" method="post">
           <fieldset class="form__field form__field--type">
-          <legend class="form__caption">Тип</legend>
+          <legend class="form__caption form__caption--type">Тип</legend>
           <ul class="form__list">
-            <li class="form__item">
+            <li class="form__item form__item--type">
               <input class="form__radio visual-hidden" id="type--accessory" type="radio" name="type" checked>
-              <label class="form__sign form__sign--type">Аксессуар для интерьера</label>
+              <label class="form__sign form__sign--type" for="type--accessory">Аксессуар для интерьера</label>
             </li>
-            <li class="form__item">
+            <li class="form__item form__item--type">
               <input class="form__radio visual-hidden" id="type--toy" type="radio" name="type">
-              <label class="form__sign form__sign--type">Детская игрушка</label>
+              <label class="form__sign form__sign--type" for="type--toy">Детская игрушка</label>
             </li>
           </ul>
         </fieldset>
@@ -67,27 +67,27 @@
           <ul class="form__list form__list--color">
             <li class="form__item form__item--color">
               <input class="form__checkbox visual-hidden" id="color--white" type="checkbox" name="color" checked>
-              <label class="form__sign form__sign--color">Белый</label>
+              <label class="form__sign form__sign--color" for="color--white">Белый</label>
             </li>
             <li class="form__item form__item--color">
               <input class="form__checkbox visual-hidden" id="color--grey" type="checkbox" name="color" checked>
-              <label class="form__sign form__sign--color">Серый</label>
+              <label class="form__sign form__sign--color" for="color--grey">Серый</label>
             </li>
             <li class="form__item form__item--color">
               <input class="form__checkbox visual-hidden" id="color--tiffany" type="checkbox" name="color">
-              <label class="form__sign form__sign--color">«Тиффани»</label>
+              <label class="form__sign form__sign--color" for="color--tiffany">«Тиффани»</label>
             </li>
             <li class="form__item form__item--color">
               <input class="form__checkbox visual-hidden" id="color--black" type="checkbox" name="color">
-              <label class="form__sign form__sign--color">Черный</label>
+              <label class="form__sign form__sign--color" for="color--black">Черный</label>
             </li>
             <li class="form__item form__item--color">
               <input class="form__checkbox visual-hidden" id="color--pink" type="checkbox" name="color">
-              <label class="form__sign form__sign--color">Розовый</label>
+              <label class="form__sign form__sign--color" for="color--pink">Розовый</label>
             </li>
             <li class="form__item form__item--color">
               <input class="form__checkbox visual-hidden" id="color--orange" type="checkbox" name="color">
-              <label class="form__sign form__sign--color">Оранжевый</label>
+              <label class="form__sign form__sign--color" for="color--orange">Оранжевый</label>
             </li>
           </ul>
         </fieldset>
@@ -129,10 +129,12 @@
           <div class="form__item form__item--comment">
             <legend class="form__caption form__caption--comment">Доп</legend>
             <textarea class="form__comment" id="comment" name="comment" placeholder="Опишите все ваши пожелания к заказу"></textarea>
-            <small class="form__postscript"><sup>*</sup>Поля обязательны для заполнения</small>
           </div>
         </fieldset>
-        <button class="button form__button" type="submit">Отправить заказ</button>
+        <div class="container form__submit">
+          <button class="button form__button" type="submit">Отправить заказ</button>
+          <small class="form__postscript"><sup>*</sup>Поля обязательны для заполнения</small>
+        </div>
         </form>
       </section>
     </main>

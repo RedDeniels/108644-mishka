@@ -30,7 +30,7 @@
     left: 8px;
     width: 32px;
     height: 37px;
-    background-image: url("../../img/icon-feature-flower.svg");
+    background-image: url("../img/icon-feature-flower.svg");
   }
 }
 
@@ -38,9 +38,10 @@
   &::after{
     top: -51px;
     left: 0;
-    width: 46.5px;
-    height: 27.3px;
-    background-image: url("../../img/icon-feature-money.svg");
+    width: 47px;
+    height: 28px;
+    background-image: url("../img/icon-feature-money.svg");
+    background-repeat: no-repeat;
   }
 }
 
@@ -49,8 +50,9 @@
     top: -46px;
     left: 7px;
     width: 33px;
-    height: 27.8px;
-    background-image: url("../../img/icon-feature-heart.svg");
+    height: 28px;
+    background-image: url("../img/icon-feature-heart.svg");
+    background-repeat: no-repeat;
   }
 }
 
@@ -58,9 +60,10 @@
   &::after{
     top: -49px;
     left: 3px;
-    width: 34.4px;
-    height: 34.4px;
-    background-image: url("../../img/icon-feature-ball.svg");
+    width: 35px;
+    height: 35px;
+    background-image: url("../img/icon-feature-ball.svg");
+    background-repeat: no-repeat;
   }
 }
 
@@ -68,9 +71,10 @@
   &::after{
     top: -49px;
     left: -6px;
-    width: 54.2px;
-    height: 23.2px;
-    background-image: url("../../img/icon-feature-rocket.svg");
+    width: 55px;
+    height: 24px;
+    background-image: url("../img/icon-feature-rocket.svg");
+    background-repeat: no-repeat;
   }
 }
 
@@ -78,9 +82,10 @@
   &::after{
     top: -51px;
     left: 3px;
-    width: 32.6px;
-    height: 32.5px;
-    background-image: url("../../img/icon-feature-gift.svg");
+    width: 33px;
+    height: 33px;
+    background-image: url("../img/icon-feature-gift.svg");
+    background-repeat: no-repeat;
   }
 }
 

@@ -15,8 +15,8 @@
 
 @media (min-width: $tablet-width) {
   .order-main__entry {
-    box-sizing: border-box;
     @include center--tablet;
+    box-sizing: border-box;
     font-size: 17px;
     line-height: 30px;
     padding-left: 0;
@@ -26,18 +26,20 @@
   .order-main--form {
     margin-top: 85px;
     padding-right: 0;
+    margin-bottom: 50px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .order-main--form{
     padding-top: 53px;
+    margin-bottom: 45px;
   }
 
   .order-main__entry {
+    @include center--desktop;
     font-size: 17px;
     line-height: 30px;
-    @include center--desktop;
     padding-left: 175px;
     padding-right: 165px;
     margin-bottom: 38px;
