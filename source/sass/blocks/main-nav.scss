@@ -104,6 +104,12 @@
     border-top: none;
   }
 
+  .main-nav__logo-image{
+    padding-left: 0;
+    width: 113px;
+    height: auto;
+  }
+
   .main-nav__list {
     display: flex;
     flex-wrap: wrap;
@@ -183,6 +189,11 @@
   .main-nav__logo {
     order: 2;
     margin: 0 auto;
+    padding-top: 8px;
+  }
+
+  .main-nav__logo-image{
+    width: 150px;
   }
 
   .main-nav__list {

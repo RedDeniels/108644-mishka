@@ -78,6 +78,24 @@
 
   .comments--main {
     margin-bottom: 165px;
+    position: relative;
+
+    &::after{
+      content: '';
+      position: absolute;
+      z-index: -1;
+      left: -48px;
+      top: -78px;
+      width: 350px;
+      height: 456px;
+      background-image: url("../img/review@1x.jpg");
+      background-repeat: no-repeat;
+      @media (min-resolution: $retina-dpi),
+        (min-resolution: $retina-dppx){
+        background-image: url("../img/review@2x.jpg");
+          background-size: cover;
+      }
+    }
   }
 
   .comments__title {
@@ -126,6 +144,7 @@
   }
 
   .comments__author{
+    font-size: 18px;
     margin-bottom: 4px;
   }
 
@@ -139,6 +158,11 @@
 @media (min-width: $desktop-width) {
   .comments--main {
     margin-bottom: 220px;
+
+    &::after{
+      left: -175px;
+      top: -70px;
+    }
   }
 
   .comments__title{
