@@ -1,21 +1,36 @@
-.copyright{
+.copyright {}
 
-}
-.copyright__developed{
+.copyright__developed {
   font-size: 19px;
   line-height: 18x;
   color: $copyright__color;
 
-  .copyright__academy:active ~ &{
+  .copyright__academy:active ~ & {
     color: $copyright-active__color;
   }
 }
-.copyright__academy{
+
+.copyright__academy {
   position: absolute;
   font-size: 0;
-  width: 30px;
-  height: 40px;
-  background-color: cadetblue;
-  right: 0;
-  top: 27px;
+
+  &::after{
+    content: '';
+    position: absolute;
+    left: 31px;
+    top: -3px;
+    width: 27px;
+    height: 34px;
+    background-image: url("../img/logo-htmlacademy.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .copyright__academy{
+    &::after{
+      left: 29px;
+    }
+  }
 }

@@ -1,8 +1,30 @@
-@mixin center--tablet{
+@mixin center--tablet {
   width: 668px;
   margin: 0 auto;
 }
-@mixin center--desktop{
+
+@mixin center--desktop {
   width: 1050px;
   margin: 0 auto;
 }
+
+@mixin title--tablet{
+  font-size: 43px;
+  line-height: 50px;
+}
+
+@mixin title--desktop {
+  font-size: 53px;
+  line-height: 57px;
+}
+@mixin text--tablet {
+  font-size: 17px;
+  line-height: 30px;
+}
+
+@mixin title--fix{
+  position: relative;
+  left: -5px;
+}
+
+

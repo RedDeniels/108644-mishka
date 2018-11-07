@@ -1,4 +1,4 @@
-.button{
+.button {
   display: inline-block;
   font-size: 17px;
   line-height: 20px;
@@ -6,16 +6,16 @@
   text-align: center;
   padding: 14px;
   border: 2px solid $button--border;
-  &:hover{
+
+  &:hover {
     color: $button-hover--color;
-    border: none;
-    padding: 16px;
+    border-color: $button-hover--bg;
     background-color: $button-hover--bg;
   }
-  &:active{
+
+  &:active {
     color: $button-active--color;
-    border: none;
-    padding: 16px;
+    border-color: $button-active--border;
     background-color: $button-active--bg;
   }
 }

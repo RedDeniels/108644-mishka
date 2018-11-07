@@ -1,13 +1,15 @@
-.modal{
+.modal {
   position: absolute;
-  bottom: -380px;
+  bottom: -480px;
   left: 0;
   width: 100%;
+  min-width: 320px;
   border-top: 1px solid $modal__border;
   border-bottom: 1px solid $modal__border;
   background-color: $modal__bg;
 }
-.modal__title{
+
+.modal__title {
   text-align: center;
   margin: 0 auto;
   margin-top: 35px;
@@ -15,7 +17,7 @@
   width: 130px;
 }
 
-.modal__button{
+.modal__button {
   display: block;
   width: 100%;
   color: $modal-button__color;
@@ -25,18 +27,33 @@
   padding: 16px;
   margin-bottom: 45px;
   outline: none;
+
   &:hover,
-  &:active{
+  &:active {
     background-color: $modal-button-active__border;
     color: $modal-button-active__color;
-  } /*-- по styleguide нужно смещать надпись на 5 px вверх при :hover ¯\_(ツ)_/¯ Что то тут не так --*/
+  }
+
+  /*-- по styleguide нужно смещать надпись на 5 px вверх при :hover ¯\_(ツ)_/¯ Что то тут не так --*/
 }
 
-@media (min-width: $tablet-width){
-  .modal{
+@media (min-width: $tablet-width) {
+  .modal {
     width: 566px;
     left: 50%;
+    bottom: -350px;
     margin-left: -283px;
+  }
+
+  .modal__title{
+    width: auto;
+  }
+
+  .modal__button{
+    box-sizing: border-box;
+    max-width: 350px;
+    margin: 0 auto;
+    margin-bottom: 46px;
   }
 
 }

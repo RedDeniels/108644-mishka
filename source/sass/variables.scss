@@ -37,8 +37,9 @@ $button--bg: $grey;
 $button-hover--color: $white;
 $button-hover--bg: $grey;
 
-$button-active--color: $grey;
+$button-active--color: $grey--hight;
 $button-active--bg: $grey;
+$button-active--border: $grey;
 
 /*-- comments color variables --*/
 $comments-author: $black;
@@ -66,9 +67,21 @@ $features__color: $black;
 
 /*-- form color variables --*/
 $form-field__border: $mint--alt;
+
 $form-caption__color: $mint--alt;
 $form-caption-modal__color: $grey;
+$form-caption-contacts-after__bg: $mint--alt;
+$form-caption-comment-after__bg: $mint--alt;
+
+$form-sign-type-icon__default: $grey;
+$form-sign-type-icon__hover: $mint--alt;
+$form-sign-type-icon__active: $grey--hight;
+
 $form-sign__color: $black;
+$form-sign-color-icon__default: $grey;
+$form-sign-color-icon__hover: $mint--alt;
+$form-sign-color-icon__active: $grey--hight;
+
 $form-desc__color: $black;
 
 $form-text__color: $grey;
@@ -102,8 +115,12 @@ $main-nav-link__color: $black;
 $main-nav-link-hover__color: $grey--pre;
 $main-nav-link-active__color: $grey--soft;
 $main-nav-link-current-hover__color: $grey--soft;
-$main-nav-item-after__border: $grey--light;
-$main-nav-item-fc-before__border: $grey--light;
+$main-nav-link-icon__bg: $grey--soft;
+
+$main-nav-item__border: $grey--light;
+$main-nav-item-logo__border: $grey--light;
+$main-nav-item-search__border: $grey--light;
+$main-nav-item-form__border: $grey--light;
 
 /*-- modal color variables --*/
 $modal__border: $grey--hight;
@@ -124,15 +141,20 @@ $page-header__bg: $white;
 
 /*-- page-main color variables --*/
 $page-main__bg: $grey--pastel;
+$page-main__border: $grey--light;
 
 /*-- product-week color variables --*/
 $product-week-name__color: $black;
 $product-week-title__color: $mint;
 $product-week-info__border: $grey--light;
+$product-week-button__color: $grey--hight;
 
 /*-- product color variables --*/
 $product__border: $grey--lumin;
+$product-order__border: $grey--lumin;
 $product-price-before__bg: $grey--lumin;
+
+$product-link-image__bg: $grey--light;
 
 /*-- product shadow variables --*/
 $product-description-hover__shadow: 0 6px 10px rgba(0,0,0,0.1);
@@ -141,6 +163,7 @@ $product-description-active__shadow: 0 3px 5px rgba(0,0,0,0.1);
 /*-- special color variables --*/
 $special__border: $grey--lumin;
 $special-button-active__color: $grey--hight;
+$special-video--bg: $grey--light;
 
 /*-- extra-nav color variables --*/
 $extra-nav-link__color: $black;

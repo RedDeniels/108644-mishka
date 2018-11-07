@@ -1,31 +1,46 @@
-.catalog{
+.catalog {}
 
+.catalog--main{
+  padding-top: 30px;
 }
-.catalog__list{
+
+.catalog__list {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-.catalog__product{
-  margin-bottom: 30px; /*не знаю, куда лучше написать этот отступ*/
+
+.catalog__product {
+  margin-bottom: 30px;
+  /*не знаю, куда лучше написать этот отступ*/
 }
 
-@media (min-width: $tablet-width){
-  .catalog__list{
+@media (min-width: $tablet-width) {
+  .catalog--main{
+    padding-top: 90px;
+  }
+
+  .catalog__list {
     display: flex;
     flex-wrap: wrap;
   }
 
+  .catalog__product{
+    margin-bottom: 54px;
+  }
+
 }
 
-@media (min-width: $desktop-width){
-  .catalog{
+@media (min-width: $desktop-width) {
+  .catalog {
     display: flex;
   }
-  .catalog--main{
-    margin-top: 125px;
+
+  .catalog--main {
+    margin-top: 56px;
   }
-  .catalog__list{
+
+  .catalog__list {
     justify-content: space-between;
   }
 

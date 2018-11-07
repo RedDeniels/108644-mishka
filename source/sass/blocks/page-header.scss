@@ -1,17 +1,21 @@
-.page-header{
+.page-header {
   background-color: $page-header__bg;
 }
-.page-header__delivery{
+
+.page-header__delivery {
   display: none;
 }
 
-@media (min-width: $tablet-width){
+@media (min-width: $tablet-width) {
 
-  .page-header{
-    width: 668px;
+  .page-header {
+    min-width: 668px;
+    max-width: 1050px;
+    width: 87%;
     margin: 0 auto;
   }
-  .page-header__delivery{
+
+  .page-header__delivery {
     display: block;
     order: 4;
     margin-left: auto;
@@ -19,9 +23,9 @@
   }
 }
 
-@media (min-width: $desktop-width){
+@media (min-width: $desktop-width) {
 
-  .page-header{
+  .page-header {
     width: 1050px;
     margin: 0 auto;
   }

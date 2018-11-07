@@ -1,125 +1,207 @@
-.special{
+.special {
   border: 1px solid $special__border;
   margin-left: 30px;
   margin-right: 30px;
 }
-.special--main{
+
+.special--main {
   margin-bottom: 58px;
 }
-.special__title{
+
+.special__title {
+  position: relative;
   font-size: 17px;
   line-height: 24px;
-  padding: 25px;
+  padding: 24px;
   padding-left: 89px;
+
+  &::after{
+    content: '';
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    top: 28px;
+    left: 33px;
+    background-image: url('../img/icon-video.svg');
+    background-repeat: no-repeat;
+  }
 }
-.special__preview{
-   display: block;
+
+.special__preview {
+  display: block;
   width: 100%;
   height: auto;
 }
-.special__play{
-  display: block;
-}
-.special__description{
 
+.special__video{
+  position: relative;
 }
-.special__info{
+
+.special__play {
+  display: block;
+  position: absolute;
+  left: calc(50% - 50px);
+  bottom: calc(50% - 38px);
+  width: 101px;
+  height: 77px;
+  background-image: url('../img/icon-play.svg');
+  background-repeat: no-repeat;
+}
+
+.special__description {
+  padding-top: 27px;
+}
+
+.special__info {
+  font-size: 13px;
+  line-height: 24px;
   margin: 0;
-  margin-bottom: 30px;
-  margin-top: 30px;
+  margin-bottom: 25px;
   padding-left: 33px;
   padding-right: 33px;
 }
-.special__button{
+
+.special__button {
   display: block;
   font-size: 17px;
   line-height: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
   align-self: center;
+  padding: 16px;
   padding-left: 23px;
   padding-right: 23px;
   margin-bottom: 33px;
   margin-left: 33px;
   margin-right: 33px;
-  &:hover{
-    padding-left: 25px;
-    padding-right: 25px;
-  }
-  &:active{
-    color: $special-button-active__color;
-    padding-left: 25px;
-    padding-right: 25px;
-  }
 
 }
 
-@media (min-width: $tablet-width){
-  .special{
-    width: 668px;
+@media (min-width: $tablet-width) {
+  .special {
+    min-width: 668px;
+    max-width: 1050px;
+    width: 87%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
   }
-  .special--main{
-    margin-bottom: 58px;
+
+  .special--main {
+    margin-bottom: 62px;
+    padding-bottom: 45px;
   }
-  .special__video{
+
+  .special__video {
+    background-color: $special-video--bg;
     order: 1;
   }
-  .special__title{
+
+  .special__preview {
+    margin: 0 auto;
+    max-height: 50vh;
+    max-width: 850px;
+    min-height: 60.3vh;
+  }
+
+  .special__title {
     order: 2;
-    margin-bottom: 33px;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 5px;
     padding-bottom: 0;
+    padding-top: 40px;
+    padding-left: 107px;
+
+    &::after{
+      top: 34px;
+      left: 44px;
+    }
   }
-  .special__description{
+
+  .special__description {
     order: 3;
+    padding-left: 43px;
+    padding-right: 43px;
   }
-  .special__info{
+
+  .special__info {
+    font-size: 15px;
+    line-height: 30px;
     margin-top: 0;
-    margin-bottom: 40px;
+    margin-bottom: 35px;
+    padding: 0;
+  }
+
+  .special__button{
+    margin: 0;
   }
 }
 
-@media (min-width: $desktop-width){
-  .special{
+@media (min-width: $desktop-width) {
+  .special {
     display: block;
     box-sizing: border-box;
     position: relative;
     width: 1050px;
     margin: 0 auto;
     padding-right: 55px;
-    min-height: 394px;
+    min-height: 435px;
   }
-  .special--main{
-    margin-bottom: 58px;
+
+  .special--main {
+    margin-bottom: 105px;
+    padding-bottom: 12px;
   }
-  .special__title{
+
+  .special__title {
     display: inline-block;
     box-sizing: border-box;
     width: 31%;
     margin-top: 98px;
     padding: 0;
-    padding-left: 80px;
-    margin-bottom: 40px;
+    padding-left: 77px;
+    margin-bottom: 7px;
+
+    &::after{
+      top: -55px;
+      left: 80px;
+    }
   }
-  .special__description{
+
+  .special__description {
     display: inline-block;
     box-sizing: border-box;
     width: 31%;
-    padding-left: 80px;
+    padding-top: 25px;
+    padding-left: 77px;
+    padding-right: 0;
   }
-  .special__info{
+
+  .special__info {
     padding: 0;
+    margin-bottom: 47px;
   }
-  .special__button{
+
+  .special__button {
     display: inline-block;
     margin: 0;
     margin-bottom: 47px;
     width: 78%;
+    padding-left: 24px;
+    padding-right: 24px;
   }
-  .special__video{
+
+  .special__preview {
+    width: 682px;
+    min-height: 456px;
+  }
+
+  .special__video {
     float: left;
     width: 682px;
-    height: 453px;
+    height: 457px;
+    background: none;
   }
 
 }

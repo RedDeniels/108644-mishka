@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
@@ -14,18 +15,18 @@
         <button class="main-nav__toggle" type="button">Открыть меню</button>
           <ul class="main-nav__list main-nav__list--site">
             <li class="main-nav__item main-nav__item--site main-nav__item--catalog">
-              <a class="main-nav__link">Каталог товаров</a>
+              <a class="main-nav__link main-nav__link--site">Каталог товаров</a>
             </li>
             <li class="main-nav__item main-nav__item--site main-nav__item--form">
-              <a class="main-nav__link" href="form.html">Вязание на заказ</a>
+              <a class="main-nav__link main-nav__link--site" href="form.html">Вязание на заказ</a>
             </li>
           </ul>
           <ul class="main-nav__list main-nav__list--user">
             <li class="main-nav__item main-nav__item--user main-nav__item--search">
-              <a class="main-nav__link" href="#">Поиск по сайту</a>
+              <a class="main-nav__link main-nav__link--search" href="#">Поиск по сайту</a>
             </li>
             <li class="main-nav__item main-nav__item--user main-nav__item--cart">
-              <a class="main-nav__link" href="#">Корзина: пока пуста</a>
+              <a class="main-nav__link main-nav__link--cart" href="#">Корзина: пока пуста</a>
             </li>
           </ul>
         <ul class="extra-nav">
@@ -41,7 +42,7 @@
     </header>
 
     <main class="page-main">
-      <div class="page-main__banner">
+      <div class="page-main__banner page-main__banner--catalog">
         <h1 class="title page-main__title page-main__title--catalog">Каталог товаров</h1>
       </div>
       <section class="catalog catalog--main container">
@@ -76,7 +77,7 @@
             <a class="product__link-image" href="bigbasket.html"><img class="product__image" src="http://placehold.it/260x195" width="260" height="195" alt="Большая корзинка для игрушек"></a>
             <div class="product__description">
               <div class="product__info">
-                <a class="product__link" href="bigbasket.html"><h3 class="title product__title">Большая корзинка для игрушек</h3></a>
+                <a class="product__link" href="bigbasket.html"><h3 class="title product__title">Большая корзинка для&nbspигрушек</h3></a>
                 <p class="product__stats">Диаметр 30 см, высота 30 см</p>
               </div>
               <div class="product__order">
@@ -95,20 +96,20 @@
             <a class="special__play"></a>
         </div>
         <div class="special__description">
-          <p class="special__info">По просьбам наших любимых фоловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+          <p class="special__info">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
           <a class="button special__button" href="form.html">Сделать заказ</a>
         </div>
       </section>
     </main>
 
     <footer class="page-footer">
-      <div class="container page-footer__container">
-        <a class="logo page-footer__logo"></a>
+      <div class="page-footer__container">
+        <a class="logo page-footer__logo" href="index.html"></a>
         <div class="page-footer__social">
           <ul class="page-footer__list">
-            <li class="page-footer__item"><a class="page-footer__link" href="#">Instagram</a></li>
-            <li class="page-footer__item"><a class="page-footer__link" href="#">Facebook</a></li>
-            <li class="page-footer__item"><a class="page-footer__link" href="#">Twitter</a></li>
+            <li class="page-footer__item"><a class="page-footer__link page-footer__link--inst" href="#">Instagram</a></li>
+            <li class="page-footer__item"><a class="page-footer__link page-footer__link--fb" href="#">Facebook</a></li>
+            <li class="page-footer__item"><a class="page-footer__link page-footer__link--tw" href="#">Twitter</a></li>
           </ul>
         </div>
         <div class="copyright page-footer__copyright">
