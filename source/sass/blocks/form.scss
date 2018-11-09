@@ -16,7 +16,9 @@
   padding-left: 0;
 }
 
-.form__item {}
+.form__item {
+  position: relative;
+}
 
 .form__item--contacts{
   margin-bottom: 30px;
@@ -58,6 +60,20 @@
     width: calc(100% - 65px);
     top: 7px;
     left: 65px;
+  }
+}
+
+.form__icon{
+  position: absolute;
+  fill: #000000;
+  opacity: 0.2;
+  &--phone{
+    bottom: 17px;
+    right: 8px;
+  }
+  &--mail{
+    bottom: 10px;
+    right: 5px;
   }
 }
 
@@ -238,6 +254,12 @@
 .form__text--contacts{
   padding-top: 24px;
   margin-bottom: 0;
+  &:hover + .form__icon,
+  &:focus + .form__icon,
+  &:active + .form__icon{
+    fill: #62d1ba;
+    opacity: 1;
+  }
 }
 
 .form__comment {
@@ -372,11 +394,13 @@
   .form__field--type{
     padding-top: 18px;
     padding-bottom: 3px;
+    margin-bottom: 20px;
   }
 
   .form__field--color{
     padding-top: 50px;
     padding-bottom: 27px;
+    margin-bottom: 0;
   }
 
   .form__field--name{
@@ -410,6 +434,7 @@
   }
 
   .form__caption--contacts{
+    left: calc(50% - 424px);
     &::after{
       display: none;
     }
@@ -426,6 +451,16 @@
       display: none;
     }
   }
+
+.form__icon{
+  &--phone{
+    right: 40px;
+  }
+  &--mail{
+    bottom: 8px;
+    right: 38px;
+  }
+}
 
   .form__list {
     @include center--tablet;
@@ -567,7 +602,6 @@
   .form__postscript {
     text-align: right;
     margin-bottom: 0;
-    padding-right: 50px;
     font-size: 17px;
     line-height: 30px;
   }
@@ -577,7 +611,7 @@
     padding-left: 31px;
     padding-right: 31px;
     margin-top: 0px;
-    margin-left: 35px;
+    margin-left: 0;
   }
 
   /* Модификаторы modal */
@@ -663,12 +697,23 @@
   }
 
   .form__caption--contacts{
-    left: calc(50% - 464px);
+    left: calc(50% - 558px);
   }
 
   .form__caption--comment{
-    top: 62px;
+    top: 14px;
     left: calc(50% - 464px);
+  }
+
+  .form__icon{
+    &--phone{
+      bottom: 17px;
+      right: 197px;
+    }
+    &--mail{
+      bottom: 10px;
+      right: 193px;
+    }
   }
 
   .form__sign{
@@ -711,6 +756,7 @@
 
   .form__postscript{
     margin-bottom: 6px;
+    padding-right: 48px;
   }
 
   .form__button{
@@ -718,6 +764,7 @@
     left: calc(50% - 365px);
     padding-left: 30px;
     padding-right: 30px;
+    margin-left: 50px;
   }
 
     /* Модификаторы modal */
