@@ -8,6 +8,8 @@
 
 .group-product__item {
   background-color: $group-product-item__bg;
+  width: 100%;
+  overflow: hidden;
 
   &:nth-child(2n) {
     background-color: $group-product-item-2n__bg;
@@ -20,9 +22,10 @@
 }
 
 .group-product__link {
+  box-sizing: border-box;
   position: relative;
   display: block;
-  width: 150px;
+  width: 100%;
   padding-left: 30px;
   padding-right: 0;
   padding-top: 25px;
@@ -35,37 +38,35 @@
   &:hover {
     padding-bottom: 35px;
   }
-
+  &:hover .group-product__icon,
+  &:focus .group-product__icon{
+    opacity: 0.7;
+  }
   &:active {
     color: $group-product-link-active__color;
     padding-bottom: 35px;
   }
-
-  &::after{
-    content: '';
-    position: absolute;
-    background-repeat: no-repeat;
+  &:active .group-product__icon{
+    opacity: 0.3;
   }
 }
 
-.group-product__link--interior{
-  &::after{
-    right: -104px;
+.group-product__desc{
+  display: block;
+  width: 150px;
+}
+
+.group-product__icon{
+  position: absolute;
+  fill: #149080;
+  opacity: 0.5;
+  &--interior{
+    right: 36px;
     top: 23px;
-    width: 40px;
-    height: 63px;
-    background-image: url("../img/icon-interior.svg");
-    background-repeat: no-repeat;
   }
-}
-
-.group-product__link--toy{
-  &::after{
-    right: -114px;
+  &--toy{
+    right: 26px;
     top: 20px;
-    width: 60px;
-    height: 60px;
-    background-image: url("../img/icon-toy.svg");
   }
 }
 
@@ -87,18 +88,22 @@
     padding-left: 35px;
     font-size: 20px;
     line-height: 30px;
-  }
 
-  .group-product__link--interior{
-    &::after{
-      right: -114px;
-      top: 28px;
+    &:hover {
+      padding-bottom: 30px;
+    }
+
+    &:active {
+      padding-bottom: 30px;
     }
   }
 
-  .group-product__link--toy{
-    &::after{
-      right: -115px;
+  .group-product__icon{
+    &--interior{
+      top: 28px;
+    }
+    &--toy{
+      right: 34px;
       top: 30px;
     }
   }
@@ -114,19 +119,25 @@
   }
 
   .group-product__link{
-    padding-bottom: 13px;
+    padding-bottom: 30px;
+
+    &:hover {
+      padding-bottom: 30px;
+    }
+
+    &:active {
+      padding-bottom: 30px;
+    }
   }
 
     .group-product__link--interior{
     &::after{
-      right: -303px;
       top: 30px;
     }
   }
 
   .group-product__link--toy{
     &::after{
-      right: -305px;
       top: 32px;
     }
   }

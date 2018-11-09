@@ -34,44 +34,34 @@
 
 .page-footer__link{
   position: relative;
-  &::after{
-    content: '';
-    position: absolute;
-    background-repeat: no-repeat;
-    background-position: center center;
-  }
 }
 
-.page-footer__link--inst{
-  &::after{
-    left: 6px;
+.page-footer__icon{
+  position: absolute;
+  &--social{
+    fill: #231F20;
+  }
+  &:hover,
+  &:focus{
+    fill: #46c1ae;
+  }
+  &:active{
+    fill: #bde3dd;
+  }
+  &--logo{
+    display: none;
+  }
+  &--inst{
+    left: 9px;
+    top: -2px;
+  }
+  &--fb{
+    left: 14px;
     top: -7px;
-    width: 30px;
-    height: 30px;
-    background-image: url("../img/icon-insta.svg");
-    background-repeat: no-repeat;
   }
-}
-
-.page-footer__link--fb{
-  &::after{
-    left: 8px;
-    top: -8px;
-    width: 30px;
-    height: 30px;
-    background-image: url("../img/icon-fb.svg");
-    background-repeat: no-repeat;
-  }
-}
-
-.page-footer__link--tw{
-  &::after{
-    left: 10px;
-    top: -9px;
-    width: 30px;
-    height: 30px;
-    background-image: url("../img/icon-twitter.svg");
-    background-repeat: no-repeat;
+  &--twitter{
+    left: 13px;
+    top: -3px;
   }
 }
 
@@ -79,8 +69,9 @@
   position: relative;
   width: 190px;
   margin: 0 auto;
-  padding-top: 35px;
+  padding-top: 33px;
   padding-bottom: 35px;
+  padding-left: 5px;
 }
 
 @media (min-width: $tablet-width) {
@@ -95,47 +86,31 @@
     margin: 0 auto;
   }
 
-  .page-footer__logo {
-    display: block;
+  .page-footer__logo{
     position: relative;
+    display: block;
     margin-top: 20px;
     margin-left: 13px;
     width: 120px;
     height: 50px;
-    background-image: url('../img/logo-footer.svg');
-    background-repeat: no-repeat;
-    background-position: center center;
+  }
+
+  .page-footer__icon--logo{
+    display: block;
+    top: 10px;
+    left: 7px;
   }
 
   .page-footer__list {
-    padding-left: 50px;
+    padding-left: 77px;
+    padding-top: 30px;
     padding-right: 0;
-  }
-
-  .page-footer__link--inst{
-    &::after{
-      left: 17px;
-      top: 2px;
-    }
-  }
-
-  .page-footer__link--fb{
-    &::after{
-      left: 20px;
-      top: 0px;
-    }
-  }
-
-  .page-footer__link--tw{
-    &::after{
-      left: 21px;
-      top: 2px;
-    }
   }
 
   .page-footer__copyright {
     margin: 0;
-    margin-right: 14px;
+    margin-right: 10px;
+    padding-top: 35px;
   }
 
   .page-footer__social {
@@ -147,11 +122,16 @@
 @media (min-width: $desktop-width) {
   .page-footer__logo{
     margin-left: 0;
-    background-position: 1px center;
+  }
+
+  .page-footer__icon--logo{
+    top: 6px;
+    left: 2px;
   }
 
   .page-footer__list{
-    padding-left: 40px;
+    padding-left: 70px;
+    padding-top: 27px;
   }
 
   .page-footer__copyright{

@@ -1,9 +1,12 @@
 .copyright {}
 
 .copyright__developed {
+  display: inline-block;
   font-size: 19px;
-  line-height: 18x;
+  line-height: 18px;
   color: $copyright__color;
+  vertical-align: top;
+  margin-top: 5px;
 
   .copyright__academy:active ~ & {
     color: $copyright-active__color;
@@ -11,26 +14,27 @@
 }
 
 .copyright__academy {
-  position: absolute;
+  position: relative;
   font-size: 0;
+  vertical-align: top;
+  display: inline-block;
+  margin-left: 25px;
+  height: auto;
+}
 
-  &::after{
-    content: '';
-    position: absolute;
-    left: 31px;
-    top: -3px;
-    width: 27px;
-    height: 34px;
-    background-image: url("../img/logo-htmlacademy.svg");
-    background-repeat: no-repeat;
-    background-position: center center;
+.copyright__icon{
+  position: absolute;
+  fill: #63d1bb;
+  &:hover,
+  &:focus{
+    fill: #46c1ae;
+  }
+  &:active{
+    fill: #46c1ae;
+    opacity: 0.3;
   }
 }
 
 @media (min-width: $tablet-width) {
-  .copyright__academy{
-    &::after{
-      left: 29px;
-    }
-  }
+
 }

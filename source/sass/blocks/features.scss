@@ -17,75 +17,33 @@
   &:last-child {
     margin-bottom: 58px;
   }
-
-  &::after{
-    content: '';
-    position: absolute;
-  }
 }
 
-.features__item--eco{
-  &::after{
-    top: -52px;
+.features__icon{
+  position: absolute;
+  fill: #63d1bb;
+  left: 0;
+  top: -50px;
+  &--eco{
     left: 8px;
-    width: 32px;
-    height: 37px;
-    background-image: url("../img/icon-feature-flower.svg");
   }
-}
+  &--style{
 
-.features__item--style{
-  &::after{
-    top: -51px;
-    left: 0;
-    width: 47px;
-    height: 28px;
-    background-image: url("../img/icon-feature-money.svg");
-    background-repeat: no-repeat;
   }
-}
-
-.features__item--like{
-  &::after{
+  &--like{
+    top: -45px;
+    left: 8px;
+  }
+  &--love{
+    top: -49px;
+    left: 3px;
+  }
+  &--domestic{
     top: -46px;
-    left: 7px;
-    width: 33px;
-    height: 28px;
-    background-image: url("../img/icon-feature-heart.svg");
-    background-repeat: no-repeat;
+    left: -7px;
   }
-}
-
-.features__item--love{
-  &::after{
-    top: -49px;
-    left: 3px;
-    width: 35px;
-    height: 35px;
-    background-image: url("../img/icon-feature-ball.svg");
-    background-repeat: no-repeat;
-  }
-}
-
-.features__item--domestic{
-  &::after{
-    top: -49px;
-    left: -6px;
-    width: 55px;
-    height: 24px;
-    background-image: url("../img/icon-feature-rocket.svg");
-    background-repeat: no-repeat;
-  }
-}
-
-.features__item--present{
-  &::after{
-    top: -51px;
-    left: 3px;
-    width: 33px;
-    height: 33px;
-    background-image: url("../img/icon-feature-gift.svg");
-    background-repeat: no-repeat;
+  &--present{
+    left: 2px;
   }
 }
 
@@ -120,6 +78,33 @@
     &:first-child,
     &:nth-child(3n+1) {
       margin-top: 88px;
+    }
+  }
+
+  .features__icon{
+    &--eco{
+      top: -54px;
+      left: 11px;
+    }
+    &--style{
+      top: -52px;
+      left: 1px;
+    }
+    &--like{
+      top: -46px;
+      left: 10px;
+    }
+    &--love{
+      top: -52px;
+      left: 3px;
+    }
+    &--domestic{
+      top: -50px;
+      left: -7px;
+    }
+    &--present{
+      top: -51px;
+      left: 3px;
     }
   }
 
