@@ -26,7 +26,7 @@
   }
 
   .catalog__product{
-    margin-bottom: 54px;
+    margin-bottom: 53px;
   }
 
 }
@@ -34,6 +34,10 @@
 @media (min-width: $desktop-width) {
   .catalog {
     display: flex;
+  }
+
+  .catalog__product{
+    margin-bottom: 56px;
   }
 
   .catalog--main {
