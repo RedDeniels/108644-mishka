@@ -8,22 +8,39 @@
   margin-bottom: 58px;
 }
 
-.special__title {
+.special__caption{
   position: relative;
+}
+
+.special__title {
   font-size: 17px;
   line-height: 24px;
   padding: 24px;
   padding-left: 89px;
+}
 
-  &::after{
-    content: '';
-    position: absolute;
-    width: 32px;
-    height: 32px;
-    top: 28px;
-    left: 33px;
-    background-image: url('../img/icon-video.svg');
-    background-repeat: no-repeat;
+.special__icon{
+  position: absolute;
+  &--video{
+    left: 32px;
+    top: 31px;
+  }
+  &--play{
+    left: 0;
+    top: 2px;
+  }
+  &--play:hover,
+  &--play:focus{
+    left: -10px;
+    top: -5px;
+    width: 121px;
+    height: 92px;
+  }
+  &--play:active{
+    left: 10px;
+    top: 9px;
+    width: 81px;
+    height: 62px;
   }
 }
 
@@ -44,8 +61,6 @@
   bottom: calc(50% - 38px);
   width: 101px;
   height: 77px;
-  background-image: url('../img/icon-play.svg');
-  background-repeat: no-repeat;
 }
 
 .special__description {
@@ -92,6 +107,10 @@
     padding-bottom: 45px;
   }
 
+  .special__icon--video{
+
+  }
+
   .special__video {
     background-color: $special-video--bg;
     order: 1;
@@ -100,22 +119,32 @@
   .special__preview {
     margin: 0 auto;
     max-height: 50vh;
-    max-width: 850px;
-    min-height: 60.3vh;
+    width: 100%;
+    height: auto;
+    min-width: 668px;
+    min-height: 455px;
+  }
+
+  .special__caption{
+        order: 2;
   }
 
   .special__title {
-    order: 2;
     font-size: 20px;
     line-height: 24px;
     margin-bottom: 5px;
     padding-bottom: 0;
-    padding-top: 40px;
+    padding-top: 35px;
     padding-left: 107px;
+  }
 
-    &::after{
-      top: 34px;
-      left: 44px;
+  .special__icon{
+    &--video{
+      top: 29px;
+      left: 43px;
+    }
+    &--play{
+      top: 0;
     }
   }
 
@@ -154,19 +183,22 @@
     padding-bottom: 12px;
   }
 
-  .special__title {
+  .special__caption{
     display: inline-block;
-    box-sizing: border-box;
     width: 31%;
+  }
+
+  .special__title {
+    box-sizing: border-box;
     margin-top: 98px;
     padding: 0;
     padding-left: 77px;
     margin-bottom: 7px;
+  }
 
-    &::after{
-      top: -55px;
-      left: 80px;
-    }
+  .special__icon--video{
+    top: 45px;
+    left: 80px;
   }
 
   .special__description {
