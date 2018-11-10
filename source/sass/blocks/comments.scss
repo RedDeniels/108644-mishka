@@ -54,6 +54,13 @@
   position: absolute;
   top: 13px;
   left: 37px;
+  &:hover,
+  &:focus{
+    fill: #666666;
+  }
+  &:active{
+    fill: #b2b2b2;
+  }
 }
 
 .comments__button {

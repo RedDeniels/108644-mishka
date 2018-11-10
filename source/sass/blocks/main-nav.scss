@@ -30,6 +30,12 @@
   right: 0;
   top: 0;
   background-color: transparent;
+  &--open .main-nav__toggle-icon--open{
+    display: block;
+  }
+  &--close .main-nav__toggle-icon--close{
+    display: block;
+  }
 }
 
 .main-nav__toggle-icon{
@@ -38,17 +44,14 @@
 
 .main-nav__toggle-icon--open{
   display: none;
-  left: -17px;
-  top: 0;
+  left: 22px;
+  top: 30px;
 }
 
 .main-nav__toggle-icon--close{
+  display: none;
   right: 27px;
   top: 29px;
-}
-
-.main-nav__toggle--hide {
-  display: none;
 }
 
 .main-nav__list {
