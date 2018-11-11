@@ -18,6 +18,17 @@
 @media (min-width: $tablet-width) {
   .catalog--main{
     padding-top: 90px;
+        &::after{
+      content: '';
+      position: absolute;
+      top: 302px;
+      left: 0px;
+      width: 100%;
+      height: 25px;
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-size: contain;
+      background-repeat: repeat-x;
+    }
   }
 
   .catalog__list {
