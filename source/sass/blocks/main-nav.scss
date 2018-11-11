@@ -30,12 +30,7 @@
   right: 0;
   top: 0;
   background-color: transparent;
-  &--open .main-nav__toggle-icon--open{
-    display: block;
-  }
-  &--close .main-nav__toggle-icon--close{
-    display: block;
-  }
+  cursor: pointer;
 }
 
 .main-nav__toggle-icon{
@@ -52,6 +47,10 @@
   display: none;
   right: 27px;
   top: 29px;
+}
+
+.main-nav__toggle-icon--show{
+  display: block;
 }
 
 .main-nav__list {

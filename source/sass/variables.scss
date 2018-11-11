@@ -23,6 +23,7 @@ $grey--hight: #c7c7c7;
 $grey--pre: #666666;
 $grey--soft: #b2b2b2;
 $grey--pastel: #f9f9f9;
+$grey--end: #e5e5e5;
 
 $white: #ffffff;
 $black: #000000;
@@ -107,6 +108,7 @@ $form-field-nth-2n__bg: $grey--clear;
 $form-button__bg: $white;
 
 /*-- group-product color variables --*/
+$group-product__bg: $grey--pastel;
 $group-product-item__bg: $mint;
 $group-product-item-2n__bg: $mint--dark;
 $group-product-link__color: $white;
@@ -132,11 +134,15 @@ $modal-button__bg: $mint;
 $modal-button-active__border: $mint;
 $modal-button-active__color: $mint--soft;
 
+/*-- product shadow variables --*/
+$modal__shadow: 0 6px 10px rgba(0,0,0,0.1);
+
 /*-- title color variables --*/
 $title__color: $black;
 
 /*-- page-footer color variables --*/
 $page-footer__bg: $grey--clear;
+$page-footer_copyright__border: $grey--end;
 
 /*-- page-header color variables --*/
 $page-header__bg: $white;
@@ -172,3 +178,6 @@ $extra-nav-link__color: $black;
 $extra-nav-link-hover__color: $grey--pre;
 $extra-nav-link-active__color: $grey--soft;
 $extra-nav-link-current-hover__color: $grey--soft;
+
+/*-- site-wrapper color variables --*/
+$site-wrapper__bg: $white;

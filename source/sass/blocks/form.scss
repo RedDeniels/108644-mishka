@@ -52,13 +52,15 @@
 .form__caption--contacts {
   padding-left: 0;
   position: relative;
+  display: block;
+  width: 100%;
   &::after{
     content: '';
     position: absolute;
     height: 1px;
     background-color: $form-caption-contacts-after__bg;
-    width: calc(100% - 65px);
-    top: 7px;
+    width: calc(100% - 95px);
+    top: 10px;
     left: 65px;
   }
 }
@@ -343,12 +345,20 @@
 
 /*-- Модификаторы modal --*/
 .form__field--modal {
+  position: relative;
   border: none;
-  margin-bottom: 32px;
+  margin-bottom: 0;
+  padding-top: 25px;
 }
 
 .form__caption--modal {
+  position: absolute;
+  left: 60px;
+  top: -25px;
   text-align: center;
+  text-transform: none;
+  font-size: 15px;
+  line-height: 30px;
 }
 
 .form__item--modal {
@@ -619,6 +629,12 @@
     position: static;
     margin: 0;
     width: auto;
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .form__field--modal{
+    padding-top: 23px;
   }
 
   .form__field--modal{
@@ -632,7 +648,7 @@
   }
 
   .form__item--modal {
-    min-width: 108px;
+    min-width: 112px;
     margin-left: 0;
     margin-bottom: 0;
   }

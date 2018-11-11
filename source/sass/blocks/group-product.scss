@@ -1,4 +1,6 @@
-.group-product {}
+.group-product {
+    background-color: $group-product__bg;
+}
 
 .group-product__list {
   list-style: none;
@@ -71,6 +73,20 @@
 }
 
 @media (min-width: $tablet-width) {
+  .group-product{
+    position: relative;
+    &::after{
+      content: '';
+      position: absolute;
+      bottom: -12px;
+      left: 0px;
+      width: 100%;
+      height: 25px;
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-size: contain;
+      background-repeat: repeat-x;
+    }
+  }
   .group-product__list {
     display: flex;
     min-width: 668px;
@@ -110,6 +126,13 @@
 }
 
 @media (min-width: $desktop-width) {
+  .group-product{
+    &::after{
+      bottom: -20px;
+      height: 37px;
+      background-position: 30px;
+    }
+  }
   .group-product__list {
     width: 1050px;
   }
