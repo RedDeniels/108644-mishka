@@ -9,17 +9,15 @@
     <script>svg4everybody();</script>
   </head>
   <body>
-
     <div style="display: none">
-      <include src="build/img/sprite-img.svg"></include>
+      <include src="build/img/sprite.svg"></include>
     </div>
-
     <div class="site-wrapper">
       <header class="page-header">
         <nav class="main-nav">
             <a class="main-nav__logo" href="#">
               <picture>
-                <source media="(min-width: 1250px)" srcset="img/logo-desktop.svg">
+                <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
                 <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
                 <img class="main-nav__logo-image" src="img/logo-mobile.svg" width="85" height="35" alt="Магазин товаров ручной работы «Mishka»">
               </picture>
@@ -110,11 +108,11 @@
                 </table>
               </div>
               <picture>
-                <source type="image/webp" media="(min-width: 1250px)" srcset="img/triple-set-desktop@1x.webp 1x, img/triple-set-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.webp 1x, img/triple-set-desktop@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.webp 1x, img/triple-set-tablet@2x.webp 2x">
                 <source type="image/webp" srcset="img/triple-set-mobile@1x.webp 1x, img/triple-set-mobile@2x.webp 2x">
 
-                <source media="(min-width: 1250px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
+                <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
                 <img class="product-week__image" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" width="260" height="315" alt="Вязаные корзинки в трех размерах">
               </picture>
@@ -128,27 +126,27 @@
               <h2 class="title features__title">Коротко о нас:</h2>
               <ul class="features__list">
                 <li class="features__item features__item--eco">
-                  <svg class="features__icon features__icon--eco" width="32" height="38"><use xlink:href="img/sprite.svg#icon-features-flower"></use></svg>
+                  <svg class="features__icon features__icon--eco" width="32" height="38"><use xlink:href="img/sprite.svg#icon-feature-flower"></use></svg>
                   Экологически чистые&nbsp;материалы
                 </li>
                 <li class="features__item features__item--style">
-                  <svg class="features__icon features__icon--style" width="47" height="28"><use xlink:href="img/sprite.svg#icon-features-money"></use></svg>
+                  <svg class="features__icon features__icon--style" width="47" height="28"><use xlink:href="img/sprite.svg#icon-feature-money"></use></svg>
                   Скандинавский стиль по&nbsp;российской цене
                 </li>
                 <li class="features__item features__item--like">
-                  <svg class="features__icon features__icon--like" width="33" height="28"><use xlink:href="img/sprite.svg#icon-features-heart"></use></svg>
+                  <svg class="features__icon features__icon--like" width="33" height="28"><use xlink:href="img/sprite.svg#icon-feature-heart"></use></svg>
                   Увеличивает лайки на&nbsp;фотографиях
                 </li>
                 <li class="features__item features__item--love">
-                  <svg class="features__icon features__icon--love" width="35" height="35"><use xlink:href="img/sprite.svg#icon-features-ball"></use></svg>
+                  <svg class="features__icon features__icon--love" width="35" height="35"><use xlink:href="img/sprite.svg#icon-feature-ball"></use></svg>
                   Связано вручную с&nbsp;любовь&nbsp;и&nbsp;умилением
                 </li>
                 <li class="features__item features__item--domestic">
-                  <svg class="features__icon features__icon--domestic" width="55" height="24"><use xlink:href="img/sprite.svg#icon-features-rocket"></use></svg>
+                  <svg class="features__icon features__icon--domestic" width="55" height="24"><use xlink:href="img/sprite.svg#icon-feature-rocket"></use></svg>
                   Поддержка&nbsp;отечественного производителя
                 </li>
                 <li class="features__item features__item--present">
-                  <svg class="features__icon features__icon--present" width="33" height="33"><use xlink:href="img/sprite.svg#icon-features-gift"></use></svg>
+                  <svg class="features__icon features__icon--present" width="33" height="33"><use xlink:href="img/sprite.svg#icon-feature-gift"></use></svg>
                   Поставляется в подарочной упаковке
                 </li>
               </ul>
@@ -192,7 +190,7 @@
               </tr>
             </table>
             <div class="contacts__map">
-              <iframe class="contacts__yandex-map" src="https://yandex.ru/map-widget/v1/-/CBFIABV7HA" width="320" height="457" frameborder="1" allowfullscreen="true"></iframe>
+              <iframe class="contacts__yandex-map" src="https://yandex.ru/map-widget/v1/-/CBFIABV7HA" width="320" height="457"></iframe>
               <picture class="contacts__container-map">
                 <source type="image/webp" media="(min-width: 1250px)" srcset="img/map-desktop@1x.webp 1x, img/map-desktop@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 768px)" srcset="img/map-tablet@1x.webp 1x, img/map-tablet@2x.webp 2x">
@@ -227,7 +225,7 @@
           <div class="copyright page-footer__copyright">
             <b class="copyright__developed">Разработано</b>
             <a class="copyright__academy" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy
-              <svg class="copyright__icon" width="27" height="34"><use xlink:href="img/sprite.svg#logo-academy"></use></svg>
+              <svg class="copyright__icon" width="27" height="34"><use xlink:href="img/sprite.svg#logo-htmlacademy"></use></svg>
             </a>
           </div>
         </div>

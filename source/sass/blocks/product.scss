@@ -1,13 +1,5 @@
 .product {
   border: 1px solid $product__border;
-
-  &:hover {
-    box-shadow: $product-description-hover__shadow;
-  }
-
-  &:active {
-    box-shadow: $product-description-active__shadow;
-  }
 }
 
 .product__link {
@@ -52,10 +44,18 @@
 .product__description {
   padding-left: 28px;
   padding-right: 28px;
-  margin-bottom: 25px;
+  padding-bottom: 25px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  &:hover {
+    box-shadow: $product-description-hover__shadow;
+  }
+
+  &:active {
+    box-shadow: $product-description-active__shadow;
+  }
 }
 
 .product__order {
@@ -129,7 +129,8 @@
   .product__description {
     box-sizing: border-box;
     width: 50%;
-    margin-bottom: 22px;
+    margin-bottom: 0;
+    padding-bottom: 22px;
   }
 
   .product__order{
@@ -176,7 +177,7 @@
 
   .product__description {
     width: 100%;
-    margin-bottom: 20px;
+    padding-bottom: 20px;
     margin-top: 25px;
     flex-grow: 2;
   }

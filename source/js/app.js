@@ -23,28 +23,30 @@ toggle.classList.add("main-nav__toggle--open");
 menu__site.classList.add("main-nav__list--close");
 menu__user.classList.add("main-nav__list--close");
 
+toggle.addEventListener("click", function (evt) {
+  console.log("успешно");
+  if(toggle.classList.contains("main-nav__toggle--open")){
+    evt.preventDefault();
+    toggle__icon__open.classList.remove("main-nav__toggle-icon--show");
+    toggle__icon__close.classList.add("main-nav__toggle-icon--show");
+    toggle.classList.remove("main-nav__toggle--open");
+    toggle.classList.add("main-nav__toggle--close");
+    menu__site.classList.remove("main-nav__list--close");
+    menu__user.classList.remove("main-nav__list--close");
+    }
+  else {
+    evt.preventDefault();
+    toggle__icon__close.classList.remove("main-nav__toggle-icon--show");
+    toggle__icon__open.classList.add("main-nav__toggle-icon--show");
+    toggle.classList.remove("main-nav__toggle--close");
+    toggle.classList.add("main-nav__toggle--open");
+    menu__site.classList.add("main-nav__list--close");
+    menu__user.classList.add("main-nav__list--close");
+    }
+});
+
 if(index !== null){
   console.log("index");
-  toggle.addEventListener("click", function (evt) {
-    if(toggle.classList.contains("main-nav__toggle--open")){
-      evt.preventDefault();
-      toggle__icon__open.classList.remove("main-nav__toggle-icon--show");
-      toggle__icon__close.classList.add("main-nav__toggle-icon--show");
-      toggle.classList.remove("main-nav__toggle--open");
-      toggle.classList.add("main-nav__toggle--close");
-      menu__site.classList.remove("main-nav__list--close");
-      menu__user.classList.remove("main-nav__list--close");
-      }
-    else {
-      evt.preventDefault();
-      toggle__icon__close.classList.remove("main-nav__toggle-icon--show");
-      toggle__icon__open.classList.add("main-nav__toggle-icon--show");
-      toggle.classList.remove("main-nav__toggle--close");
-      toggle.classList.add("main-nav__toggle--open");
-      menu__site.classList.add("main-nav__list--close");
-      menu__user.classList.add("main-nav__list--close");
-      }
-  });
 
   button_week__order.addEventListener("click", function (evt) {
     evt.preventDefault();
