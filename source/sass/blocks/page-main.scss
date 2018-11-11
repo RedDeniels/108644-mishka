@@ -89,7 +89,7 @@
   .page-main__banner--index{
     background-image: url("../img/hero-desktop@1x.jpg");
     @media (min-resolution: $retina-dpi),
-           (min-resolution: $retina-dppx){
+      (min-resolution: $retina-dppx){
       background-image: url("../img/hero-desktop@2x.jpg");
     }
   }
