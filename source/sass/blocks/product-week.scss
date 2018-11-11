@@ -7,11 +7,12 @@
     position: absolute;
     bottom: -43px;
     left: -30px;
-    width: calc(100% + 60px);
+    width: calc(120% + 60px);
     height: 7px;
     background-image: url("../img/bg-zigzag-line.svg");
-    background-size: cover;
+    background-size: contain;
     background-repeat: repeat-x;
+    overflow-x: hidden;
   }
 }
 
@@ -120,6 +121,7 @@
       width: 114.8%;
       height: 16px;
       background-repeat: repeat-x;
+      background-size: contain;
     }
   }
 
