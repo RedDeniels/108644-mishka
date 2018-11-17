@@ -27,15 +27,20 @@
   }
 }
 
+.form__item--type{
+  min-height: 58px;
+}
+
 .form__field {
   border: none;
-  border-top: 1px solid $form-field__border;
   margin: 0;
   padding: 0;
   padding-top: 35px;
 }
 
 .form__caption {
+  position: relative;
+  display: block;
   font-size: 17px;
   line-height: 16px;
   font-weight: bold;
@@ -43,22 +48,40 @@
   padding-left: 30px;
   text-transform: uppercase;
   padding-right: 28px;
+  margin-bottom: 20px;
+
+  &::after{
+    content: '';
+    position: absolute;
+    width: calc(100% - 20px);
+    height: 1px;
+    top: 5px;
+    right: -70px;
+    background-color: $form-field__border;
+  }
 }
 
 .form__caption--color{
   padding-right: 15px;
 }
 
+.form__caption--name{
+  margin-bottom: 30px;
+}
+
 .form__caption--contacts {
   padding-left: 0;
   position: relative;
+  display: block;
+  width: 100%;
+  margin-bottom: 0px;
   &::after{
     content: '';
     position: absolute;
     height: 1px;
     background-color: $form-caption-contacts-after__bg;
-    width: calc(100% - 65px);
-    top: 7px;
+    width: calc(100% - 95px);
+    top: 10px;
     left: 65px;
   }
 }
@@ -79,7 +102,7 @@
 
 .form__caption--comment{
   position: relative;
-  margin-bottom: 24px;
+  margin-bottom: 27px;
   &::after{
     content: '';
     position: absolute;
@@ -301,7 +324,7 @@
   line-height: 16px;
   padding: 0;
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 32px;
 }
 
 .form__button {
@@ -318,7 +341,7 @@
 /*-- Модификаторы страницы form.html --*/
 .form__field--type{
   padding-top: 20px;
-  margin-bottom: 35px;
+  margin-bottom: 0px;
 }
 
 .form__field--color{
@@ -327,7 +350,7 @@
 }
 
 .form__field--name{
-  padding-top: 29px;
+  padding-top: 0px;
 }
 
 .form__field--contacts {
@@ -343,12 +366,20 @@
 
 /*-- Модификаторы modal --*/
 .form__field--modal {
+  position: relative;
   border: none;
-  margin-bottom: 32px;
+  margin-bottom: 0;
+  padding-top: 25px;
 }
 
 .form__caption--modal {
+  position: absolute;
+  left: 60px;
+  top: -25px;
   text-align: center;
+  text-transform: none;
+  font-size: 15px;
+  line-height: 30px;
 }
 
 .form__item--modal {
@@ -381,6 +412,12 @@
     position: relative;
   }
 
+  .form__container{
+    display: flex;
+    width: 668px;
+    margin: 0 auto;
+  }
+
   .form__field {
     position: relative;
     border-top: none;
@@ -398,14 +435,14 @@
   }
 
   .form__field--color{
-    padding-top: 50px;
+    padding-top: 52px;
     padding-bottom: 27px;
     margin-bottom: 0;
   }
 
   .form__field--name{
     padding-top: 54px;
-    padding-bottom: 20px;
+    padding-bottom: 22px;
   }
 
   .form__field--contacts{
@@ -419,33 +456,31 @@
   }
 
   .form__caption {
-    position: absolute;
-    left: calc(50% - 334px);
-    padding-left: 0;
-    @include center--tablet;
-  }
-
-  .form__caption--type{
-    top: 35px;
-  }
-
-  .form__caption--color{
-    top: 67px;
+    padding-left: 3px;
+    padding-right: 0;
+    padding-top: 20px;
+    width: 165px;
+    &::after{
+      display: none;
+    }
   }
 
   .form__caption--contacts{
-    left: calc(50% - 424px);
+    margin-right: 40px;
+    padding-top: 0;
     &::after{
       display: none;
     }
   }
 
   .form__caption--name{
-    margin-top: 12px;
+    margin-top: 0;
+    padding-top: 11px;
   }
 
   .form__caption--comment{
-    margin-top: 18px;
+    margin-top: 0px;
+    padding-left: 2px;
 
     &::after{
       display: none;
@@ -454,32 +489,44 @@
 
 .form__icon{
   &--phone{
-    right: 40px;
+    right: 25px;
   }
   &--mail{
     bottom: 8px;
-    right: 38px;
+    right: 23px;
   }
 }
 
   .form__list {
-    @include center--tablet;
+    align-self: flex-end;
+    padding-left: 0;
   }
 
   .form__list--color {
     box-sizing: border-box;
     display: flex;
     flex-wrap: wrap;
-    padding-left: 148px;
+    padding-left: 70px;
+  }
+
+  .form__list--contacts{
+    width: 100%;
+  }
+
+  .form__list--name{
+    box-sizing: border-box;
+    padding-left: 35px;
+    width: 100%;
+
   }
 
   .form__item {
-    margin-left: 165px;
+    margin-left: 15px;
     margin-bottom: 25px;
   }
 
   .form__item--type{
-    margin-bottom: 25px;
+    margin-bottom: 20px;
   }
 
   .form__item--color {
@@ -491,13 +538,14 @@
   .form__item--name {
     display: flex;
     margin-bottom: 6px;
-    margin-left: 155px;
-    padding-right: 15px;
+    margin-left: 0px;
+    padding-right: 0px;
   }
 
   .form__item--contacts{
-    padding-right: 15px;
-    margin-left: 153px;
+    display: flex;
+    padding-right: 0px;
+    margin-left: 0px;
     margin-bottom: 38px;
     &:last-child{
       margin-bottom: 38px;
@@ -506,12 +554,11 @@
 
   .form__item--comment {
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
     min-height: 230px;
     @include center--tablet;
-    min-height: 188px;
-    margin-bottom: 7px;
+    min-height: 148px;
+    margin-bottom: 43px;
   }
 
   .form__sign{
@@ -528,14 +575,14 @@
     &::after{
       width: 47px;
       height: 47px;
-      left: -12px;
-      top: 2px;
+      left: -14px;
+      top: 0px;
     }
     &::before{
       width: 20px;
       height: 20px;
-      left: 3px;
-      top: 17px;
+      left: 1px;
+      top: 16px;
     }
   }
 
@@ -546,12 +593,12 @@
     &::after{
       width: 50px;
       height: 50px;
-      left: 1px;
-      top: 0px;
+      left: 0px;
+      top: -4px;
     }
     &::before{
       left: 10px;
-      top: 18px;
+      top: 13px;
       width: 34px;
       height: 24px;
     }
@@ -565,12 +612,10 @@
   }
 
   .form__comment {
-    @include center--tablet;
     box-sizing: border-box;
     display: block;
-    margin-left: 165px;
     width: 500px;
-    margin-left: 167px;
+    margin-left: 0px;
     font-size: 18px;
     line-height: 19px;
   }
@@ -583,6 +628,7 @@
   .form__text--name{
     padding-left: 20px;
     padding-bottom: 14px;
+    padding-top: 9px;
     font-size: 19px;
     line-height: 18px;
   }
@@ -591,6 +637,7 @@
     padding-top: 0;
     padding-bottom: 14px;
     padding-left: 17px;
+    padding-top: 2px;
   }
 
   .form__submit{
@@ -619,6 +666,12 @@
     position: static;
     margin: 0;
     width: auto;
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .form__field--modal{
+    padding-top: 23px;
   }
 
   .form__field--modal{
@@ -632,7 +685,7 @@
   }
 
   .form__item--modal {
-    min-width: 108px;
+    min-width: 112px;
     margin-left: 0;
     margin-bottom: 0;
   }
@@ -640,8 +693,21 @@
 
 @media (min-width: $desktop-width) {
 
+  .form__container{
+    width: 930px;
+  }
+
   .form__field--contacts{
     padding-top: 69px;
+  }
+
+  .form__field--type{
+    padding-top: 22px;
+    margin-bottom: 15px;
+  }
+
+  .form-field__comment{
+    padding-top: 4px;
   }
 
   .form__list {
@@ -649,8 +715,14 @@
   }
 
   .form__list--color {
-    padding-left: 7px;
+    padding-left: 0;
+    margin-left: 0;
     width: 800px;
+  }
+
+  .form__list--name{
+    padding-left: 25px;
+    padding-right: 98px;
   }
 
   .form__item {
@@ -658,7 +730,7 @@
   }
 
   .form__item--type{
-    margin-left: 100px;
+    margin-left: 0px;
   }
 
   .form__item--color {
@@ -667,61 +739,70 @@
   }
 
   .form__item--name{
-    margin-left: 162px;
-    margin-bottom: 6px;
+    margin-left: 0px;
+    padding-right: 0;
+    margin-bottom: 7px;
   }
 
   .form__item--contacts{
     margin-bottom: 42px;
-    margin-left: 160px;
-    padding-right: 190px;
+    margin-left: 0px;
+    padding-right: 110px;
   }
 
   .form__item--comment {
-    @include center--desktop;
+    padding-right: 0;
+    width: 930px;
     box-sizing: border-box;
+    margin-bottom: 36px;
   }
 
   .form__caption {
-    @include center--desktop;
-    left: calc(50% - 460px);
+    width: 115px;
   }
 
   .form__caption--color{
-    left: calc(50% - 464px);
+    width: 112px;
+    padding-top: 16px;
+    padding-left :2px;
   }
 
-  .form__caption--name{
-    top: 67px;
-    left: calc(50% - 465px);
-  }
 
   .form__caption--contacts{
-    left: calc(50% - 558px);
+    margin-right: 14px;
   }
 
   .form__caption--comment{
-    top: 14px;
-    left: calc(50% - 464px);
+    padding-top: 15px;
   }
 
   .form__icon{
     &--phone{
       bottom: 17px;
-      right: 197px;
+      right: 121px;
     }
     &--mail{
       bottom: 10px;
-      right: 193px;
+      right: 118px;
     }
   }
 
   .form__sign{
-    margin-left: 73px;
+    margin-left: 0px;
+  }
+
+  .form__sign--type{
+    margin-left: 32px;
+    &::after{
+      left: -13px;
+    }
   }
 
   .form__sign--color{
-    margin-left: 44px;
+    margin-left: 0px;
+    &::after{
+      top: 0;
+    }
   }
 
   .form__text {
@@ -734,8 +815,13 @@
     padding-left: 15px;
   }
 
+  .form__text--contacts{
+    padding-top: 0;
+  }
+
   .form__comment {
-    margin-left: 175px;
+    margin-left: 0px;
+    margin-right: 115px;
     width: 700px;
     font-size: 19px;
     line-height: 18px;
@@ -743,11 +829,6 @@
 
   .form__button {
     left: calc(50% - 375px);
-  }
-
-  .form__caption {
-    margin: 0;
-    width: auto;
   }
 
   .form__submit{

@@ -1,20 +1,27 @@
 .modal {
-  position: absolute;
-  bottom: -480px;
+  display: none;
+  position: fixed;
+  z-index: 11;
+  top: calc(50% - 169px);
   left: 0;
   width: 100%;
-  min-width: 320px;
   border-top: 1px solid $modal__border;
   border-bottom: 1px solid $modal__border;
   background-color: $modal__bg;
+  box-shadow: $modal__shadow;
+}
+
+.modal--show{
+  display: block;
 }
 
 .modal__title {
   text-align: center;
+  text-transform: uppercase;
   margin: 0 auto;
-  margin-top: 35px;
-  margin-bottom: 25px;
-  width: 130px;
+  margin-top: 32px;
+  margin-bottom: 40px;
+  width: 150px;
 }
 
 .modal__button {
@@ -27,6 +34,7 @@
   padding: 16px;
   margin-bottom: 45px;
   outline: none;
+  text-transform: uppercase;
 
   &:hover,
   &:active {
@@ -34,19 +42,22 @@
     color: $modal-button-active__color;
   }
 
-  /*-- по styleguide нужно смещать надпись на 5 px вверх при :hover ¯\_(ツ)_/¯ Что то тут не так --*/
 }
 
 @media (min-width: $tablet-width) {
   .modal {
-    width: 566px;
     left: 50%;
-    bottom: -350px;
+    top: calc(50% - 174px);
+    width: 566px;
     margin-left: -283px;
+    border: 1px solid $modal__border;
   }
 
   .modal__title{
     width: auto;
+    font-size: 30px;
+    line-height: 57px;
+    margin-bottom: 15px;
   }
 
   .modal__button{
